@@ -27,7 +27,7 @@ The owner has not chosen a license. This ADR does not select one. Collection is 
 ## M0 consequences
 
 - Foundation documents, agent definitions, and skills landed earlier. Schema 0.1.0 and the source registry are on main. This change adds the root workspace, CI, a generated SQLite FTS5 index package, and a local explorer scaffold. Ingestion and a real catalog are still absent. The full explorer is still absent.
-- Root install, typecheck, Vitest, and Playwright were run by the coordinator on commit `10b3e3c`. Results are in `ops/STATE.md`. GitHub Actions for this pull request is a separate result and is not copied here until it is observed.
+- Root install, typecheck, Vitest, and Playwright were run by the coordinator on commit `10b3e3c`. GitHub Actions run `36430260863` passed on `c60b825`. Both are recorded in `ops/STATE.md`.
 - Later implementation must keep catalog files canonical and must be able to rebuild FTS5 indexes from those files.
 - Later explorer work stays local to the Node.js runtime unless a new ADR says otherwise. Shipping the full explorer is not required to finish M0.
 - Retrieval and pattern work must still function when no LLM and no vector index are configured.
@@ -44,4 +44,4 @@ The owner has not chosen a license. This ADR does not select one. Collection is 
 
 ## Confirmation
 
-Schema 0.1.0, the source registry, and the workspace scaffold are in the tree this ADR describes. `ops/STATE.md` is the record of the coordinator's commands. Do not treat this ADR as owner approval or as a GitHub Actions result.
+Schema 0.1.0, the source registry, and the workspace scaffold are in the tree this ADR describes. `ops/STATE.md` is the record of the coordinator's commands and of GitHub Actions run `36430260863`. Do not treat this ADR as owner approval.

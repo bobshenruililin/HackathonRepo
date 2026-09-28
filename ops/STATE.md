@@ -102,9 +102,15 @@ Commands and results:
 
 The smoke index is built only from labeled synthetic JSON. It is not a real project count.
 
-Not observed in this record:
+GitHub Actions, observed after the local commands:
 
-- GitHub Actions for PR #7. Local success is not that result.
+- Workflow: `CI` / job `Install, typecheck, and test`
+- Run: https://github.com/bobshenruililin/HackathonRepo/actions/runs/36430260863
+- Head at that run: `c60b825` (this file's parent is `10b3e3c`; the run includes the state commit that first recorded the local commands)
+- Result: pass, about 57s
+
+Still not observed:
+
 - A real catalog, ingestion, or the full explorer.
 - Owner approval of the license, retention, removal, or public names and schools.
 
@@ -112,11 +118,11 @@ Not observed in this record:
 
 | Work | State recorded here | Result |
 | --- | --- | --- |
-| PR #7 | Workspace scaffold and this state record. Not merged. | Local checks above passed. GitHub Actions not yet observed. |
+| PR #7 | Workspace scaffold and this state record. Not merged. | Local checks above passed. GitHub Actions run `36430260863` passed on `c60b825`. |
 
 ## Checks
 
-Local commands on `10b3e3c` passed, as listed in the root workspace section. GitHub Actions for this pull request was not observed when those commands were recorded.
+Local commands on `10b3e3c` passed, as listed in the root workspace section. GitHub Actions run `36430260863` passed on `c60b825`.
 
 ## Completed before this branch
 
@@ -149,7 +155,7 @@ Local commands on `10b3e3c` passed, as listed in the root workspace section. Git
 
 ## Unknowns
 
-- GitHub Actions result for PR #7: not observed when the local checks were recorded.
+- A later GitHub Actions run, after this CI note, is a new result. Run `36430260863` on `c60b825` passed.
 - Owner license choice: not chosen.
 - Whether public names or schools may be stored: owner decision, not made.
 - Devpost authorization: none recorded. Automation stays disabled.
