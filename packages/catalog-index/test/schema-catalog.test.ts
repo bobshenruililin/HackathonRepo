@@ -19,7 +19,7 @@ describe("HackMIT schema catalog", () => {
   it("indexes the real catalog and keeps synthetic fixtures out of the real count", () => {
     const dbPath = tempDb();
     const counts = buildSchemaIndex({ catalogFile, dbPath });
-    expect(counts).toEqual({ real: 2075, synthetic: 0 });
+    expect(counts).toEqual({ real: 2180, synthetic: 0 });
 
     const hits = searchRecords(dbPath, "Pilot");
     expect(hits.length).toBeGreaterThan(0);
@@ -37,6 +37,42 @@ describe("HackMIT schema catalog", () => {
       ),
     ).toBe(true);
     expect(record?.details.claims.some((claim) => claim.statement.includes("Rev.ai Speech API Challenge"))).toBe(true);
+  });
+
+  it("keeps a named Devpost prize and a Blueprint project attached to the right event", () => {
+    const dbPath = tempDb();
+    buildSchemaIndex({ catalogFile, dbPath });
+
+    const windowShare = searchRecords(dbPath, "Window Share").find((hit) => hit.title === "Window Share");
+    expect(windowShare).toBeDefined();
+    const winner = getRecord(dbPath, windowShare?.id ?? "");
+    expect(
+      winner?.details.submissions.some(
+        (submission) => submission.eventName.status === "known" && submission.eventName.value === "HackMIT 2016",
+      ),
+    ).toBe(true);
+    expect(
+      winner?.details.repositories.some(
+        (item) => item.locator.status === "known" && item.locator.value === "https://github.com/sbower213/windowshare",
+      ),
+    ).toBe(true);
+    expect(winner?.details.claims.some((claim) => claim.statement.includes("Winner First Place"))).toBe(true);
+
+    const potato = searchRecords(dbPath, "Hot Potato").find((hit) => hit.title === "2-Player Hot Potato");
+    expect(potato).toBeDefined();
+    const blueprint = getRecord(dbPath, potato?.id ?? "");
+    expect(
+      blueprint?.details.submissions.some(
+        (submission) => submission.eventName.status === "known" && submission.eventName.value === "Blueprint 2025",
+      ),
+    ).toBe(true);
+    expect(
+      blueprint?.details.repositories.some(
+        (item) =>
+          item.locator.status === "known" &&
+          item.locator.value === "https://github.com/vedant-a-joshi/mit-blueprint-25-submission",
+      ),
+    ).toBe(true);
   });
 });
 
