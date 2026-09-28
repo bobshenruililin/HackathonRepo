@@ -4,6 +4,8 @@
 
 M0 foundation is on main as merge `2f877e39eefaafd1482dd5e77c28fdb7e6771005` (PR #7). It is not an owner approval of policy, and collection is not approved.
 
+M1 collection did not start. On 2026-09-28 the registry on `589d87e` had 0 `approved` sources (29 `discovered`, 18 `permission-pending`). No genuine project records were accepted. The coverage report is `docs/M1_COVERAGE.md`. Devpost automation stays disabled.
+
 The workspace scaffold is on main. The coordinator ran install, typecheck, Vitest, and Playwright against commit `10b3e3c2a56870d581e5e4e2d691e9c337a54d05` on 2026-09-28. Those results, and the two GitHub Actions passes, are recorded below. They are not an owner approval of policy and not a collection approval.
 
 The second security pass is done. It does not accept M0. Report: `/cursor/stores/bc-57d64c88-331a-41ed-baf7-50dfe22d7fce/docs/m0-security-review-pass-2.md`. Reviewed commit: `4aa3fe2db2809b5c0563391127be5abf71b26e1a`. That commit is before PR #5 (`1311f2463630b4bbdb118413c04e9ca35a424a3c`). The pass's note that this file still marked the source audit and schema unknown applied to `4aa3fe2`, not to `1311f24`.
@@ -151,7 +153,7 @@ Local commands on `10b3e3c` passed, as listed in the root workspace section. Git
 - Devpost automated collection. Stays disabled. The 18 Devpost URLs stay permission-pending and not-attempted.
 - The full Next.js explorer. The scaffold is not that product.
 - Indexes built from a real catalog. The generator exists. Real catalog files do not.
-- M1. See `docs/M1_ACCEPTANCE.md`. M1 is proposed, not started, and not approved.
+- M1 collection. Not started. See `docs/M1_COVERAGE.md`. The proposed checks in `docs/M1_ACCEPTANCE.md` were not executed. No genuine project records were accepted.
 
 ## Unknowns
 
