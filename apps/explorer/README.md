@@ -1,6 +1,8 @@
 # @hackathon-atlas/explorer
 
-Local Next.js scaffold on the Node.js runtime. One page reads a generated SQLite FTS5 index and shows the real count and the synthetic count. It is not the full explorer. It does not browse projects, call the HackMIT archive, or use an LLM.
+Local Next.js explorer on the Node.js runtime. It reads a generated SQLite FTS5 index: keyword search, filters that stay empty when a field is unknown, a project page, and a two-project comparison. Search and comparison do not call a model API. It is a local read interface, not a hosted product.
+
+When the index real count is 0, the page says there are no real projects. Labeled synthetic fixtures stay in their own list. They are excluded from the real count.
 
 The browser smoke test builds that index from labeled synthetic records only. Those records do not increase the real count. `next dev` and `next start` both use the Node.js runtime.
 
@@ -64,4 +66,4 @@ pnpm build
 pnpm start
 ```
 
-`pnpm build-index` writes `apps/explorer/.data/catalog.sqlite` from the one synthetic catalog-index fixture (`real=0`, `synthetic=1`). `pnpm test:e2e` builds a smoke index with two labeled synthetic records (`real=0`, `synthetic=2`) and checks the page in Chromium.
+`pnpm build-index` writes `apps/explorer/.data/catalog.sqlite` from the one synthetic catalog-index fixture (`real=0`, `synthetic=1`). `pnpm test:e2e` builds a smoke index with two labeled synthetic records (`real=0`, `synthetic=2`) and checks the page in Chromium. The smoke page says there are no real projects. The second smoke record carries labeled synthetic evidence, a submission, and repositories so the project and comparison pages have associated records to show. Those records are still synthetic.

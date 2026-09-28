@@ -8,12 +8,52 @@ body {
   margin: 0;
 }
 
-main {
-  max-width: 40rem;
+header {
+  max-width: 72rem;
   margin: 0 auto;
-  padding: 2rem 1.25rem;
+  padding: 1rem 1.25rem 0;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+main {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2rem;
 }
 
 dt {
   font-weight: 600;
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 40rem;
+  margin: 1rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid;
+  padding: 0.4rem 0.5rem;
+  vertical-align: top;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.unknown {
+  font-style: italic;
+}
+
+section {
+  margin-top: 1.5rem;
 }

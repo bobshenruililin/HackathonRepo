@@ -7,12 +7,15 @@ CREATE TABLE records (
   id TEXT PRIMARY KEY,
   title TEXT NOT NULL,
   summary TEXT NOT NULL,
-  synthetic INTEGER NOT NULL CHECK (synthetic IN (0, 1))
+  synthetic INTEGER NOT NULL CHECK (synthetic IN (0, 1)),
+  search_text TEXT NOT NULL,
+  details_json TEXT NOT NULL
 ) STRICT;
 
 CREATE VIRTUAL TABLE records_fts USING fts5(
   title,
   summary,
+  search_text,
   content='records',
   content_rowid='rowid'
 );
@@ -48,6 +51,13 @@ export function assertGeneratedIndex(db: DatabaseSync): void {
   const names = new Set(rows.map((row) => row.name));
   if (!names.has("records") || !names.has("records_fts")) {
     throw new Error("Database is not a generated FTS5 catalog index");
+  }
+  const columns = db.prepare("PRAGMA table_info(records)").all() as Array<{ name: string }>;
+  const columnNames = new Set(columns.map((column) => column.name));
+  for (const required of ["id", "title", "summary", "synthetic", "search_text", "details_json"]) {
+    if (!columnNames.has(required)) {
+      throw new Error("Generated index is missing detail columns. Rebuild the index.");
+    }
   }
 }
 
