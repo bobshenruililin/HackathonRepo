@@ -224,7 +224,8 @@ describe("runCli", () => {
     expect(body.indexPath).toBe(path.resolve(dbPath));
     expect(body.hitCounts).toEqual({ status: "known", real: 1, synthetic: 0, reason: null });
     expect(body.hits.map((hit) => hit.id)).toEqual(["test-only-synthetic-false"]);
-    expect(body.hits[0]?.title).toMatch(/Not a hackathon project/);
+    expect(body.hits[0]?.title).toBe("TEST ONLY synthetic flag false");
+    expect(body.hits[0]?.summary).toMatch(/Not a hackathon project/);
   });
 
   it("exits 2 on a usage error and exits 1 when the index is missing", () => {

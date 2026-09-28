@@ -44,7 +44,7 @@ export function parseCommand(argv: readonly string[]): ParsedCommand {
   }
 
   const indexPath = parsed.values.index;
-  if (indexPath === undefined || indexPath.trim() === "") {
+  if (typeof indexPath !== "string" || indexPath.trim() === "") {
     throw new CliUsageError("search requires --index <generated.sqlite>");
   }
 
@@ -53,13 +53,29 @@ export function parseCommand(argv: readonly string[]): ParsedCommand {
     throw new CliUsageError("Search query must not be empty");
   }
 
-  const filterArgs = parsed.values.filter ?? [];
   return {
     kind: "search",
     indexPath,
     query,
-    filters: filterArgs.map(parseFilter),
+    filters: readFilters(parsed.values.filter).map(parseFilter),
   };
+}
+
+function readFilters(value: unknown): string[] {
+  if (value === undefined) {
+    return [];
+  }
+  if (!Array.isArray(value)) {
+    throw new CliUsageError("Filter must be field=value");
+  }
+  const filters: string[] = [];
+  for (const item of value) {
+    if (typeof item !== "string") {
+      throw new CliUsageError("Filter must be field=value");
+    }
+    filters.push(item);
+  }
+  return filters;
 }
 
 function parseFilter(raw: string): FilterRequest {
