@@ -21,8 +21,12 @@ export default async function ComparePage({ searchParams }: CompareProps) {
   const rightId = first(params.right);
   const index = readIndex();
   const records = index.status === "generated" ? index.all : [];
-  const left = records.find((record) => record.id === leftId) ?? null;
-  const right = records.find((record) => record.id === rightId) ?? null;
+  const leftResolved = resolveSide(records, leftId);
+  const rightResolved = resolveSide(records, rightId);
+  const left = leftResolved.record;
+  const right = rightResolved.record;
+  const leftMatches = left === null ? leftResolved.matches : [];
+  const rightMatches = right === null ? rightResolved.matches : [];
 
   return (
     <main>
@@ -36,28 +40,14 @@ export default async function ComparePage({ searchParams }: CompareProps) {
         <>
           <CorpusNotice realCount={index.counts.real} />
           <form method="get" action="/compare">
-            <label htmlFor="left">Left project</label>
-            <select id="left" name="left" defaultValue={leftId}>
-              <option value="">Select a project</option>
-              {records.map((record) => (
-                <option key={record.id} value={record.id}>
-                  {record.synthetic ? "Synthetic fixture: " : ""}
-                  {record.title}
-                </option>
-              ))}
-            </select>
-            <label htmlFor="right">Right project</label>
-            <select id="right" name="right" defaultValue={rightId}>
-              <option value="">Select a project</option>
-              {records.map((record) => (
-                <option key={`right-${record.id}`} value={record.id}>
-                  {record.synthetic ? "Synthetic fixture: " : ""}
-                  {record.title}
-                </option>
-              ))}
-            </select>
+            <label htmlFor="left">Left project id or exact title</label>
+            <input id="left" name="left" type="search" defaultValue={leftId} />
+            <label htmlFor="right">Right project id or exact title</label>
+            <input id="right" name="right" type="search" defaultValue={rightId} />
             <button type="submit">Compare</button>
           </form>
+          <MatchList label="Left matches" matches={leftMatches} side="left" other={rightId} />
+          <MatchList label="Right matches" matches={rightMatches} side="right" other={leftId} />
           {leftId !== "" && leftId === rightId ? <p>Both sides are the same catalog record.</p> : null}
           <table data-testid="comparison">
             <thead>
@@ -262,4 +252,49 @@ function first(value: string | string[] | undefined): string {
     return value[0] ?? "";
   }
   return value ?? "";
+}
+
+function resolveSide(
+  records: readonly CatalogRecord[],
+  raw: string,
+): { record: CatalogRecord | null; matches: CatalogRecord[] } {
+  const query = raw.trim();
+  if (query === "") return { record: null, matches: [] };
+  const byId = records.find((record) => record.id === query);
+  if (byId) return { record: byId, matches: [] };
+  const exact = records.filter((record) => record.title.toLowerCase() === query.toLowerCase());
+  if (exact.length === 1) return { record: exact[0] ?? null, matches: [] };
+  const pool = exact.length > 1 ? exact : records.filter((record) => record.title.toLowerCase().includes(query.toLowerCase()));
+  return { record: null, matches: pool.slice(0, 8) };
+}
+
+function MatchList({
+  label,
+  matches,
+  side,
+  other,
+}: {
+  label: string;
+  matches: readonly CatalogRecord[];
+  side: "left" | "right";
+  other: string;
+}) {
+  if (matches.length === 0) return null;
+  return (
+    <section>
+      <h2>{label}</h2>
+      <ul>
+        {matches.map((record) => {
+          const params = new URLSearchParams();
+          params.set("left", side === "left" ? record.id : other);
+          params.set("right", side === "right" ? record.id : other);
+          return (
+            <li key={record.id}>
+              <a href={`/compare?${params.toString()}`}>{record.title}</a>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
 }
