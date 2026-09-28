@@ -159,7 +159,98 @@ describe("HackMIT schema catalog", () => {
       ),
     ).toBe(true);
   });
+
+  it("keeps later code-observed dependency claims on GreenPlanner, Unwrap, and Prophecy", () => {
+    const dbPath = tempDb();
+    buildSchemaIndex({ catalogFile, dbPath });
+
+    expectStagedNames(
+      dbPath,
+      "GreenPlanner",
+      "https://github.com/lavenderbonnet/hackmit",
+      "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "package.json",
+      [
+        ["Scoped npm package testing-library/dom", "library"],
+        ["Scoped npm package testing-library/jest-dom", "library"],
+        ["Scoped npm package testing-library/react", "library"],
+        ["Scoped npm package testing-library/user-event", "library"],
+        ["autoprefixer", "library"],
+        ["leaflet", "library"],
+        ["lucide-react", "library"],
+        ["postcss", "library"],
+        ["react", "framework"],
+        ["react-dom", "library"],
+        ["react-leaflet", "library"],
+        ["react-scripts", "library"],
+        ["tailwindcss", "library"],
+        ["web-vitals", "library"],
+      ],
+    );
+    expectStagedNames(
+      dbPath,
+      "Unwrap",
+      "https://github.com/kristina-sakayeva/hack_mit_26",
+      "747d32f9aca804d88a9e629b00c480237a22e880",
+      "package.json",
+      [
+        ["Scoped npm package testing-library/react", "library"],
+        ["Scoped npm package types/node", "library"],
+        ["Scoped npm package types/react", "library"],
+        ["Scoped npm package types/react-dom", "library"],
+        ["Scoped npm package vitest/coverage-v8", "library"],
+        ["autoprefixer", "library"],
+        ["framer-motion", "library"],
+        ["jsdom", "library"],
+        ["next", "framework"],
+        ["postcss", "library"],
+        ["react", "framework"],
+        ["react-dom", "library"],
+        ["tailwindcss", "library"],
+        ["typescript", "library"],
+        ["vitest", "library"],
+      ],
+    );
+    expectStagedNames(
+      dbPath,
+      "Prophecy",
+      "https://github.com/amritnair/hackmit",
+      "3703e95f569b24f25708fd396b177b9dce0fc1d2",
+      "pyproject.toml",
+      [["Python", "language"]],
+    );
+  });
 });
+
+function expectStagedNames(
+  dbPath: string,
+  title: string,
+  locator: string,
+  revision: string,
+  manifest: string,
+  names: ReadonlyArray<readonly [string, "library" | "framework" | "language"]>,
+): void {
+  const hit = searchRecords(dbPath, title).find((item) => item.title === title);
+  expect(hit).toBeDefined();
+  const record = getRecord(dbPath, hit?.id ?? "");
+  expect(
+    record?.details.repositories.some(
+      (item) => item.locator.status === "known" && item.locator.value === locator,
+    ),
+  ).toBe(true);
+  for (const [name, role] of names) {
+    const statement = `${name} is code-observed as a ${role} at revision ${revision}. Manifest path: ${manifest}.`;
+    expect(statement.includes("@")).toBe(false);
+    expect(
+      record?.details.claims.some(
+        (claim) =>
+          claim.statement === statement &&
+          claim.basis === "code-observed" &&
+          claim.reviewStatus === "unreviewed",
+      ),
+    ).toBe(true);
+  }
+}
 
 function tempDb(): string {
   const dir = mkdtempSync(path.join(tmpdir(), "hackathon-atlas-schema-"));
