@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2026 Shen Ruililin
+ *
+ * Original Hackathon Atlas code is under the MIT License.
+ * Third-party material keeps its own terms.
+ */
 import { spawnSync } from "node:child_process";
 import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
@@ -28,7 +34,9 @@ describe("package pins", () => {
       dependencies?: Record<string, string>;
       devDependencies?: Record<string, string>;
     };
-    expect(manifest.dependencies ?? {}).toEqual({});
+    expect(manifest.dependencies).toEqual({
+      "@hackathon-atlas/analogues": "workspace:*",
+    });
     expect(manifest.devDependencies).toEqual({
       "@hackathon-atlas/catalog-index": "workspace:*",
       "@types/node": "24.19.0",

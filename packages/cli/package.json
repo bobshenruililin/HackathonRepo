@@ -13,10 +13,13 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "pretypecheck": "pnpm --filter @hackathon-atlas/catalog-index build",
+    "pretypecheck": "pnpm --filter @hackathon-atlas/catalog-index build && pnpm --filter @hackathon-atlas/analogues build",
     "typecheck": "tsc --noEmit -p tsconfig.json && pnpm build",
-    "pretest": "pnpm --filter @hackathon-atlas/catalog-index build && pnpm build",
+    "pretest": "pnpm --filter @hackathon-atlas/catalog-index build && pnpm --filter @hackathon-atlas/analogues build && pnpm build",
     "test": "vitest run"
+  },
+  "dependencies": {
+    "@hackathon-atlas/analogues": "workspace:*"
   },
   "devDependencies": {
     "@hackathon-atlas/catalog-index": "workspace:*",

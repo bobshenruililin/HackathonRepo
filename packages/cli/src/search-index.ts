@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) 2026 Shen Ruililin
+ *
+ * Original Hackathon Atlas code is under the MIT License.
+ * Third-party material keeps its own terms.
+ */
+
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { DatabaseSync } from "node:sqlite";
