@@ -31,6 +31,8 @@ The script runs `hackathon-atlas search` and prints JSON. It does not query SQLi
 
 If `taxonomy.acceptedCount` is 0, every taxonomy dimension is unknown. Do not assign labels. `tracks` and `sponsors` from this command are unknown. `retrieval.status` stays `NOT MEASURED`. This command does not run a labeled evaluation and does not emit precision, recall, or scores.
 
+`hackmitTracks` is a separate section built from `hackmitTrackTaxonomy()`. It lists accepted problem-domain values that are source-reported gallery track labels, not project assignments and not inferred product domains. Dimensions other than problem-domain stay unknown. That section does not fill `taxonomy`. When the report uses `createTaxonomyRegistry()`, `taxonomy` stays `acceptedCount: 0` and status unknown. Search hits are not precedents.
+
 If the caller supplies no index path, do not search. The generated index path is unknown and precedents are NOT MEASURED.
 
 ## Bounds
@@ -56,6 +58,8 @@ If the caller supplies no index path, do not search. The generated index path is
 - Every track, sponsor, date, and rule is cited or marked unknown.
 - Filters reported unknown were not applied.
 - Taxonomy dimensions with no accepted value are unknown.
+- `hackmitTracks` lists the accepted problem-domain seed from `hackmitTrackTaxonomy()` and leaves every other dimension unknown.
+- `taxonomy` from the empty registry stays `acceptedCount: 0` and status unknown.
 - Retrieval is `NOT MEASURED` unless a labeled eval was actually run.
 - When no accepted catalog records exist, the brief contains the words `precedents are NOT MEASURED` and names no invented analogue.
 - Report exact commands run. If none ran, write none.

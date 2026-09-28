@@ -16,6 +16,7 @@ import {
   cliArguments,
   defaultCliPath,
   defaultTaxonomyPath,
+  hackmitTracksSection,
   runPrepareSearch,
   taxonomySection,
 } from "./search.mjs";
@@ -201,6 +202,65 @@ describe("prepare-hackathon search", () => {
     assert.equal(report.search, search);
   });
 
+  it("keeps the empty registry section unchanged and lists the HackMIT track seed separately", async () => {
+    const taxonomy = await import(pathToFileURL(defaultTaxonomyPath()).href);
+    const emptyRegistry = taxonomy.createTaxonomyRegistry();
+    const search = {
+      query: "TESTONLYTOKEN",
+      indexPath: "/tmp/generated.sqlite",
+      filters: [],
+      hitCounts: { status: "known", real: 1, synthetic: 0, reason: null },
+      hits: [
+        {
+          id: "test-only-hit",
+          title: "TEST ONLY keyword hit",
+          summary: "TESTONLYTOKEN is a search hit, not a precedent.",
+          synthetic: false,
+        },
+      ],
+    };
+
+    const report = buildReport(search, taxonomy, emptyRegistry);
+
+    assert.deepEqual(report.taxonomy, taxonomySection(taxonomy, emptyRegistry));
+    assert.equal(report.taxonomy.status, "unknown");
+    assert.equal(report.taxonomy.acceptedCount, 0);
+    assert.equal(taxonomy.listAccepted(emptyRegistry).length, 0);
+    assert.equal(taxonomy.listAccepted(taxonomy.createTaxonomyRegistry()).length, 0);
+    assert.equal(
+      report.taxonomy.dimensions.every(
+        (dimension) => dimension.status === "unknown" && !("values" in dimension) && !("value" in dimension),
+      ),
+      true,
+    );
+
+    const tracks = hackmitTracksSection(taxonomy);
+    assert.deepEqual(report.hackmitTracks, tracks);
+    assert.equal(report.hackmitTracks.acceptedCount, 5);
+    assert.equal(
+      report.hackmitTracks.reason,
+      "These are source-reported gallery track labels, not project assignments and not inferred product domains.",
+    );
+    const problemDomain = report.hackmitTracks.dimensions.find((dimension) => dimension.dimension === "problem-domain");
+    assert.deepEqual(problemDomain, {
+      dimension: "problem-domain",
+      status: "accepted",
+      values: ["education", "healthcare", "sustainability", "entertainment", "interactive-media"],
+    });
+    const others = report.hackmitTracks.dimensions.filter((dimension) => dimension.dimension !== "problem-domain");
+    assert.equal(others.length, taxonomy.TAXONOMY_DIMENSIONS.length - 1);
+    assert.equal(
+      others.every((dimension) => dimension.status === "unknown" && !("values" in dimension) && !("value" in dimension)),
+      true,
+    );
+    assert.equal(report.precedents.status, "NOT MEASURED");
+    assert.equal(report.precedents.statement, "precedents are NOT MEASURED");
+    assert.match(report.precedents.reason, /Search hits are not/);
+    assert.equal(report.retrieval.status, "NOT MEASURED");
+    assert.doesNotMatch(JSON.stringify(report.precedents), /test-only-hit/);
+    assert.equal(report.search.hits.length, 1);
+  });
+
   it("runs the script executable against a temporary index", () => {
     const dbPath = writeIndex();
     const result = spawnSync(
@@ -216,6 +276,15 @@ describe("prepare-hackathon search", () => {
     assert.equal(report.search.hits.length, 2);
     assert.equal(report.precedents.statement, "precedents are NOT MEASURED");
     assert.equal(report.retrieval.status, "NOT MEASURED");
+    assert.equal(report.taxonomy.status, "unknown");
+    assert.equal(report.taxonomy.acceptedCount, 0);
+    assert.deepEqual(report.hackmitTracks.dimensions.find((dimension) => dimension.dimension === "problem-domain").values, [
+      "education",
+      "healthcare",
+      "sustainability",
+      "entertainment",
+      "interactive-media",
+    ]);
   });
 });
 
