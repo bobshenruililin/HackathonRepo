@@ -53,11 +53,40 @@ function isAwardStatement(statement: string): boolean {
   );
 }
 
+/**
+ * The technology token is the text before this phrase.
+ * The role, the revision, and the manifest path are not tokens.
+ */
+const CODE_OBSERVED_PHRASE = /\bis code-observed as a (?:library|framework|language)\b/i;
+
+const CODE_OBSERVED_METADATA = new Set([
+  "code-observed",
+  "library",
+  "framework",
+  "language",
+  "revision",
+  "manifest",
+  "path",
+]);
+
+function hasListedTechnologyWording(statement: string): boolean {
+  return /\b(built with|dependenc|gallery technolog)/i.test(statement);
+}
+
 function statesUnknown(statement: string, mode: AnalogueMode): boolean {
   if (!/\bunknown\b/i.test(statement)) return false;
   if (mode === "direct") return /\b(track|challenge)\b/i.test(statement);
-  if (mode === "mechanism") return /\b(built with|dependenc|gallery technolog)/i.test(statement);
+  if (mode === "mechanism") return hasListedTechnologyWording(statement) || CODE_OBSERVED_PHRASE.test(statement);
   return /\bdemo url\b/i.test(statement);
+}
+
+function codeObservedToken(statement: string): string | null {
+  const match = statement.match(CODE_OBSERVED_PHRASE);
+  if (!match || match.index === undefined) return null;
+  const raw = statement.slice(0, match.index).trim();
+  if (raw.length === 0) return null;
+  if (CODE_OBSERVED_METADATA.has(normalizeToken(raw))) return null;
+  return raw;
 }
 
 function challengeItems(body: string): string[] {
@@ -104,9 +133,10 @@ function splitList(span: string): string[] {
 
 function extractMechanism(statement: string): Extraction {
   if (statesUnknown(statement, "mechanism")) return { values: [], unknown: true };
-  const technologyWording = /\b(built with|dependenc|gallery technolog)/i.test(statement);
-  if (isAwardStatement(statement) && !technologyWording) return { values: [], unknown: false };
-  if (!technologyWording) return { values: [], unknown: false };
+  const technologyWording = hasListedTechnologyWording(statement);
+  const observed = codeObservedToken(statement);
+  if (isAwardStatement(statement) && !technologyWording && observed === null) return { values: [], unknown: false };
+  if (!technologyWording && observed === null) return { values: [], unknown: false };
 
   const values: Array<ExtractedValue | null> = [];
   const patterns = [
@@ -120,6 +150,7 @@ function extractMechanism(statement: string): Extraction {
       for (const item of splitList(span)) values.push(technologyValue(item));
     }
   }
+  if (observed) values.push(technologyValue(observed));
   return { values: dedupe(values.filter((value): value is ExtractedValue => value !== null)), unknown: false };
 }
 
