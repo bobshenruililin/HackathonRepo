@@ -1,10 +1,10 @@
 # State
 
-Snapshot at `main` `8f1914de1bcebe30075736a49cd6fb5af796ed01` (2026-09-28). M0 is not accepted. This file does not treat a security review as acceptance.
+Catalog snapshot is the file on `main` at `8f1914de1bcebe30075736a49cd6fb5af796ed01` (2026-09-28). Pull request #25, merge `5fb241dfbed1a5cfa00ec64af930c80a772cc87b`, did not change that file. M0 is not accepted. This file does not treat a security review as acceptance.
 
 ## WHAT YOU BUILT
 
-Schema 0.1.0 separates events, projects, submissions, repositories, evidence, and claims. Ingest 0.1.0 replays staged observations without fetching. The canonical catalog is `catalog/hackmit/catalog.json`. The SQLite index, CLI, and explorer read that catalog and can be rebuilt. Taxonomy dimensions exist; on this commit the accepted set is empty. Eval reports `NOT MEASURED` unless a real gold judgment, a real corpus, and retrieval ids are all supplied. Repository observations classify caller-supplied paths and do not fetch or execute. Analogue retrieval returns direct, mechanism, and demo matches that cite claims. Original code is MIT. Ordinary public reads for this run are in `DATA_POLICY.md`. Devpost automation stays disabled.
+Schema 0.1.0 separates events, projects, submissions, repositories, evidence, and claims. Ingest 0.1.0 replays staged observations without fetching. The canonical catalog is `catalog/hackmit/catalog.json`. The SQLite index, CLI, and explorer read that catalog and can be rebuilt. `hackmitTrackTaxonomy()` accepts five source-reported track labels on problem-domain: education, healthcare, sustainability, entertainment, and interactive-media. `createTaxonomyRegistry()` stays empty. The other dimensions have no accepted value. Catalog projects are not classified with these labels. Eval reports `NOT MEASURED` unless a real gold judgment, a real corpus, and retrieval ids are all supplied. Repository observations classify caller-supplied paths and do not fetch or execute. Analogue retrieval returns direct, mechanism, and demo matches that cite claims. Original code is MIT. Ordinary public reads for this run are in `DATA_POLICY.md`. Devpost automation stays disabled.
 
 The morning narrative is `docs/OVERNIGHT_REPORT.md`.
 
@@ -34,11 +34,11 @@ HackMIT (2013 Devpost page) 284, HackMIT'14 62, 2016 156, 2017 176, 2018 176, 20
 
 ## WHAT WORKS
 
-Ingest replay, schema validation, index build, CLI search, explorer search with event name, award, track, and repository filters, analogue retrieval over claim text, and the eval harness refusal to invent precision. The explorer was checked over HTTP against a generated index of the catalog before the last prize pages landed. Pull request #25, not on this commit, accepts five source-reported track labels.
+Ingest replay, schema validation, index build, CLI search, explorer search with event name, award, track, and repository filters, analogue retrieval over claim text, and the eval harness refusal to invent precision. The explorer was checked over HTTP against a generated index of the catalog before the last prize pages landed. Pull request #25 is merged and accepts five source-reported track labels. Those values are not assigned on catalog projects.
 
 ## WHAT WAS TESTED
 
-`pnpm test` on Node 24.21.0 at this commit passed: schema 26, ingest 14, catalog-index 15, cli 14, eval 7, taxonomy 7, repo-observations 21, analogues 19. GitHub Actions "Install, typecheck, and test" passed on the merged pull requests through #24. Playwright was not re-run at this commit. Precision and recall were not measured.
+`pnpm test` on Node 24.21.0 at `8f1914d` passed: schema 26, ingest 14, catalog-index 15, cli 14, eval 7, taxonomy 7, repo-observations 21, analogues 19. Pull request #25 added one taxonomy test; GitHub Actions on `6f7c776` passed. This docs revision does not re-run the suite. Playwright was not re-run. Precision and recall were not measured.
 
 ## WHAT FAILED
 
@@ -46,8 +46,8 @@ Ingest replay, schema validation, index build, CLI search, explorer search with 
 
 ## WHAT IS UNCERTAIN
 
-StudyDate and Text2Test repository strings differ from the gold pages by `.git` and, for StudyDate, letter case. Whether those strings are the same repository was not checked again. Two projects named Pilot were left as different projects. Plume and Ballot project pages were not opened. Code-observed repository notes exist outside the catalog and are not imported. The accepted taxonomy on this commit is empty. Removal intake is undefined. The second security pass does not accept M0.
+StudyDate and Text2Test repository strings differ from the gold pages by `.git` and, for StudyDate, letter case. Whether those strings are the same repository was not checked again. Two projects named Pilot were left as different projects. Plume and Ballot project pages were not opened. Code-observed repository notes exist outside the catalog and are not imported. Five track labels are accepted as problem-domain values and are not assigned on projects. The other dimensions have no accepted value. Removal intake is undefined. The second security pass does not accept M0.
 
 ## WHAT YOU WOULD DO NEXT
 
-Import code-observed rows only where the repository locator is already on a catalog project. Finish the four unopened participant repositories. Save an analogue sample over the real catalog. Merge the track-label taxonomy only if the claim ids still match. Do not score the six fixed queries until a gold set states the full relevant set. Do not treat a missing gallery as an empty edition.
+Import code-observed rows only where the repository locator is already on a catalog project. Finish the four unopened participant repositories. Save an analogue sample over the real catalog. Assign the five accepted track labels only from gallery track claims. Do not accept music, finance, or sponsor-challenge mechanism labels without a new recorded decision. Do not score the six fixed queries until a gold set states the full relevant set. Do not treat a missing gallery as an empty edition.

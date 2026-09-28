@@ -1,6 +1,6 @@
 # Overnight report
 
-Status as of `main` commit `8f1914de1bcebe30075736a49cd6fb5af796ed01` on 2026-09-28. This is a record of what is in the repository now. It is not an acceptance of M0.
+Catalog counts below are the file on `main` at `8f1914de1bcebe30075736a49cd6fb5af796ed01` (2026-09-28). Pull request #25, merge `5fb241dfbed1a5cfa00ec64af930c80a772cc87b`, did not change that file. This is a record of what is in the repository now. It is not an acceptance of M0.
 
 ## What is in the repository
 
@@ -69,13 +69,13 @@ Keyword scans for computer vision, physical-world-plus-AI, speech, and social ma
 
 ## Taxonomy and patterns
 
-On this commit the accepted taxonomy set is empty. Pull request #25, not merged here, accepts five source-reported track labels as problem-domain values: education, healthcare, sustainability, entertainment, and interactive-media. Prize titles, sponsor challenges, and demo hosts were not accepted. General, Beginner, and NO TRACK were not accepted.
+`hackmitTrackTaxonomy()` accepts five source-reported track labels as problem-domain values: education, healthcare, sustainability, entertainment, and interactive-media. That seed is on `main` via pull request #25 (merge `5fb241dfbed1a5cfa00ec64af930c80a772cc87b`). `createTaxonomyRegistry()` stays empty. These values are the gallery's track labels, not inferred product domains. Prize titles, sponsor challenges, and demo hosts were not accepted. General, Beginner, and NO TRACK were not accepted. The other eleven dimensions have no accepted value. Catalog projects are not individually classified.
 
 A pattern note counted this catalog's predecessor (2,180 projects, before the last 22 prize pages). Award and repository totals in that note are stale by those 22 pages. The table above is the current file. No pattern statement treats a prize as a cause.
 
 ## Tests
 
-`pnpm test` on Node 24.21.0 at this commit: schema 26, ingest 14, catalog-index 15, cli 14, eval 7, taxonomy 7, repo-observations 21, analogues 19. All passed. GitHub Actions "Install, typecheck, and test" passed on the merged pull requests through #24.
+`pnpm test` on Node 24.21.0 at `8f1914d`, before the taxonomy merge: schema 26, ingest 14, catalog-index 15, cli 14, eval 7, taxonomy 7, repo-observations 21, analogues 19. All passed. Pull request #25 added one taxonomy test. GitHub Actions on `6f7c776` passed. This docs revision does not re-run the suite. GitHub Actions "Install, typecheck, and test" passed on the merged pull requests through #25.
 
 Explorer checks before the filter pull request merged: the generated index served event names, paged results ("Showing 1–40 of 2180"), award plus a known repository (69 on the earlier catalog; the catalog now has more prize pages), Window Share, and 2-Player Hot Potato on track Beginner. Playwright was not re-run at this commit.
 
