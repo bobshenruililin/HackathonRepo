@@ -1,19 +1,17 @@
-import type { CatalogRecord } from "@hackathon-atlas/catalog-index";
-
-import { knownEventIds } from "../lib/derive";
+import type { EventOption } from "../lib/derive";
 import type { ExplorerQuery } from "../lib/query";
 
 export function SearchForm({
   query,
-  records,
+  events,
 }: {
   query: ExplorerQuery;
-  records: readonly CatalogRecord[];
+  events: readonly EventOption[];
 }) {
-  const eventIds = knownEventIds(records);
-  const eventOptions = eventIds.includes(query.eventId) || query.eventId === "" || query.eventId === "unknown"
-    ? eventIds
-    : [...eventIds, query.eventId].sort();
+  const eventOptions =
+    query.eventId === "" || query.eventId === "unknown" || events.some((event) => event.id === query.eventId)
+      ? events
+      : [...events, { id: query.eventId, label: query.eventId }];
 
   return (
     <form className="search" method="get" action="/" data-testid="search-form">
@@ -43,12 +41,22 @@ export function SearchForm({
       <select id="eventId" name="eventId" defaultValue={query.eventId}>
         <option value="">Any (includes unknown)</option>
         <option value="unknown">Unknown</option>
-        {eventOptions.map((eventId) => (
-          <option key={eventId} value={eventId}>
-            {eventId}
+        {eventOptions.map((event) => (
+          <option key={event.id} value={event.id}>
+            {event.label}
           </option>
         ))}
       </select>
+
+      <label htmlFor="award">Award claim</label>
+      <select id="award" name="award" defaultValue={query.award}>
+        <option value="">Any (includes unknown)</option>
+        <option value="unknown">No award claim</option>
+        <option value="known">Award, prize, or winner claim</option>
+      </select>
+
+      <label htmlFor="track">Track text</label>
+      <input id="track" name="track" type="search" defaultValue={query.track} />
 
       <label htmlFor="repository">Repository locator</label>
       <select id="repository" name="repository" defaultValue={query.repository}>

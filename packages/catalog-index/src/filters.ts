@@ -46,5 +46,29 @@ export function matchesFilters(record: CatalogRecord, filters: ListFilters): boo
     return false;
   }
 
+  const award = filters.award ?? "";
+  const awardClaim = record.details.claims.some((claim) => AWARD_CLAIM.test(claim.statement));
+  if (award === "known" && !awardClaim) {
+    return false;
+  }
+  if (award === "unknown" && awardClaim) {
+    return false;
+  }
+
+  const track = filters.track?.trim() ?? "";
+  const trackClaims = record.details.claims.filter((claim) => TRACK_CLAIM.test(claim.statement));
+  if (track === "unknown" && trackClaims.length > 0) {
+    return false;
+  }
+  if (track !== "" && track !== "unknown") {
+    const needle = track.toLowerCase();
+    if (!trackClaims.some((claim) => claim.statement.toLowerCase().includes(needle))) {
+      return false;
+    }
+  }
+
   return true;
 }
+
+const AWARD_CLAIM = /\b(award|prize|winner)\b/i;
+const TRACK_CLAIM = /\btrack\b/i;
