@@ -10,7 +10,8 @@
       "projectName": "CampusMap",
       "catalogLocator": "https://github.com/jdcsacoto/hackmit2024",
       "pinnedRevision": "e3e4d3e2c40ceb7f6dae1183f27dc15b9e60910e",
-      "manifestStatus": "read",
+      "manifestStatus": "no-root-manifest",
+      "manifestNote": "The commit was pinned and no root manifest was present.",
       "manifestsRead": [],
       "manifestsAbsent": [
         "package.json",
