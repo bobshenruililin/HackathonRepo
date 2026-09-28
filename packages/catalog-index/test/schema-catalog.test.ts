@@ -91,6 +91,34 @@ describe("HackMIT schema catalog", () => {
       travelRecord?.details.claims.some((claim) => claim.statement.includes("Best Use of Amadeus APIs")),
     ).toBe(true);
   });
+
+  it("keeps code-observed dependency claims on the five matched repositories", () => {
+    const dbPath = tempDb();
+    buildSchemaIndex({ catalogFile, dbPath });
+
+    const eco = searchRecords(dbPath, "EcoAI").find((hit) => hit.title === "EcoAI");
+    expect(eco).toBeDefined();
+    const ecoRecord = getRecord(dbPath, eco?.id ?? "");
+    expect(
+      ecoRecord?.details.claims.some((claim) =>
+        claim.statement.startsWith("Flask is code-observed as a framework at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4."),
+      ),
+    ).toBe(true);
+
+    const heart = searchRecords(dbPath, "HeartFrame").find((hit) => hit.title === "HeartFrame");
+    expect(heart).toBeDefined();
+    const heartRecord = getRecord(dbPath, heart?.id ?? "");
+    expect(
+      heartRecord?.details.claims.some((claim) =>
+        claim.statement.includes(
+          "streamlit is code-observed as a library at revision 27202cb64499714be972b2a9ee078b7568fd63c3.",
+        ),
+      ),
+    ).toBe(true);
+    expect(
+      heartRecord?.details.claims.some((claim) => /award|prize|winner/i.test(claim.statement)),
+    ).toBe(false);
+  });
 });
 
 function tempDb(): string {
