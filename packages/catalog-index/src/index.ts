@@ -1,4 +1,5 @@
-export { buildIndex } from "./build-index.js";
+export { buildIndex, buildSchemaIndex } from "./build-index.js";
+export { loadSchemaCatalog } from "./schema-catalog.js";
 export { countRecords } from "./count-records.js";
 export { MissingIndexError } from "./errors.js";
 export { getRecord } from "./get-record.js";
