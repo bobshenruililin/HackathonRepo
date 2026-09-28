@@ -16,6 +16,12 @@ Controlled vocabulary for Hackathon Atlas. The twelve dimensions in `TAXONOMY_DI
 
 Unknown is `{ status: "unknown" }`. It is valid on any closed dimension. It is not a taxonomy value, and it does not enter the accepted set. The token `unknown` cannot be proposed.
 
+## Gallery track assignment
+
+`assignHackmitTrackFromClaims` reads claim statements. It returns `{ status: "value", value }` only when a statement is exactly `The gallery card names the track Education.`, `The gallery card names the track Healthcare.`, `The gallery card names the track Sustainability.`, `The gallery card names the track Entertainment.`, or `The gallery card names the track Interactive Media.`. Those map to education, healthcare, sustainability, entertainment, and interactive-media.
+
+Beginner, General, NO TRACK, Music, Finance, and any other label return `{ status: "unknown" }`. A prize title or a sponsor challenge returns unknown, including a sentence that only contains the word Healthcare. A project with no exact statement is unknown. Two different exact track sentences are unknown. The function does not propose or accept values, and `createTaxonomyRegistry()` stays empty.
+
 ## Checks
 
 From the repository root:

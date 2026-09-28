@@ -1,5 +1,6 @@
+import { TaxonomyError } from "./errors.js";
 import { acceptValue, createTaxonomyRegistry, proposeValue } from "./registry.js";
-import type { TaxonomyRegistry } from "./types.js";
+import type { DimensionAssignment, TaxonomyRegistry } from "./types.js";
 
 /**
  * Source-reported HackMIT gallery track labels. A track name is not an
@@ -38,6 +39,20 @@ const TRACKS = [
   },
 ] as const;
 
+type HackmitTrackValue = (typeof TRACKS)[number]["value"];
+
+/**
+ * Exact gallery-card sentences. A prize title, a sponsor challenge, or any
+ * other track label is not an assignment.
+ */
+const GALLERY_TRACK_STATEMENT = {
+  "The gallery card names the track Education.": "education",
+  "The gallery card names the track Healthcare.": "healthcare",
+  "The gallery card names the track Sustainability.": "sustainability",
+  "The gallery card names the track Entertainment.": "entertainment",
+  "The gallery card names the track Interactive Media.": "interactive-media",
+} as const satisfies Record<string, HackmitTrackValue>;
+
 export function hackmitTrackTaxonomy(): TaxonomyRegistry {
   let registry = createTaxonomyRegistry();
   for (const track of TRACKS) {
@@ -53,4 +68,49 @@ export function hackmitTrackTaxonomy(): TaxonomyRegistry {
     });
   }
   return registry;
+}
+
+/**
+ * Assigns problem-domain only from an exact gallery track sentence.
+ * Beginner, General, NO TRACK, Music, Finance, prize titles, and sponsor
+ * challenges stay unknown. Two different exact tracks stay unknown.
+ * This function does not propose or accept taxonomy values.
+ */
+export function assignHackmitTrackFromClaims(
+  claims: readonly { readonly statement: string }[],
+): DimensionAssignment {
+  if (!Array.isArray(claims)) {
+    throw new TaxonomyError("invalid-assignment", "Track assignment reads a list of claim statements.");
+  }
+
+  let assigned: HackmitTrackValue | undefined;
+  for (const claim of claims) {
+    if (!isClaim(claim) || typeof claim.statement !== "string") {
+      continue;
+    }
+    const value = trackForExactStatement(claim.statement);
+    if (value === undefined) {
+      continue;
+    }
+    if (assigned !== undefined && assigned !== value) {
+      return Object.freeze({ status: "unknown" });
+    }
+    assigned = value;
+  }
+
+  if (assigned === undefined) {
+    return Object.freeze({ status: "unknown" });
+  }
+  return Object.freeze({ status: "value", value: assigned });
+}
+
+function trackForExactStatement(statement: string): HackmitTrackValue | undefined {
+  if (!Object.hasOwn(GALLERY_TRACK_STATEMENT, statement)) {
+    return undefined;
+  }
+  return GALLERY_TRACK_STATEMENT[statement as keyof typeof GALLERY_TRACK_STATEMENT];
+}
+
+function isClaim(value: unknown): value is { statement: string } {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
 }
