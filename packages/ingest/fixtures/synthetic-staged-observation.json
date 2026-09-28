@@ -1,0 +1,35 @@
+{
+  "observationId": "obs_synthetic_fixture_paper_boat",
+  "synthetic": true,
+  "source": {
+    "url": "https://example.invalid/synthetic/fixture-paper-boat",
+    "retrievedAt": "2099-06-01T00:00:00.000Z",
+    "excerpt": {
+      "attribution": "SYNTHETIC staged observation",
+      "quote": "SYNTHETIC quote: this sentence is not from a real project."
+    }
+  },
+  "event": {
+    "identityKey": "fixture-event",
+    "name": "SYNTHETIC Fixture Event",
+    "startsAt": null,
+    "endsAt": null
+  },
+  "project": {
+    "identityKey": "fixture-project",
+    "name": "SYNTHETIC Fixture Project",
+    "summary": null
+  },
+  "submission": {
+    "identityKey": "fixture-submission",
+    "eventIdentityKey": "fixture-event",
+    "projectIdentityKey": "fixture-project",
+    "submittedAt": null
+  },
+  "repository": {
+    "identityKey": "fixture-repo",
+    "projectIdentityKey": "fixture-project",
+    "locator": null,
+    "linkStatus": "missing"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@hackathon-atlas/ingest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Resumable ingest of staged observation JSON into schema 0.1.0 catalog records. Does not fetch, select a license, or promote canonical data.",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "@hackathon-atlas/schema": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "typescript": "7.0.2",
+    "vitest": "5.0.2"
+  }
+}
