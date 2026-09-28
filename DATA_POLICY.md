@@ -2,7 +2,7 @@
 
 This file is a draft for coordinator integration. It is not legal advice. The owner has not approved this text. Where a fact is not known, this draft says unknown. Controls that are not built are marked **Proposed**.
 
-Proposed controls below include the design-time security review at `/cursor/stores/bc-57d64c88-331a-41ed-baf7-50dfe22d7fce/docs/m0-security-review.md`. That review is not owner approval, not a collection approval, and not M0 acceptance. A second pass is required before M0 acceptance. This draft does not invent command results.
+Proposed controls below include the design-time security review at `/cursor/stores/bc-57d64c88-331a-41ed-baf7-50dfe22d7fce/docs/m0-security-review.md`. That review is not owner approval, not a collection approval, and not M0 acceptance. The second security pass is done and does not accept M0. This draft does not invent command results.
 
 The owner has not chosen a license. Redistribution terms for our code are undecided. This draft does not select a license.
 
@@ -56,7 +56,7 @@ Attribute claims to the evidence that supports them. A source URL alone does not
 
 Third-party text stays labeled as third-party. Upstream attribution is not a reason to collect contact data.
 
-Attribution field names that depend on the schema package are unknown in this pull request. Do not invent them.
+Attribution field names now follow schema 0.1.0: basis, evidence references, observation time, review status, source URL, retrieval time, and the inspected commit when a repository was inspected. Naming those fields does not approve collection.
 
 **Proposed (not implemented, not owner-approved):** each factual record cites its source URL, retrieval time, and, when a repository was inspected, the commit id. Every non-unknown claim also records basis (`source-reported`, `code-observed`, `test-observed`, or `inferred`), evidence references, observation time, and review status.
 
@@ -103,6 +103,6 @@ Until a request process exists, do not treat silence as consent to keep or repub
 - It does not choose a license.
 - It does not approve collection, broad collection, Devpost automation, publishing, or deployment.
 - It does not mark any proposed control as implemented or as owner-approved.
-- It does not accept M0. A second pass is required before M0 acceptance.
-- It does not report schema or source-audit outcomes. Those are unknown in this pull request.
-- It does not report install, typecheck, or test commands. They were not run.
+- It does not accept M0. The second security pass is done and does not accept M0.
+- Schema 0.1.0 and the source inventory are on main. This draft still does not approve collection. Attribution field names now follow the schema: basis, evidence references, observation time, review status, source URL, retrieval time, and the inspected commit when a repository was inspected.
+- It does not report install, typecheck, or test commands. This draft does not claim those commands ran here.
