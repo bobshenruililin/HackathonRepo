@@ -12,6 +12,7 @@ export {
   proposeValue,
 } from "./registry.js";
 export { classify } from "./classify.js";
+export { hackmitTrackTaxonomy } from "./hackmit-tracks.js";
 export {
   MAX_RATIONALE_LENGTH,
   MAX_SOURCE_RECORD_ID_LENGTH,

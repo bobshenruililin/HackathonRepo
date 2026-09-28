@@ -6,6 +6,7 @@ import {
   acceptValue,
   classify,
   createTaxonomyRegistry,
+  hackmitTrackTaxonomy,
   listAccepted,
   listProposed,
   proposeValue,
@@ -177,6 +178,38 @@ describe("controlled taxonomy", () => {
         }),
       ),
     ).toBe("never-proposed");
+  });
+
+  it("accepts five source-reported HackMIT track labels and leaves other dimensions empty", () => {
+    const registry = hackmitTrackTaxonomy();
+    const accepted = listAccepted(registry).map((item) => item.value);
+
+    expect(accepted).toEqual([
+      "education",
+      "healthcare",
+      "sustainability",
+      "entertainment",
+      "interactive-media",
+    ]);
+    expect(listAccepted(registry).every((item) => item.dimension === "problem-domain")).toBe(true);
+    expect(listProposed(registry)).toHaveLength(5);
+    expect(
+      classify(registry, {
+        "problem-domain": { status: "value", value: "healthcare" },
+        "target-user": { status: "unknown" },
+      }).dimensions,
+    ).toEqual([
+      { dimension: "problem-domain", status: "accepted", value: "healthcare" },
+      { dimension: "target-user", status: "unknown" },
+    ]);
+    expect(
+      codeOf(() =>
+        classify(registry, {
+          "problem-domain": { status: "value", value: "finance" },
+        }),
+      ),
+    ).toBe("never-proposed");
+    expect(listAccepted(createTaxonomyRegistry())).toEqual([]);
   });
 
   it("rejects a dimension outside the closed list", () => {
