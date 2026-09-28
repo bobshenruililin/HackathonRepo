@@ -247,6 +247,56 @@ describe("direct mode", () => {
     });
   });
 
+  it("does not treat a shared Beginner track or challenge as a direct analogue", () => {
+    const catalog = fixture(
+      [
+        { id: "prj_synthetic_query" },
+        { id: "prj_synthetic_beginner" },
+        { id: "prj_synthetic_education" },
+      ],
+      [
+        {
+          id: "clm_query_beginner_track",
+          projectId: "prj_synthetic_query",
+          statement: "The gallery card names the track Beginner.",
+        },
+        {
+          id: "clm_query_beginner_challenge",
+          projectId: "prj_synthetic_query",
+          statement: "The gallery card names challenge preferences: Beginner.",
+        },
+        {
+          id: "clm_query_education",
+          projectId: "prj_synthetic_query",
+          statement: "The gallery card names the track Education.",
+        },
+        {
+          id: "clm_beginner_track",
+          projectId: "prj_synthetic_beginner",
+          statement: "The gallery card names the track Beginner.",
+        },
+        {
+          id: "clm_beginner_challenge",
+          projectId: "prj_synthetic_beginner",
+          statement: "Challenge: Beginner",
+        },
+        {
+          id: "clm_education_track",
+          projectId: "prj_synthetic_education",
+          statement: "The gallery card names the track Education.",
+        },
+      ],
+    );
+
+    const result = retrieveAnalogues(catalog, "prj_synthetic_query", "direct");
+
+    expect(result.status).toBe("matched");
+    expect(result.realAnalogueCount).toBe(0);
+    expect(result.analogues.map((analogue) => analogue.projectId)).toEqual(["prj_synthetic_education"]);
+    expect(result.analogues[0]?.shared.map((shared) => shared.text)).toEqual(["Education"]);
+    expect(statementsOf(result).some((statement) => statement.includes("Beginner"))).toBe(false);
+  });
+
   it("does not treat an award label that mentions a track as a named track", () => {
     const catalog = fixture(
       [{ id: "prj_synthetic_query" }, { id: "prj_synthetic_other" }],

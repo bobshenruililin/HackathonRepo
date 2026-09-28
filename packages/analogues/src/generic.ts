@@ -7,9 +7,11 @@
 
 /**
  * Track or challenge labels that do not name a specific track or challenge.
- * "General" and "NO TRACK" are recorded labels of this kind.
+ * "General", "NO TRACK", and the exact label "Beginner" are recorded labels
+ * of this kind. "Beginner" is not an accepted problem-domain value.
  */
 const GENERIC_DIRECT = new Set([
+  "beginner",
   "general",
   "no track",
   "none",

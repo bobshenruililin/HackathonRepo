@@ -8,7 +8,7 @@ Copyright (c) 2026 Shen Ruililin. Original code in this package is under the MIT
 
 ## Modes
 
-- `direct`: a shared track or challenge named by a claim. Recognized wording includes `names the track`, `names challenge preferences`, and a claim whose whole statement is `Track:` or `Challenge:` plus a name. Claims that only say Winner, award labels, and claims that do not name a track or challenge are ignored. `General` and `NO TRACK` are too generic to match.
+- `direct`: a shared track or challenge named by a claim. Recognized wording includes `names the track`, `names challenge preferences`, and a claim whose whole statement is `Track:` or `Challenge:` plus a name. Claims that only say Winner, award labels, and claims that do not name a track or challenge are ignored. `General`, `NO TRACK`, and the exact label `Beginner` are too generic to match.
 - `mechanism`: a shared technology named by dependency wording, `Built With` wording, or gallery technology wording. An award label is not a mechanism. Words such as `ai`, `web`, and `technology` are too generic to match.
 - `demo`: the host of a URL in a claim that states a demo URL. Hosts such as `youtu.be`, `youtube.com`, `drive.google.com`, and `github.com` are too generic to match. A link that does not state a demo URL is not a demo.
 
