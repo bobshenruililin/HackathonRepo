@@ -13,6 +13,9 @@ importers:
       '@hackathon-atlas/catalog-index':
         specifier: workspace:*
         version: link:../../packages/catalog-index
+      '@hackathon-atlas/taxonomy':
+        specifier: workspace:*
+        version: link:../../packages/taxonomy
       next:
         specifier: 16.3.6
         version: 16.3.6(@playwright/test@1.63.0)(@types/node@24.19.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
