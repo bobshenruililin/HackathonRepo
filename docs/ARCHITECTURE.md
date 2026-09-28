@@ -1,18 +1,18 @@
 # Architecture
 
-This document records the intended Hackathon Atlas architecture for the M0 foundation draft. It does not claim that the workspace, catalog, indexes, or explorer exist yet. Schema details owned by the in-flight schema package are unknown here. Where this draft would need those details, it says unknown.
+This document records the Hackathon Atlas architecture. Schema 0.1.0 is in `packages/schema`. A root pnpm workspace, a generated SQLite FTS5 index package, and a local Next.js scaffold exist. A canonical catalog of real events does not. The Next.js app is a scaffold, not the full explorer.
 
-Proposed controls in this file are not owner-approved policy. They fold in the design-time security review at `/cursor/stores/bc-57d64c88-331a-41ed-baf7-50dfe22d7fce/docs/m0-security-review.md`. That review is not M0 acceptance. A second pass is required before M0 acceptance. Collection is not approved. The owner has not chosen a license.
+Proposed controls in this file are not owner-approved policy. They fold in the design-time security review at `/cursor/stores/bc-57d64c88-331a-41ed-baf7-50dfe22d7fce/docs/m0-security-review.md` and the second pass at `/cursor/stores/bc-57d64c88-331a-41ed-baf7-50dfe22d7fce/docs/m0-security-review-pass-2.md`. Neither review accepts M0. Collection is not approved. The owner has not chosen a license.
 
 ## System shape
 
 | Piece | Role in the architecture | M0 state |
 | --- | --- | --- |
-| Catalog files | Canonical records for events, projects, submissions, repositories, evidence, and claims, once a catalog exists. Not a store of full archive pages or third-party trees. | Not created in this pull request. Format and version: unknown. Retention choice: not made. |
-| SQLite FTS5 indexes | Generated, reproducible search indexes built from the catalog. Safe to delete and rebuild. Not canonical. | Not implemented. |
-| Next.js explorer | Local read interface on the Node.js runtime. Reads the catalog and generated indexes. | Not fully implemented in M0. The full explorer is out of M0 scope. |
-| TypeScript / pnpm workspace | One workspace for our original code. Shared root configuration is integrated by the coordinator. | Workspace not created in this pull request. |
-| Vitest and Playwright | Test tools. Vitest for unit and integration tests. Playwright for explorer behavior when an explorer exists. | Not run. Product tests are not part of this pull request. |
+| Catalog files | Canonical records for events, projects, submissions, repositories, evidence, and claims, once a catalog exists. Not a store of full archive pages or third-party trees. | Contracts are schema 0.1.0. No real catalog is stored. Retention choice: not made. |
+| SQLite FTS5 indexes | Generated, reproducible search indexes built from catalog JSON. Safe to delete and rebuild. Not canonical. | Builder is `packages/catalog-index`. Database files are gitignored. |
+| Next.js explorer | Local read interface on the Node.js runtime. Reads generated index counts. | Scaffold only, at `apps/explorer`. It does not browse projects. The full explorer is out of M0 scope. |
+| TypeScript / pnpm workspace | One workspace for our original code. Shared root configuration is integrated by the coordinator. | Present. Node 24.21.0 and pnpm 12.6.0. Pins are in the manifests and `pnpm-lock.yaml`. |
+| Vitest and Playwright | Test tools. Vitest for unit and integration tests. Playwright for the explorer scaffold. | Present. Coordinator results are in `ops/STATE.md`. |
 | LLM service | None required. No mandatory runtime LLM. | No LLM service is part of this baseline. |
 | Vector database | Not part of this baseline. | Not introduced. |
 
@@ -58,7 +58,7 @@ These controls are proposed. They are not implemented, and the owner has not app
 
 Our original code stays separate from third-party source material. This pull request does not vendor third-party code. Workers do not execute third-party code or install its dependencies, and they do not copy third-party implementations without approved reuse terms.
 
-The directory layout of the workspace is unknown in this pull request. The coordinator integrates shared root configuration. Workers do not edit that shared configuration unless a task allows those paths.
+The workspace layout is `apps/explorer`, `packages/schema`, `packages/catalog-index`, plus root `package.json`, `pnpm-workspace.yaml`, `pnpm-lock.yaml`, `tsconfig.base.json`, and `.github/workflows/ci.yml`. The coordinator integrates shared root configuration. Workers do not edit that shared configuration unless a task allows those paths.
 
 ## Runtime and tests
 
@@ -68,7 +68,7 @@ There is no mandatory LLM call on the read path or the write path. Pattern notes
 
 No host model id is recorded in this repository. Role definitions use `model: inherit`. This draft does not claim a host model is configured.
 
-Vitest and Playwright are the test tools. They are not evidence that a hackathon project works, and they are not a substitute for review of claims. This pull request does not add product tests and does not run install, typecheck, Vitest, or Playwright.
+Vitest and Playwright are the test tools. They are not evidence that a hackathon project works, and they are not a substitute for review of claims. The coordinator's install, typecheck, Vitest, and Playwright results are in `ops/STATE.md`.
 
 ## Coordination
 
@@ -83,8 +83,7 @@ Task assignment and completion reports follow [../ops/TASK_CONTRACT.md](../ops/T
 - Broad collection and any treatment of `https://archive.hackmit.org/` as a dataset.
 - Devpost automated collection. It stays disabled. No authorization is recorded here.
 - Implementing the full explorer.
-- Building SQLite indexes.
+- Building indexes from a real catalog. The generator exists; real catalog files do not.
 - Implementing ingestion.
-- Pinning dependency versions (the workspace is not created in this pull request).
 - Selecting a license.
-- Accepting M0 on the design-time security review. A second pass is required first.
+- Treating the design-time review or the second security pass as M0 acceptance. The second pass is done and does not accept M0.
