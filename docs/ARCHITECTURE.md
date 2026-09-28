@@ -1,6 +1,6 @@
 # Architecture
 
-This document records the Hackathon Atlas architecture. Schema 0.1.0 is in `packages/schema`. A root pnpm workspace, a generated SQLite FTS5 index package, and a local Next.js scaffold exist. A canonical catalog of real events does not. The Next.js app is a scaffold, not the full explorer.
+This document records the Hackathon Atlas architecture. Schema 0.1.0 is in `packages/schema`. A root pnpm workspace, a generated SQLite FTS5 index package, and a local Next.js explorer exist. The HackMIT canonical catalog is `catalog/hackmit/catalog.json`.
 
 Proposed controls in this file are not owner-approved policy. They fold in the design-time security review at `/cursor/stores/bc-57d64c88-331a-41ed-baf7-50dfe22d7fce/docs/m0-security-review.md` and the second pass at `/cursor/stores/bc-57d64c88-331a-41ed-baf7-50dfe22d7fce/docs/m0-security-review-pass-2.md`. Neither review accepts M0. Collection is not approved. The owner has not chosen a license.
 
@@ -8,7 +8,7 @@ Proposed controls in this file are not owner-approved policy. They fold in the d
 
 | Piece | Role in the architecture | M0 state |
 | --- | --- | --- |
-| Catalog files | Canonical records for events, projects, submissions, repositories, evidence, and claims, once a catalog exists. Not a store of full archive pages or third-party trees. | Contracts are schema 0.1.0. No real catalog is stored. Retention choice: not made. |
+| Catalog files | Canonical records for events, projects, submissions, repositories, evidence, and claims. Not a store of full archive pages or third-party trees. | Schema 0.1.0. The HackMIT catalog is `catalog/hackmit/catalog.json`. |
 | SQLite FTS5 indexes | Generated, reproducible search indexes built from catalog JSON. Safe to delete and rebuild. Not canonical. | Builder is `packages/catalog-index`. Database files are gitignored. |
 | Next.js explorer | Local read interface on the Node.js runtime. Reads generated index counts. | Scaffold only, at `apps/explorer`. It does not browse projects. The full explorer is out of M0 scope. |
 | TypeScript / pnpm workspace | One workspace for our original code. Shared root configuration is integrated by the coordinator. | Present. Node 24.21.0 and pnpm 12.6.0. Pins are in the manifests and `pnpm-lock.yaml`. |
@@ -83,7 +83,7 @@ Task assignment and completion reports follow [../ops/TASK_CONTRACT.md](../ops/T
 - Broad collection and any treatment of `https://archive.hackmit.org/` as a dataset.
 - Devpost automated collection. It stays disabled. No authorization is recorded here.
 - Implementing the full explorer.
-- Building indexes from a real catalog. The generator exists; real catalog files do not.
+- Rebuilding the SQLite index from `catalog/hackmit/catalog.json`. The index is generated. The catalog file is canonical.
 - Implementing ingestion.
 - Selecting a license.
 - Treating the design-time review or the second security pass as M0 acceptance. The second pass is done and does not accept M0.

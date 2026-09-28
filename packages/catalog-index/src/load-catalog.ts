@@ -39,6 +39,10 @@ function parseRecord(filePath: string, fileName: string): CatalogRecord {
     throw new Error(`${fileName} must be a JSON object`);
   }
 
+  return recordFromObject(parsed, fileName);
+}
+
+export function recordFromObject(parsed: Record<string, unknown>, fileName: string): CatalogRecord {
   assertCatalogFields(parsed, fileName);
   const id = requiredString(parsed, "id", fileName);
   const title = readTitle(parsed, fileName);

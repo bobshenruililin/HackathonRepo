@@ -1,4 +1,5 @@
 import { loadCatalog } from "./load-catalog.js";
+import { loadSchemaCatalog } from "./schema-catalog.js";
 import {
   createSchema,
   openDatabase,
@@ -10,8 +11,17 @@ import { readCounts } from "./count-records.js";
 
 export function buildIndex(options: BuildIndexOptions): RecordCounts {
   const records = loadCatalog(options.catalogDir);
-  resetDatabaseFile(options.dbPath);
-  const db = openDatabase(options.dbPath, false);
+  return writeIndex(options.dbPath, records);
+}
+
+export function buildSchemaIndex(options: { catalogFile: string; dbPath: string }): RecordCounts {
+  const records = loadSchemaCatalog(options.catalogFile);
+  return writeIndex(options.dbPath, records);
+}
+
+function writeIndex(dbPath: string, records: ReturnType<typeof loadCatalog>): RecordCounts {
+  resetDatabaseFile(dbPath);
+  const db = openDatabase(dbPath, false);
   try {
     createSchema(db);
     const insert = db.prepare(
