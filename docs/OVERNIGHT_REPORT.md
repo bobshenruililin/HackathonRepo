@@ -81,7 +81,7 @@ A pattern note counted an earlier file (2,180 projects, before the last 22 prize
 
 - 2-Player Hot Potato, Blueprint 2025: direct matched 140 real projects on the label `Beginner`. Mechanism and demo were unknown. Pull request #28 now treats that exact label as generic. The sample was not re-run after that change.
 - Window Share, HackMIT 2016, and TravelAR, HackMIT 2017: direct and mechanism unknown. Demo was `no-match` because the host is `youtube.com`.
-- Wirehead, HackMIT 2025, one project whose gallery track claim says Education: direct matched 330 real projects. 185 of those share `Education`. The rest of the overlap is shared sponsor-challenge text. Mechanism was unknown. Demo was `no-match` (`youtube.com`).
+- Wirehead, HackMIT 2025, one project whose gallery track claim says Education: direct matched 330 real projects. 185 of those share `Education`. The union also includes shared sponsor-challenge text. Mechanism was unknown. Demo was `no-match` (`youtube.com`).
 
 Direct mode still treats a shared sponsor-challenge string as a match. Interaction analogues and distant structural analogues are not implemented. The sample was not repeated on the catalog that contains the five code-observed repositories.
 
