@@ -119,6 +119,46 @@ describe("HackMIT schema catalog", () => {
       heartRecord?.details.claims.some((claim) => /award|prize|winner/i.test(claim.statement)),
     ).toBe(false);
   });
+
+  it("keeps later code-observed dependency claims on Kami, Spidey Sense, and Eve", () => {
+    const dbPath = tempDb();
+    buildSchemaIndex({ catalogFile, dbPath });
+
+    const kami = searchRecords(dbPath, "Kami").find((hit) => hit.title === "Kami");
+    expect(kami).toBeDefined();
+    const kamiRecord = getRecord(dbPath, kami?.id ?? "");
+    expect(
+      kamiRecord?.details.claims.some((claim) =>
+        claim.statement.startsWith(
+          "matter-js is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2.",
+        ),
+      ),
+    ).toBe(true);
+
+    const spideyHits = searchRecords(dbPath, "Spidey Sense").filter((hit) => hit.title === "Spidey Sense");
+    expect(spideyHits.length).toBeGreaterThan(1);
+    const spideyRecords = spideyHits.map((hit) => getRecord(dbPath, hit.id));
+    expect(
+      spideyRecords.some((record) =>
+        record?.details.claims.some((claim) =>
+          claim.statement.startsWith(
+            "faster-whisper is code-observed as a library at revision b331076b7aaed4830c866f06439ba758c08f2759.",
+          ),
+        ),
+      ),
+    ).toBe(true);
+
+    const eve = searchRecords(dbPath, "Eve").find((hit) => hit.title === "Eve");
+    expect(eve).toBeDefined();
+    const eveRecord = getRecord(dbPath, eve?.id ?? "");
+    expect(
+      eveRecord?.details.claims.some((claim) =>
+        claim.statement.startsWith(
+          "react is code-observed as a framework at revision fee307dd0c750f6977b937add8e8f80d6ba17c97.",
+        ),
+      ),
+    ).toBe(true);
+  });
 });
 
 function tempDb(): string {

@@ -1,6 +1,6 @@
 # State
 
-Catalog snapshot is the file on `main` after pull request #27, merge `bc479ac5f04019071fc8043f9c6a538448160c10` (2026-09-28). Pull request #28, merge `abba5bc1211761834283d7edb9c724159fa5561e`, did not change that file. M0 is not accepted. This file does not treat a security review as acceptance.
+Catalog snapshot is this file. It adds code-observed dependency claims for Kami, Spidey Sense, and Eve onto the catalog from pull request #27. Pull request #28 did not change the catalog. M0 is not accepted. This file does not treat a security review as acceptance.
 
 ## WHAT YOU BUILT
 
@@ -22,11 +22,11 @@ Missing lists, not empty editions: Devpost 2015 and 2020, Plume 2022–2024, Blu
 | Synthetic projects | 0 |
 | Submissions | 2180 |
 | Repository locators | 921 |
-| Evidence | 2270 |
-| Claims | 5904 |
+| Evidence | 2276 |
+| Claims | 5969 |
 | Events | 12 |
 
-Source-reported claims: 4870. Inferred claims: 942. Code-observed claims: 92. Test-observed claims: 0. Evidence kinds: source 2265, code 5. Five projects have code-observed dependency claims: The Cambridge Sock Company, EcoAI, Mozaic, HeartFrame, and Erbgut. Projects with an award, prize, or winner claim: 218. Of those, 84 also have a repository locator. Projects with a demo-URL claim: 455. Exact titles that repeat: 30 titles, 66 project ids, not merged.
+Source-reported claims: 4870. Inferred claims: 942. Code-observed claims: 157. Test-observed claims: 0. Evidence kinds: source 2268, code 8. Eight projects have code-observed dependency claims: The Cambridge Sock Company, EcoAI, Mozaic, HeartFrame, Erbgut, Kami, Spidey Sense, and Eve. Projects with an award, prize, or winner claim: 218. Of those, 84 also have a repository locator. Projects with a demo-URL claim: 455. Exact titles that repeat: 30 titles, 66 project ids, not merged.
 
 ## WHICH YEARS/SOURCES ARE COVERED
 
@@ -46,8 +46,8 @@ Ingest replay, schema validation, index build, CLI search, explorer search with 
 
 ## WHAT IS UNCERTAIN
 
-StudyDate and Text2Test repository strings differ from the gold pages by `.git` and, for StudyDate, letter case. Whether those strings are the same repository was not checked again. Two projects named Pilot were left as different projects. Plume and Ballot project pages were not opened. Eleven inspected repositories did not match a catalog locator and were not imported. Eve and money-maxing were opened and also do not match a catalog locator. kami and spideysense match, and their rows are not imported yet. The analogue sample predates the `Beginner` filter and the code-observed claims. Direct mode still matches a shared sponsor-challenge string. Five track labels are accepted as problem-domain values and are not assigned on projects. The other dimensions have no accepted value. Removal intake is undefined. The second security pass does not accept M0.
+StudyDate and Text2Test repository strings differ from the gold pages by `.git` and, for StudyDate, letter case. Whether those strings are the same repository was not checked again. Two projects named Pilot were left as different projects. Plume and Ballot project pages were not opened. Eleven inspected repositories did not match a catalog locator and were not imported. `Preet37/money-maxing` does not match `https://github.com/athm23/money-maxing`. The analogue sample predates the `Beginner` filter and these code-observed claims. Direct mode still matches a shared sponsor-challenge string. Five track labels are accepted as problem-domain values and are not assigned on projects. The other dimensions have no accepted value. Removal intake is undefined. The second security pass does not accept M0.
 
 ## WHAT YOU WOULD DO NEXT
 
-Import kami and spideysense only where the proposal is code-observed and the locator already matches. Re-run the analogue sample on the current catalog. Do not treat a shared sponsor challenge as a problem-domain analogue without a new recorded decision. Assign the five accepted track labels only from gallery track claims. Do not accept music, finance, or sponsor-challenge mechanism labels without a new recorded decision. Do not score the six fixed queries until a gold set states the full relevant set. Do not treat a missing gallery as an empty edition.
+Re-run the analogue sample on this catalog. Do not treat a shared sponsor challenge as a problem-domain analogue without a new recorded decision. Assign the five accepted track labels only from gallery track claims. Do not accept music, finance, or sponsor-challenge mechanism labels without a new recorded decision. Do not score the six fixed queries until a gold set states the full relevant set. Do not treat a missing gallery as an empty edition.
