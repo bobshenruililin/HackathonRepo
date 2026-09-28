@@ -4,6 +4,7 @@ import {
   TAXONOMY_DIMENSIONS,
   TaxonomyError,
   acceptValue,
+  assignHackmitTrackFromClaims,
   classify,
   createTaxonomyRegistry,
   hackmitTrackTaxonomy,
@@ -210,6 +211,64 @@ describe("controlled taxonomy", () => {
       ),
     ).toBe("never-proposed");
     expect(listAccepted(createTaxonomyRegistry())).toEqual([]);
+  });
+
+  it.each([
+    ["The gallery card names the track Education.", "education"],
+    ["The gallery card names the track Healthcare.", "healthcare"],
+    ["The gallery card names the track Sustainability.", "sustainability"],
+    ["The gallery card names the track Entertainment.", "entertainment"],
+    ["The gallery card names the track Interactive Media.", "interactive-media"],
+  ] as const)("assigns the exact sentence %s to %s", (statement, value) => {
+    const assignment = assignHackmitTrackFromClaims([{ statement }]);
+
+    expect(assignment).toEqual({ status: "value", value });
+    expect(
+      classify(hackmitTrackTaxonomy(), {
+        "problem-domain": assignment,
+      }).dimensions,
+    ).toEqual([{ dimension: "problem-domain", status: "accepted", value }]);
+    expect(listAccepted(createTaxonomyRegistry())).toEqual([]);
+  });
+
+  it("does not assign Beginner", () => {
+    expect(
+      assignHackmitTrackFromClaims([{ statement: "The gallery card names the track Beginner." }]),
+    ).toEqual({ status: "unknown" });
+    expect(listAccepted(createTaxonomyRegistry())).toEqual([]);
+    expect(listProposed(createTaxonomyRegistry())).toEqual([]);
+  });
+
+  it("does not assign a prize sentence that contains Healthcare", () => {
+    expect(
+      assignHackmitTrackFromClaims([
+        {
+          statement:
+            "The gallery card states the award label Healthcare Track Winner. It does not name a prize.",
+        },
+      ]),
+    ).toEqual({ status: "unknown" });
+  });
+
+  it("does not assign General, NO TRACK, Music, Finance, or a sponsor challenge", () => {
+    const statements = [
+      "The gallery card names the track General.",
+      "The gallery card names the track NO TRACK.",
+      "The gallery card names the track Music.",
+      "The gallery card names the track Finance.",
+      "The gallery card names challenge preferences: Healthcare, Suno: Best Musical Hack, Windsurf Challenge.",
+    ];
+
+    for (const statement of statements) {
+      expect(assignHackmitTrackFromClaims([{ statement }])).toEqual({ status: "unknown" });
+    }
+    expect(assignHackmitTrackFromClaims([])).toEqual({ status: "unknown" });
+    expect(
+      assignHackmitTrackFromClaims([
+        { statement: "The gallery card names the track Education." },
+        { statement: "The gallery card names the track Healthcare." },
+      ]),
+    ).toEqual({ status: "unknown" });
   });
 
   it("rejects a dimension outside the closed list", () => {
