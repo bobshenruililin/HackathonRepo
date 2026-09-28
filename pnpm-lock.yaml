@@ -64,6 +64,10 @@ importers:
         version: 5.0.2(@types/node@24.19.0)(vite@8.3.1(@types/node@24.19.0))
 
   packages/cli:
+    dependencies:
+      '@hackathon-atlas/analogues':
+        specifier: workspace:*
+        version: link:../analogues
     devDependencies:
       '@hackathon-atlas/catalog-index':
         specifier: workspace:*
