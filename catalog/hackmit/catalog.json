@@ -3239,6 +3239,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_06240742a1da9690dd3da2f6",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package electron/rebuild"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package electron/rebuild is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_d6da6d198218364dde2fd0c4"
@@ -7332,6 +7355,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6477ed5069bf423759b027e2"
+      ],
+      "id": "clm_0dd5f9e310515638bb595135",
+      "inspectedCommitId": "b331076b7aaed4830c866f06439ba758c08f2759",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "b331076b7aaed4830c866f06439ba758c08f2759"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/tomasdavola/spideysense/tree/b331076b7aaed4830c866f06439ba758c08f2759",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_cfb35df7964954ee1cb8e491"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_e06c2b3749e7a85627eefe5a"
@@ -7680,6 +7726,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_2f543500602d9f7409314b47"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_0eaf0977a705df0deb39cf19",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/vscode"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package types/vscode is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -10350,6 +10419,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_13c92b17afb19844ec2d4e3e",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/matter-js"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "Scoped npm package types/matter-js is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_5d288a30008d1f3d16543bea"
@@ -11644,6 +11736,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_b1b404a1fdf5076f91a97fde"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_166b7dc5b82d64a774f26863",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "typescript"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "typescript is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -15656,6 +15771,52 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_1da8e08feca65ce6937ee67d",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "better-sqlite3"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "better-sqlite3 is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_1dc71efa19d850d51f80a6ee",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "prettier"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "prettier is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_87fc72bef51dc5dba098e1cb"
@@ -15762,6 +15923,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_aab2c459ba1610ab932ea94f"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_1dfd334877474a2eb595f4a5",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "mongodb"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "mongodb is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -16225,6 +16409,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_88fef2abd88083e9fada7a70"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_1f2f227a2491582309f5151b",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package resvg/resvg-js"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "Scoped npm package resvg/resvg-js is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -17437,6 +17644,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_667d07fc8da51b6995a1005c"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_20ea8e4dcdcdcc6e7ea862c7",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package tiptap/react"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package tiptap/react is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -22591,6 +22821,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_2abfcade856f7c0e08dddeb2",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "onnx"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "onnx is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: ml/pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_366b47d46bffd3938e4df86d"
@@ -23623,6 +23876,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_88fef2abd88083e9fada7a70"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_2ca44163c9dfc2899b4d4a85",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "tsx"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "tsx is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -28297,6 +28573,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_361fae9bc23ac0d80effa91b",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "vite"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "vite is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_218c4e3d5127e2680d01699e"
@@ -28403,6 +28702,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_401cc4010d2cd079a87f367d"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_3661ee69e7d5f897e06a45f0",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/node"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package types/node is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -33557,6 +33879,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_3fbf6bf837fe7c1cbdb66700",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "vitest"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "vitest is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_1cc48659a833ecde52cefa97"
@@ -36744,6 +37089,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_eb60f0f16d886a1b15580a5b"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_453817863d8d297dc119d4ed",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "happy-dom"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "happy-dom is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -41085,6 +41453,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6477ed5069bf423759b027e2"
+      ],
+      "id": "clm_4e52f5b11f75d40f632f59a6",
+      "inspectedCommitId": "b331076b7aaed4830c866f06439ba758c08f2759",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "sounddevice"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/tomasdavola/spideysense/tree/b331076b7aaed4830c866f06439ba758c08f2759",
+      "statement": "sounddevice is code-observed as a library at revision b331076b7aaed4830c866f06439ba758c08f2759. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_85719a33b537e1bc0ed92b37"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_94429437765addb876380a57"
@@ -42669,6 +43060,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_51bcdcf64cb681b1ede2248f",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package fontsource-variable/newsreader"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package fontsource-variable/newsreader is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_68eec3051cd92e04f738dd20"
@@ -42863,6 +43277,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_04b752b719185732f7011a3e"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_51f5e3ea6bdcc6b3b98dd96d",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "gifenc"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "gifenc is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -43369,6 +43806,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_e15022a68482673bbcb695cd"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_52f30a1f5f01b532ee936bfc",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "fee307dd0c750f6977b937add8e8f80d6ba17c97"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_465ab81a599ab219262d6fc1"
       },
       "synthetic": false
     },
@@ -44496,6 +44956,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_55342bdab7ee791bdd486720",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package playwright/test"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package playwright/test is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_7d3aad2e71a2e910e94400df"
@@ -45263,6 +45746,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_dfad5e2b4751bb367cd653ea"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6477ed5069bf423759b027e2"
+      ],
+      "id": "clm_57096c6b553887443a9e4ca1",
+      "inspectedCommitId": "b331076b7aaed4830c866f06439ba758c08f2759",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "scipy"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/tomasdavola/spideysense/tree/b331076b7aaed4830c866f06439ba758c08f2759",
+      "statement": "scipy is code-observed as a library at revision b331076b7aaed4830c866f06439ba758c08f2759. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_85719a33b537e1bc0ed92b37"
       },
       "synthetic": false
     },
@@ -46787,6 +47293,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_5a7c0c15b8d14a81fc8b0c67",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package vitejs/plugin-react"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package vitejs/plugin-react is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_546f63e36467ec99c81970b9"
@@ -47909,6 +48438,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_5c85a79a93cd9606eda3b8c0",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/better-sqlite3"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package types/better-sqlite3 is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_adb5a4eeddc2f23f7d85aa12"
@@ -47927,6 +48479,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_717f916ac6f36b10b1a2874a"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_5c943c6a01c4b1ab245b3ac4",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "tqdm"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "tqdm is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: ml/pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -48830,6 +49405,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_60a367271a8a49b70c29b37e"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_5e9fc5063f718a320cb91b7b",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "marked"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "marked is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -50947,6 +51545,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_626937ed4e419b966814e538",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "onnxruntime"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "onnxruntime is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: ml/pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_242c1591b35c4c01f5d6d97d"
@@ -52466,6 +53087,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6477ed5069bf423759b027e2"
+      ],
+      "id": "clm_651390f00e2bc405163194af",
+      "inspectedCommitId": "b331076b7aaed4830c866f06439ba758c08f2759",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "numpy"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/tomasdavola/spideysense/tree/b331076b7aaed4830c866f06439ba758c08f2759",
+      "statement": "numpy is code-observed as a library at revision b331076b7aaed4830c866f06439ba758c08f2759. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_85719a33b537e1bc0ed92b37"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_272ff997a061612528fe34d4"
@@ -52770,6 +53414,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_75520152248adf280fab2449"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_6573477a21ae77582da84061",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "perfect-freehand"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "perfect-freehand is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -55395,6 +56062,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_6a934394e4bf0b45ca97543f",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "zod"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "zod is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_cad9ec0ff9afbfc56925d179"
@@ -56339,6 +57029,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_8bbfc5ad3094cb25a6ea9c60"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_6c4e7e10ebd521e361c5f626",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "torchvision"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "torchvision is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: ml/pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -58435,6 +59148,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_70086492fa274a9e0a708b05",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "concurrently"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "concurrently is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_8aca5275c7e27f11cce4d15a"
@@ -58828,6 +59564,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_833d840232172a6b3a07aa0c"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_7107659da3c729f31dd22204",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "opencv-python-headless"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "opencv-python-headless is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: ml/pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -61297,6 +62056,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_75da63086f29d03220af7380",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "mongodb-memory-server"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "mongodb-memory-server is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_dff978b41864760cebe227e8"
@@ -61778,6 +62560,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_c4008bdcd38c249c9c4c34b0"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_768dbcdec4fee7686e49909d",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "numpy"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "numpy is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: ml/pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -63012,6 +63817,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_d4be795c5351f70887d47205"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_79156984649db9182b4601f0",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "vite"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "vite is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -64512,6 +65340,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_7bcbe08346a63443333f0628",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "react is code-observed as a framework at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_9789cff60731dd7ec230f2e8"
@@ -64883,6 +65734,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_b24084e678fb09f4a4fc502d"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_7c9a104654f6f69a1b176b90",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "ruff"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "ruff is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: ml/pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -67699,6 +68573,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_d93bc2905d17b7649d7f7b8c"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_82e03e2b4da74dcef92a2318",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "electron"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "electron is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -71243,6 +72140,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_9ab339f4befadb872a0b27b5"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_8a0bb41d087cea0912897b3a",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "roughjs"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "roughjs is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -75738,6 +76658,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_934f4648099659c59a1f7625",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "qrcode"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "qrcode is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_518fcaf684b0ac1d45044cf4"
@@ -75822,6 +76765,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_5d9456d96165efa7d00b28f1"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_93a1f78827f9845c125f3748",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/qrcode"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "Scoped npm package types/qrcode is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -79017,6 +79983,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_9a33d668e3f4064af2d88e81",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package fontsource-variable/inter"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package fontsource-variable/inter is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_6de11feba4c3fee5127809ff"
@@ -79409,6 +80398,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_29dc7240c29ee7d6c4b5f9b0"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_9b40db567509f95342756050",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_899ee0d994fc305ed0f27eef"
       },
       "synthetic": false
     },
@@ -80839,6 +81851,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_9b029fa0cc506a2f1e3f7fdd"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_9e93deb08ba2736f38418765",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "esbuild"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "esbuild is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -83065,6 +84100,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_a29b23aec33da0d4e4ce638c",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "zod"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "zod is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_4be86e881cb80513bb737fce"
@@ -83678,6 +84736,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_ecc6716539ce6636f20a72c5"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_a3dfc183d5bc72934ea133c0",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "matter-js"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "matter-js is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -88925,6 +90006,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_af2eebd224ab2eaf0e3cb66b",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react-dom"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package types/react-dom is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_dd9fbe74a4dfc6702ed0e4bc"
@@ -90351,6 +91455,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_e26cbeb7a0b00fed71f22722"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6477ed5069bf423759b027e2"
+      ],
+      "id": "clm_b1f9ea9ee8fa834c0bc611a8",
+      "inspectedCommitId": "b331076b7aaed4830c866f06439ba758c08f2759",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "deep_filter"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/tomasdavola/spideysense/tree/b331076b7aaed4830c866f06439ba758c08f2759",
+      "statement": "deep_filter is code-observed as a library at revision b331076b7aaed4830c866f06439ba758c08f2759. Manifest path: tools/df-stream/Cargo.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_85719a33b537e1bc0ed92b37"
       },
       "synthetic": false
     },
@@ -92842,6 +93969,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6477ed5069bf423759b027e2"
+      ],
+      "id": "clm_b705bc73eec0a4d87dccd97c",
+      "inspectedCommitId": "b331076b7aaed4830c866f06439ba758c08f2759",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "faster-whisper"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/tomasdavola/spideysense/tree/b331076b7aaed4830c866f06439ba758c08f2759",
+      "statement": "faster-whisper is code-observed as a library at revision b331076b7aaed4830c866f06439ba758c08f2759. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_85719a33b537e1bc0ed92b37"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_7bec5ac3dc22b69fdd3d0f75"
@@ -93988,6 +95138,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_b99200c345998f0c780ae5dc",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/bun"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "Scoped npm package types/bun is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_bfb711609395a3867eb2f5d6"
@@ -94688,6 +95861,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_f149adecafc8744989d151c4"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_bac17f2836b43f74cdadc378",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "lucide-react"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "lucide-react is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -96295,6 +97491,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_7b9552f744fa7cd6600e508b"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_bda33cf23779a7996add59af",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "torch"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "torch is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: ml/pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -103718,6 +104937,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6477ed5069bf423759b027e2"
+      ],
+      "id": "clm_cad879524f9d6f1202dbd06c",
+      "inspectedCommitId": "b331076b7aaed4830c866f06439ba758c08f2759",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "ndarray"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/tomasdavola/spideysense/tree/b331076b7aaed4830c866f06439ba758c08f2759",
+      "statement": "ndarray is code-observed as a library at revision b331076b7aaed4830c866f06439ba758c08f2759. Manifest path: tools/df-stream/Cargo.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_85719a33b537e1bc0ed92b37"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_98e0cc28a284cc68122c6e95"
@@ -108185,6 +109427,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_d43dc1e6415f49a5b3fa1033",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "hersheytext"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "hersheytext is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_8d8f3610deace20bcf197a39"
@@ -110276,6 +111541,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_d7f0f980fc23ac8c95a939ec",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "wordlist-english"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "wordlist-english is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_f1857baeb61c54da4b3f4cde"
@@ -110514,6 +111802,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_962d2b76e33c356b394cb3b1"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_d8596d8c3e36a4619ed91a0f",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "typescript"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "typescript is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -111263,6 +112574,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_967487c7987c5dfc0bfea82f"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_da21ec2ec5171970d12325f0",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package types/react is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -115933,6 +117267,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_e36637be95d4fa65b169f675",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react-dom"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "react-dom is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_1d5963ef6cb7a11d2d93d945"
@@ -116721,6 +118078,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_80da4b57f207bfbf86400dd1"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_e52db30927e574338b63e184",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "vitest"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "vitest is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -117982,6 +119362,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_e7e256efc1832ba208426bf8",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "mypy"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "mypy is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: ml/pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_dc536ddc04d9fdd6a19f7000"
@@ -118950,6 +120353,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_e9a74c3f144d08cb6df7e89b",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package biomejs/biome"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "Scoped npm package biomejs/biome is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_2f3017ed0fdb5ddcfa387ddc"
@@ -119585,6 +121011,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_7842eeead55283b0e01872af"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_eb1fd3e44750392e30e8a14a",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package tiptap/starter-kit"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "Scoped npm package tiptap/starter-kit is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -120931,6 +122380,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_be10bc0eb25f29b2c34a4cb4"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_4e5c18add0f154af3adceff2"
+      ],
+      "id": "clm_ed7e5e419040ef72d856be79",
+      "inspectedCommitId": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "dompurify"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "statement": "dompurify is code-observed as a library at revision fee307dd0c750f6977b937add8e8f80d6ba17c97. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_1d96487357829bd62daacf21"
       },
       "synthetic": false
     },
@@ -124916,6 +126388,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_feb013ee37b747881b86e3a6"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_edaed6da9ab07300fade275f"
+      ],
+      "id": "clm_f567d8cc1f8adb26ee28fbce",
+      "inspectedCommitId": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "pytest"
+      },
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "statement": "pytest is code-observed as a library at revision 32db1c23e80d2fcb1c348e90bc64100b1f3f48d2. Manifest path: ml/pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a9aa8532aa3ef5846f533869"
       },
       "synthetic": false
     },
@@ -132617,6 +134112,18 @@
     },
     {
       "excerpt": {
+        "attribution": "Public GitHub tree for snowballsh/kami",
+        "kind": "third-party-excerpt",
+        "quote": "Dependency names were read from manifests at this revision."
+      },
+      "id": "evd_191e2d5fe3434ba63442acd3",
+      "kind": "source",
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "sourceUrl": "https://github.com/snowballsh/kami/tree/32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "synthetic": false
+    },
+    {
+      "excerpt": {
         "attribution": "gallery card title",
         "kind": "third-party-excerpt",
         "quote": "Snoobook"
@@ -138412,6 +139919,18 @@
       "synthetic": false
     },
     {
+      "id": "evd_4e5c18add0f154af3adceff2",
+      "inspectedRevision": "fee307dd0c750f6977b937add8e8f80d6ba17c97",
+      "kind": "code",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_465ab81a599ab219262d6fc1",
+      "synthetic": false
+    },
+    {
       "excerpt": {
         "attribution": "gallery card title",
         "kind": "third-party-excerpt",
@@ -140800,6 +142319,18 @@
       "synthetic": false
     },
     {
+      "id": "evd_6477ed5069bf423759b027e2",
+      "inspectedRevision": "b331076b7aaed4830c866f06439ba758c08f2759",
+      "kind": "code",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_cfb35df7964954ee1cb8e491",
+      "synthetic": false
+    },
+    {
       "excerpt": {
         "attribution": "gallery card title",
         "kind": "third-party-excerpt",
@@ -142753,6 +144284,18 @@
       "kind": "source",
       "retrievedAt": "2026-09-28T17:04:25.000Z",
       "sourceUrl": "https://hackmit-2019.devpost.com/project-gallery",
+      "synthetic": false
+    },
+    {
+      "excerpt": {
+        "attribution": "Public GitHub tree for kierancschmitt/eve",
+        "kind": "third-party-excerpt",
+        "quote": "Dependency names were read from manifests at this revision."
+      },
+      "id": "evd_78cb465286ae130a7391f53f",
+      "kind": "source",
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "sourceUrl": "https://github.com/kierancschmitt/eve/tree/fee307dd0c750f6977b937add8e8f80d6ba17c97",
       "synthetic": false
     },
     {
@@ -145717,6 +147260,18 @@
       "kind": "source",
       "retrievedAt": "2026-09-28T17:41:24.000Z",
       "sourceUrl": "https://plume.hackmit.org/api/v3/projects/gallery?hackathon_id=bp-2025&items_per_page=24",
+      "synthetic": false
+    },
+    {
+      "excerpt": {
+        "attribution": "Public GitHub tree for tomasdavola/spideysense",
+        "kind": "third-party-excerpt",
+        "quote": "Dependency names were read from manifests at this revision."
+      },
+      "id": "evd_93437f848792a8fe0c10f9d2",
+      "kind": "source",
+      "retrievedAt": "2026-09-28T18:36:38.000Z",
+      "sourceUrl": "https://github.com/tomasdavola/spideysense/tree/b331076b7aaed4830c866f06439ba758c08f2759",
       "synthetic": false
     },
     {
@@ -155485,6 +157040,18 @@
       "kind": "source",
       "retrievedAt": "2026-09-28T17:12:54.000Z",
       "sourceUrl": "https://plume.hackmit.org/api/v3/projects/gallery?hackathon_id=hack-2025&items_per_page=24",
+      "synthetic": false
+    },
+    {
+      "id": "evd_edaed6da9ab07300fade275f",
+      "inspectedRevision": "32db1c23e80d2fcb1c348e90bc64100b1f3f48d2",
+      "kind": "code",
+      "observedAt": "2026-09-28T18:36:38.000Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_899ee0d994fc305ed0f27eef",
       "synthetic": false
     },
     {

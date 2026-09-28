@@ -1,6 +1,6 @@
 # Overnight report
 
-Catalog counts below are the file on `main` after pull request #27, merge `bc479ac5f04019071fc8043f9c6a538448160c10` (2026-09-28). Pull request #28, merge `abba5bc1211761834283d7edb9c724159fa5561e`, did not change that file. This is a record of what is in the repository now. It is not an acceptance of M0.
+Catalog counts below are this file. It adds code-observed dependency claims for Kami, Spidey Sense, and Eve onto the catalog from pull request #27. Pull request #28 did not change the catalog. This is a record of what is in the repository now. It is not an acceptance of M0.
 
 ## What is in the repository
 
@@ -20,11 +20,11 @@ The catalog was ingested from public gallery cards fetched on 2026-09-28, plus D
 | Synthetic projects | 0 |
 | Submissions | 2180 |
 | Repository locators | 921 |
-| Evidence | 2270 |
-| Claims | 5904 |
+| Evidence | 2276 |
+| Claims | 5969 |
 | Events | 12 |
 
-Claim basis in the file: source-reported 4870, inferred 942, code-observed 92, test-observed 0. Evidence kinds: source 2265, code 5. Review status is unreviewed. The catalog text contains no `@`.
+Claim basis in the file: source-reported 4870, inferred 942, code-observed 157, test-observed 0. Evidence kinds: source 2268, code 8. Review status is unreviewed. The catalog text contains no `@`.
 
 | Event | Projects | Known repository |
 | --- | ---: | ---: |
@@ -45,7 +45,7 @@ Blueprint is a separate event family. Start and end times are unknown. Sixty-two
 
 218 projects have an award, prize, or winner claim. 84 of those also have a repository locator. 455 projects have a demo-URL claim. 30 exact titles repeat across 66 project ids. Those ids were not merged.
 
-Five repositories whose locators already matched a catalog project have code-observed dependency claims from public manifest names at a pinned commit: The Cambridge Sock Company, EcoAI, Mozaic, HeartFrame, and Erbgut. That is 87 technology claims on those projects, plus five repository claims that an inspected revision was staged. Scoped npm package names are written without a leading at-sign. Code-evidence paths stay unknown; each technology statement names one manifest or file path. Eleven other inspected repositories were not attached, because the normalized locator was not already in the catalog. Awards were not inferred from those repositories.
+Eight repositories whose locators already matched a catalog project have code-observed dependency claims from public manifest names at a pinned commit: The Cambridge Sock Company, EcoAI, Mozaic, HeartFrame, Erbgut, Kami, Spidey Sense, and Eve. That is 149 technology claims on those projects, plus eight repository claims that an inspected revision was staged. Scoped npm package names are written without a leading at-sign. Code-evidence paths stay unknown; each technology statement names one manifest or file path. Eleven other inspected repositories were not attached, because the normalized locator was not already in the catalog. `Preet37/money-maxing` was opened and was not attached. The catalog locator `https://github.com/athm23/money-maxing` belongs to a project named Money Maxer and is a different owner. Awards were not inferred from these repositories.
 
 ## What the sources did not support
 
@@ -67,7 +67,7 @@ Precision and recall are **NOT MEASURED**. The gold set is six rechecked Devpost
 
 The filter "award claim and a known repository" returns 84 projects. That is a filter count, not precision or recall.
 
-Keyword scans for computer vision, physical-world-plus-AI, speech, and social matching were not treated as answers. Sponsor-challenge wording and unrelated titles match those words. Those four queries, and "README claims supported by repository evidence," stay **NOT MEASURED**. Five projects now have code-observed dependency claims. That is not a measurement of the last query.
+Keyword scans for computer vision, physical-world-plus-AI, speech, and social matching were not treated as answers. Sponsor-challenge wording and unrelated titles match those words. Those four queries, and "README claims supported by repository evidence," stay **NOT MEASURED**. Eight projects now have code-observed dependency claims. That is not a measurement of the last query.
 
 ## Taxonomy and patterns
 
@@ -83,7 +83,7 @@ A pattern note counted an earlier file (2,180 projects, before the last 22 prize
 - Window Share, HackMIT 2016, and TravelAR, HackMIT 2017: direct and mechanism unknown. Demo was `no-match` because the host is `youtube.com`.
 - Wirehead, HackMIT 2025, one project whose gallery track claim says Education: direct matched 330 real projects. 185 of those share `Education`. The union also includes shared sponsor-challenge text. Mechanism was unknown. Demo was `no-match` (`youtube.com`).
 
-Direct mode still treats a shared sponsor-challenge string as a match. Interaction analogues and distant structural analogues are not implemented. The sample was not repeated on the catalog that contains the five code-observed repositories.
+Direct mode still treats a shared sponsor-challenge string as a match. Interaction analogues and distant structural analogues are not implemented. The sample was not repeated on the catalog that contains these eight code-observed repositories.
 
 ## Tests
 
@@ -93,8 +93,8 @@ Explorer checks before the filter pull request merged: the generated index serve
 
 ## Still open
 
-- Eve (`KieranCSchmitt/Eve`) and money-maxing (`Preet37/money-maxing`) were opened read-only and do not match a catalog repository locator. They were not added as projects.
-- kami and spideysense match catalog locators. Their code-observed rows are not in the catalog yet.
+- `Preet37/money-maxing` was opened read-only. It does not match a catalog locator. `https://github.com/athm23/money-maxing` is a different owner and was not used.
+- Eve's inspected URL lowercases to the catalog locator `https://github.com/kierancschmitt/eve`. Dependency names from the opened root `package.json` are attached. No new project was created.
 - Eleven other inspected repositories stay unresolved. No project was created for them.
 - The analogue sample was not re-run after `Beginner` became generic, and it was not re-run after the five code-observed repositories landed.
 - Direct mode still matches a shared sponsor-challenge string. Interaction analogues and distant structural analogues are not built.
