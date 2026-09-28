@@ -1,10 +1,15 @@
 import type { CatalogRecord, IndexedClaim, IndexedEvidence } from "@hackathon-atlas/catalog-index";
+import { assignHackmitTrackFromClaims } from "@hackathon-atlas/taxonomy";
 
 import { deriveRecord, unknownReason } from "../lib/derive";
 import { KnownValue, SourceLink } from "./known-value";
 
+const GALLERY_TRACK_UNKNOWN_REASON =
+  "No exact gallery sentence for Education, Healthcare, Sustainability, Entertainment, or Interactive Media.";
+
 export function ProjectView({ record }: { record: CatalogRecord }) {
   const derived = deriveRecord(record);
+  const galleryTrack = assignHackmitTrackFromClaims(record.details.claims);
   const facts = record.details.sourceFacts;
 
   return (
@@ -49,6 +54,14 @@ export function ProjectView({ record }: { record: CatalogRecord }) {
           <dd>{derived.claimCount}</dd>
           <dt>Known source URL count</dt>
           <dd>{derived.knownSourceUrlCount}</dd>
+          <dt>Gallery track</dt>
+          <dd data-testid="gallery-track">
+            {galleryTrack.status === "value" ? (
+              galleryTrack.value
+            ) : (
+              <span className="unknown">Unknown. {GALLERY_TRACK_UNKNOWN_REASON}</span>
+            )}
+          </dd>
         </dl>
       </section>
 
