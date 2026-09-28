@@ -1,0 +1,27 @@
+{
+  "name": "@hackathon-atlas/cli",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "hackathon-atlas": "./dist/main.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "pretypecheck": "pnpm --filter @hackathon-atlas/catalog-index build",
+    "typecheck": "tsc --noEmit -p tsconfig.json && pnpm build",
+    "pretest": "pnpm --filter @hackathon-atlas/catalog-index build && pnpm build",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@hackathon-atlas/catalog-index": "workspace:*",
+    "@types/node": "24.19.0",
+    "typescript": "7.0.2",
+    "vitest": "5.0.2"
+  }
+}
