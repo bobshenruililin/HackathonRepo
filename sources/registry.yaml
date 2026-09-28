@@ -1,0 +1,738 @@
+schema_version: 1
+seed:
+  url: https://archive.hackmit.org/
+  role: discovery-seed
+  observed_at: '2026-09-28T13:00:51Z'
+candidates:
+- id: archive-seed
+  url: https://archive.hackmit.org/
+  source_kind: event-site
+  event_edition: unknown
+  collection_method: http-get
+  approval_status: discovered
+  access_status: fetched
+  observed_at: '2026-09-28T13:00:51Z'
+  evidence: HTTP 200. Final URL https://archive.hackmit.org/. Content-Type text/html; charset=utf-8. Last-Modified
+    Sat, 23 May 2026 01:45:15 GMT. Title text "HackMIT Archive". Navbar links /2014 through /2025, anchor
+    text CURRENT to https://hackmit.org, and anchor text "Blueprint Archive" to https://bparchive.hackmit.org.
+    This page is an edition index, not a project list.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2014
+  url: https://archive.hackmit.org/2014/
+  source_kind: edition-page
+  event_edition: '2014'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: fetched
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Requested https://archive.hackmit.org/2014. Final HTTP 200 at https://archive.hackmit.org/2014/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:15 GMT. Title text "HACKMIT
+    - Oct 4-5". Visible text includes "Oct 4 - 5, 2014, MIT CAMPUS". The document is an organizer event
+    splash (navigation, about, FAQ, sponsors, or schedule). It was not observed to be a participant project
+    list.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2015
+  url: https://archive.hackmit.org/2015/
+  source_kind: edition-page
+  event_edition: '2015'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: fetched
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Requested https://archive.hackmit.org/2015. Final HTTP 200 at https://archive.hackmit.org/2015/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:15 GMT. Title text "HACKMIT
+    2015". Schedule text names "Saturday, Sept. 19" and "Sunday, Sept. 20" without a year beside those
+    dates. Visible links include https://my.hackmit.org labeled Dashboard and confirmation portal. The
+    document is an organizer event splash (navigation, about, FAQ, sponsors, or schedule). It was not
+    observed to be a participant project list.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2016
+  url: https://archive.hackmit.org/2016/
+  source_kind: edition-page
+  event_edition: '2016'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: fetched
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Requested https://archive.hackmit.org/2016. Final HTTP 200 at https://archive.hackmit.org/2016/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:15 GMT. Title text "HACKMIT
+    2016". Visible text includes "SEPTEMBER 17-18 // 2016". Footer links https://code.hackmit.org/ with
+    anchor text "Open source" and https://github.com/techx/hackmit-splash/blob/master/LICENSE.txt beside
+    the text "Released under" and "CC BY-SA". The document is an organizer event splash (navigation, about,
+    FAQ, sponsors, or schedule). It was not observed to be a participant project list.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2017
+  url: https://archive.hackmit.org/2017/
+  source_kind: edition-page
+  event_edition: '2017'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: fetched
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Requested https://archive.hackmit.org/2017. Final HTTP 200 at https://archive.hackmit.org/2017/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:15 GMT. Title text "HACKMIT
+    2017". Visible text includes "SEPTEMBER 16-17 2017". Footer links https://code.hackmit.org with anchor
+    text "Open source". The document is an organizer event splash (navigation, about, FAQ, sponsors, or
+    schedule). It was not observed to be a participant project list.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2018
+  url: https://archive.hackmit.org/2018/
+  source_kind: edition-page
+  event_edition: '2018'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: fetched
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Requested https://archive.hackmit.org/2018. Final HTTP 200 at https://archive.hackmit.org/2018/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:14 GMT. Title text "HACKMIT
+    2018". Visible text includes "Massachusetts Institute of Technology on September 15th-16th". Links
+    include https://my.hackmit.org/ as an admissions-status URL and https://code.hackmit.org/. The document
+    is an organizer event splash (navigation, about, FAQ, sponsors, or schedule). It was not observed
+    to be a participant project list.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2019
+  url: https://archive.hackmit.org/2019/
+  source_kind: edition-page
+  event_edition: '2019'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: fetched
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Requested https://archive.hackmit.org/2019. Final HTTP 200 at https://archive.hackmit.org/2019/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:15 GMT. Title text "HACKMIT
+    2019". A visible sentence mentions walk-on availability on the morning of September 14th and HackMIT
+    2020 registration. No single event-date sentence was recorded in this audit. An apply control points
+    at https://my.hackmit.org. The document is an organizer event splash (navigation, about, FAQ, sponsors,
+    or schedule). It was not observed to be a participant project list.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2020
+  url: https://archive.hackmit.org/2020/
+  source_kind: edition-page
+  event_edition: '2020'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: fetched
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Requested https://archive.hackmit.org/2020. Final HTTP 200 at https://archive.hackmit.org/2020/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:14 GMT. Title text "HackMIT
+    2020". Visible text includes "September 18-20, 2020". The HTML contains 18 unique https://devpost.com/software/...
+    hrefs under the heading "Past HackMIT Projects". Those URLs are separate candidates and were not fetched.
+    A volunteer link points at https://go.hackmit.org/volunteer. The document is an organizer event splash
+    (navigation, about, FAQ, sponsors, or schedule). It was not observed to be a participant project list.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2021
+  url: https://archive.hackmit.org/2021/
+  source_kind: edition-page
+  event_edition: '2021'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: fetched
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Requested https://archive.hackmit.org/2021. Final HTTP 200 at https://archive.hackmit.org/2021/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:15 GMT. Title text "HackMIT
+    2021". Visible text includes "SEPTEMBER 18-19, 2021". Links include https://go.hackmit.org/interest
+    and https://github.com/techx with anchor text "View TechX Github". The document is an organizer event
+    splash (navigation, about, FAQ, sponsors, or schedule). It was not observed to be a participant project
+    list.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2022
+  url: https://archive.hackmit.org/2022/
+  source_kind: edition-page
+  event_edition: '2022'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: fetched
+  observed_at: '2026-09-28T13:01:15Z'
+  evidence: Requested https://archive.hackmit.org/2022. Final HTTP 200 at https://archive.hackmit.org/2022/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:15 GMT. Title text "HackMIT
+    2022". Visible text includes "10.01 - 10.02" and "October 1-2, 2022". Links include https://go.hackmit.org/volunteer22
+    and https://github.com/techx. The document is an organizer event splash (navigation, about, FAQ, sponsors,
+    or schedule). It was not observed to be a participant project list.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2023
+  url: https://archive.hackmit.org/2023/
+  source_kind: edition-page
+  event_edition: '2023'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: fetched
+  observed_at: '2026-09-28T13:01:15Z'
+  evidence: Requested https://archive.hackmit.org/2023. Final HTTP 200 at https://archive.hackmit.org/2023/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:15 GMT. Title text "HackMIT
+    2023". Visible text includes "Sept 16th-17th" and "September 16-17, 2023". Links include https://my.hackmit.org
+    labeled Apply, https://go.hackmit.org/mentor-judge, http://go.hackmit.org/discord, and https://github.com/techx.
+    The document is an organizer event splash (navigation, about, FAQ, sponsors, or schedule). It was
+    not observed to be a participant project list.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2024
+  url: https://archive.hackmit.org/2024/
+  source_kind: edition-page
+  event_edition: '2024'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: browser-rendering-dependent
+  observed_at: '2026-09-28T13:01:15Z'
+  evidence: 'Requested https://archive.hackmit.org/2024. Final HTTP 200 at https://archive.hackmit.org/2024/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:15 GMT. The document is
+    a client-rendered shell: title text "HackMIT 2024", a meta description, and body <div id="root"></div>
+    with script ./assets/index-BWncbrv6.js. Text extraction of the HTML did not show a project list; the
+    page is not empty. One classification hop fetched https://archive.hackmit.org/2024/assets/index-BWncbrv6.js
+    at 2026-09-28T13:05:01Z: HTTP 200, Content-Type application/javascript; charset=utf-8, Last-Modified
+    Sat, 23 May 2026 01:45:14 GMT. The script was read as text and not executed. It contains organizer
+    splash and FAQ copy, including "HACKMIT 2024", "weekend of September 14–15", and the string "September
+    14, 2024". No devpost.com string was present. Rendered DOM was not observed in a browser.'
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: edition-2025
+  url: https://archive.hackmit.org/2025/
+  source_kind: edition-page
+  event_edition: '2025'
+  collection_method: http-get
+  approval_status: discovered
+  access_status: browser-rendering-dependent
+  observed_at: '2026-09-28T13:01:15Z'
+  evidence: 'Requested https://archive.hackmit.org/2025. Final HTTP 200 at https://archive.hackmit.org/2025/.
+    Content-Type text/html; charset=utf-8. Last-Modified Sat, 23 May 2026 01:45:15 GMT. The document is
+    a client-rendered shell: title text "HackMIT 2025", a meta description, and body <div id="root"></div>
+    with script assets/index-Cg_OwfxS.js. Text extraction of the HTML did not show a project list; the
+    page is not empty. One classification hop fetched https://archive.hackmit.org/2025/assets/index-Cg_OwfxS.js
+    at 2026-09-28T13:05:02Z: HTTP 200, Content-Type application/javascript; charset=utf-8, Last-Modified
+    Sat, 23 May 2026 01:45:15 GMT. The script was read as text and not executed. It contains organizer
+    splash and FAQ copy, including "HackMIT 2025" and "Saturday, September 13th" through "Sunday, September
+    14th". No devpost.com string was present. Rendered DOM was not observed in a browser.'
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: current-site
+  url: https://hackmit.org/
+  source_kind: event-site
+  event_edition: unknown
+  collection_method: http-get
+  approval_status: discovered
+  access_status: browser-rendering-dependent
+  observed_at: '2026-09-28T13:04:31Z'
+  evidence: 'The archive seed links the anchor text CURRENT to https://hackmit.org. Requested https://hackmit.org.
+    HTTP 200. Final URL https://hackmit.org/. No redirect. Content-Type text/html; charset=utf-8. Last-Modified
+    Sun, 20 Sep 2026 03:48:19 GMT. Observed at 2026-09-28T13:04:31Z. The document is a client-rendered
+    shell: body <div id="root"></div> and script /assets/index-D49HQaq3.js. Title, og:title, and og:site_name
+    contain the source-reported text "HackMIT 2026". The meta description contains the source-reported
+    text "HackMIT 2026 is a 24-hour hackathon at MIT in Cambridge, Massachusetts." That text is not a
+    resolved event year. One classification hop fetched https://hackmit.org/assets/index-D49HQaq3.js at
+    2026-09-28T13:05:01Z: HTTP 200, Content-Type application/javascript; charset=utf-8. The script was
+    read as text and not executed. It repeats the string "HackMIT 2026" and includes a sentence naming
+    Saturday, September 19th and Sunday, September 20th. Those strings remain source-reported text and
+    were not used to assign an edition. No devpost.com string was present. Rendered DOM was not observed
+    in a browser.'
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: blueprint-archive
+  url: https://bparchive.hackmit.org
+  source_kind: unknown
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:00:51Z'
+  evidence: Href on https://archive.hackmit.org/ with anchor text "Blueprint Archive". Not fetched. Not
+    classified.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: my-hackmit
+  url: https://my.hackmit.org/
+  source_kind: organizer-infrastructure
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href on edition pages including 2015 (anchor text Dashboard and confirmation portal), 2016
+    (Registration Portal), 2018 (admissions status), and 2023 (Apply). Not fetched.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: code-hackmit
+  url: https://code.hackmit.org/
+  source_kind: unknown
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href on 2016, 2017, 2018, 2019, and 2020 edition pages. 2016 and 2017 anchor text is "Open
+    source". Not fetched, so the source kind is unknown.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: github-techx
+  url: https://github.com/techx
+  source_kind: organizer-infrastructure
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href on 2021, 2022, and 2023 edition pages. 2021 anchor text is "View TechX Github". Not fetched.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: github-hackmit-splash-license
+  url: https://github.com/techx/hackmit-splash/blob/master/LICENSE.txt
+  source_kind: repository
+  event_edition: '2016'
+  collection_method: href-on-fetched-page
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href on the 2016 edition page beside the source-reported text "Released under" and "CC BY-SA".
+    The license file was not fetched, and no license was selected.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: go-hackmit-volunteer
+  url: https://go.hackmit.org/volunteer
+  source_kind: organizer-infrastructure
+  event_edition: '2020'
+  collection_method: href-on-fetched-page
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href on the 2020 edition page with anchor text "sign up here" in a mentor-or-judge volunteer
+    answer. Not fetched.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: go-hackmit-interest
+  url: https://go.hackmit.org/interest
+  source_kind: organizer-infrastructure
+  event_edition: '2021'
+  collection_method: href-on-fetched-page
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href on the 2021 edition page in the navbar apply control. Not fetched.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: go-hackmit-volunteer22
+  url: https://go.hackmit.org/volunteer22
+  source_kind: organizer-infrastructure
+  event_edition: '2022'
+  collection_method: href-on-fetched-page
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:15Z'
+  evidence: Href on the 2022 edition page for a mentor or judge application. Not fetched.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: go-hackmit-mentor-judge
+  url: https://go.hackmit.org/mentor-judge
+  source_kind: organizer-infrastructure
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:15Z'
+  evidence: Href on the 2023 edition page for a mentor or judge application. The same URL string also
+    appears in the 2024, 2025, and current-site scripts. Not fetched.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: go-hackmit-discord
+  url: http://go.hackmit.org/discord
+  source_kind: organizer-infrastructure
+  event_edition: '2023'
+  collection_method: href-on-fetched-page
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:15Z'
+  evidence: Href on the 2023 edition page as an http URL. The same URL string appears in the 2024 and
+    current-site scripts. Not fetched.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: hackmit-substack
+  url: https://hackmit.substack.com/
+  source_kind: unknown
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:15Z'
+  evidence: Href on the 2022 and 2023 edition pages. Not fetched, so the source kind is unknown.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: plume-hackmit
+  url: https://plume.hackmit.org/
+  source_kind: unknown
+  event_edition: unknown
+  collection_method: string-in-fetched-script
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:05:01Z'
+  evidence: URL string present in the current-site, 2024, and 2025 module scripts that were fetched as
+    classification hops. The URL itself was not requested.
+  claim_basis: code-observed
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: wii-hackmit
+  url: https://wii.hackmit.org
+  source_kind: unknown
+  event_edition: unknown
+  collection_method: string-in-fetched-script
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:05:01Z'
+  evidence: URL string present in the current-site module script. The URL itself was not requested.
+  claim_basis: code-observed
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: china-hackmit
+  url: https://china.hackmit.org
+  source_kind: unknown
+  event_edition: unknown
+  collection_method: string-in-fetched-script
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:05:02Z'
+  evidence: URL string present in the 2025 module script. The URL itself was not requested.
+  claim_basis: code-observed
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: coolhackgames-hackmit
+  url: http://coolhackgames.hackmit.org/
+  source_kind: unknown
+  event_edition: unknown
+  collection_method: string-in-fetched-script
+  approval_status: discovered
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:05:02Z'
+  evidence: URL string present in the 2025 module script. The URL itself was not requested.
+  claim_basis: code-observed
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-detection-of-breast-cancer-based-on-image-analysis
+  url: https://devpost.com/software/detection-of-breast-cancer-based-on-image-analysis
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-core-fh4pvs
+  url: https://devpost.com/software/core-fh4pvs
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-dispenser
+  url: https://devpost.com/software/dispenser
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-pilot-81xkaf
+  url: https://devpost.com/software/pilot-81xkaf
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-verifast
+  url: https://devpost.com/software/verifast
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-studydate-vxpws8
+  url: https://devpost.com/software/studydate-vxpws8
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-text2test
+  url: https://devpost.com/software/text2test
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-afar
+  url: https://devpost.com/software/afar
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-hackmit2019-qcu9y7
+  url: https://devpost.com/software/hackmit2019-qcu9y7
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-onpause
+  url: https://devpost.com/software/onpause
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-hackmit-xdjoke
+  url: https://devpost.com/software/hackmit-xdjoke
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-hackmit2019
+  url: https://devpost.com/software/hackmit2019
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-rap-scorer
+  url: https://devpost.com/software/rap-scorer
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-eye-in-the-sky-nm1l3k
+  url: https://devpost.com/software/eye-in-the-sky-nm1l3k
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-villager-49dkvf
+  url: https://devpost.com/software/villager-49dkvf
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-lgtm
+  url: https://devpost.com/software/lgtm
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-mpgreen
+  url: https://devpost.com/software/mpgreen
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
+- id: devpost-homeup
+  url: https://devpost.com/software/homeup
+  source_kind: project-page
+  event_edition: unknown
+  collection_method: href-on-fetched-page
+  approval_status: permission-pending
+  access_status: not-attempted
+  observed_at: '2026-09-28T13:01:14Z'
+  evidence: Href observed on https://archive.hackmit.org/2020/ under the heading "Past HackMIT Projects".
+    HTTP status unknown. Not fetched. Devpost automated collection is disabled. The URL is not assigned
+    to an event edition.
+  claim_basis: source-reported
+  policy_refs:
+  - AGENTS.md#access-and-security
+  - AGENTS.md#data-rules
