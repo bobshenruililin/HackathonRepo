@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 
+import { assertCatalogFields, buildRecordDetails, readSummary, readTitle } from "./details.js";
 import type { CatalogRecord } from "./types.js";
 
 export function loadCatalog(catalogDir: string): CatalogRecord[] {
@@ -38,16 +39,32 @@ function parseRecord(filePath: string, fileName: string): CatalogRecord {
     throw new Error(`${fileName} must be a JSON object`);
   }
 
+  assertCatalogFields(parsed, fileName);
   const id = requiredString(parsed, "id", fileName);
-  const title = requiredString(parsed, "title", fileName);
-  const summary = requiredString(parsed, "summary", fileName);
+  const title = readTitle(parsed, fileName);
+  const summary = readSummary(parsed, fileName);
+  const syntheticFlagRecorded = Object.hasOwn(parsed, "synthetic");
   const synthetic = optionalBoolean(parsed, "synthetic", fileName);
-  return { id, title, summary, synthetic };
+  const built = buildRecordDetails(parsed, fileName, {
+    id,
+    title,
+    summary: summary.source,
+    synthetic,
+    syntheticFlagRecorded,
+  });
+  return {
+    id,
+    title,
+    summary: summary.column,
+    synthetic,
+    searchText: built.searchText,
+    details: built.details,
+  };
 }
 
 function requiredString(
   value: Record<string, unknown>,
-  field: "id" | "title" | "summary",
+  field: "id",
   fileName: string,
 ): string {
   const raw = value[field];

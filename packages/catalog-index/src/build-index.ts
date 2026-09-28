@@ -15,12 +15,19 @@ export function buildIndex(options: BuildIndexOptions): RecordCounts {
   try {
     createSchema(db);
     const insert = db.prepare(
-      "INSERT INTO records (id, title, summary, synthetic) VALUES (?, ?, ?, ?)",
+      "INSERT INTO records (id, title, summary, synthetic, search_text, details_json) VALUES (?, ?, ?, ?, ?, ?)",
     );
     db.exec("BEGIN");
     try {
       for (const record of records) {
-        insert.run(record.id, record.title, record.summary, record.synthetic ? 1 : 0);
+        insert.run(
+          record.id,
+          record.title,
+          record.summary,
+          record.synthetic ? 1 : 0,
+          record.searchText,
+          JSON.stringify(record.details),
+        );
       }
       db.exec("COMMIT");
     } catch (error) {

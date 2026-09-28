@@ -4,6 +4,8 @@ Builds a local SQLite FTS5 index from catalog JSON files. The database is genera
 
 `countRecords` reports `real` and `synthetic` separately. A record counts as synthetic only when its `synthetic` field is `true`. The committed fixture is labeled synthetic and does not increase the real count. It is not a HackMIT project.
 
+`listRecords` and `getRecord` read the same rows. Optional evidence, submissions, repositories, and claims are stored in `details_json`. Missing fields are stored as unknown. `records_fts` indexes `title`, `summary`, and `search_text`. `search_text` is built from known optional values. Unknown reasons are left out of that text. Rebuild the index after this column change. The database stays generated and is not canonical.
+
 `@hackathon-atlas/schema` is a separate workspace package. This package does not rewrite that package's contracts, fixtures, or tests. Root `pnpm typecheck` and `pnpm test` run the schema package scripts because `packages/*` is a workspace glob.
 
 ## Versions checked before pinning
