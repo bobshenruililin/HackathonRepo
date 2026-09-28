@@ -2,7 +2,7 @@
 
 Controlled vocabulary for Hackathon Atlas. The twelve dimensions in `TAXONOMY_DIMENSIONS` are the whole list. A new dimension belongs in that list only after a recorded proposal. This package has no function that adds a dimension.
 
-Accepted values start empty. The package does not seed labels and does not store projects.
+`createTaxonomyRegistry()` starts empty. `hackmitTrackTaxonomy()` is a separate registry that accepts five source-reported gallery track labels as problem-domain values: education, healthcare, sustainability, entertainment, and interactive-media. A track label is not an inferred product fact. The other eleven dimensions stay unaccepted in that registry. The package does not store projects.
 
 ## Proposal and acceptance
 
