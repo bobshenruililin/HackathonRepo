@@ -1,0 +1,551 @@
+{
+  "authority": "staging",
+  "authoritative": false,
+  "synthetic": false,
+  "datasetLabel": "code-observed-slice-3",
+  "description": "Staging only. Four observeRepository reports for catalog repositories that already have a GitHub locator. This file is not the canonical catalog.",
+  "entries": [
+    {
+      "projectId": "prj_00c478d61bbe1edbd5155b43",
+      "projectName": "cashew",
+      "catalogLocator": "https://github.com/khanhkhuat1504/cashew",
+      "pinnedRevision": "4eb5d06188afae1f146a779e45d5c51047d5ca1b",
+      "manifestStatus": "no-root-manifest",
+      "manifestNote": "The commit was pinned and no root manifest was present.",
+      "manifestsRead": [],
+      "manifestsAbsent": [
+        "package.json",
+        "requirements.txt",
+        "go.mod",
+        "Cargo.toml",
+        "pyproject.toml"
+      ],
+      "retrievedAt": "2026-09-28T19:53:06.265Z",
+      "report": {
+        "synthetic": false,
+        "revision": {
+          "status": "known",
+          "value": "4eb5d06188afae1f146a779e45d5c51047d5ca1b"
+        },
+        "observations": [],
+        "languages": [],
+        "frameworks": [],
+        "award": {
+          "status": "unknown",
+          "reason": "An award is never inferred from a repository."
+        },
+        "projects": [],
+        "counts": {
+          "realProjects": 0,
+          "realObservations": 0,
+          "syntheticObservations": 0
+        }
+      }
+    },
+    {
+      "projectId": "prj_014633fa39a0482ab9bfdf1a",
+      "projectName": "ClosePilot",
+      "catalogLocator": "https://github.com/rahmagiwa/closepilot",
+      "pinnedRevision": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "manifestStatus": "read",
+      "manifestsRead": [
+        "package.json"
+      ],
+      "manifestsAbsent": [
+        "requirements.txt",
+        "go.mod",
+        "Cargo.toml",
+        "pyproject.toml"
+      ],
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "report": {
+        "synthetic": false,
+        "revision": {
+          "status": "known",
+          "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+        },
+        "observations": [
+          {
+            "name": "Scoped npm package eslint/js",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "Scoped npm package types/react",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "Scoped npm package types/react-dom",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "Scoped npm package vitejs/plugin-react",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "eslint",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "eslint-plugin-react-hooks",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "eslint-plugin-react-refresh",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "globals",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "react",
+            "role": "framework",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "react-dom",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "vite",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          }
+        ],
+        "languages": [],
+        "frameworks": [
+          {
+            "name": "react",
+            "role": "framework",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          }
+        ],
+        "award": {
+          "status": "unknown",
+          "reason": "An award is never inferred from a repository."
+        },
+        "projects": [],
+        "counts": {
+          "realProjects": 0,
+          "realObservations": 11,
+          "syntheticObservations": 0
+        }
+      }
+    },
+    {
+      "projectId": "prj_0194bff66e717ff33b2546c8",
+      "projectName": "hackmit2026.com",
+      "catalogLocator": "https://github.com/luciusscala/hackmit2026",
+      "pinnedRevision": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "manifestStatus": "read",
+      "manifestsRead": [
+        "package.json"
+      ],
+      "manifestsAbsent": [
+        "requirements.txt",
+        "go.mod",
+        "Cargo.toml",
+        "pyproject.toml"
+      ],
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "report": {
+        "synthetic": false,
+        "revision": {
+          "status": "known",
+          "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+        },
+        "observations": [
+          {
+            "name": "Scoped npm package react-three/drei",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "Scoped npm package react-three/fiber",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "Scoped npm package supabase/supabase-js",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "Scoped npm package tailwindcss/postcss",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "Scoped npm package types/node",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "Scoped npm package types/react",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "Scoped npm package types/react-dom",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "Scoped npm package vercel/analytics",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "eslint",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "eslint-config-next",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "next",
+            "role": "framework",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "react",
+            "role": "framework",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "react-dom",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "tailwindcss",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "three",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "typescript",
+            "role": "library",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          }
+        ],
+        "languages": [],
+        "frameworks": [
+          {
+            "name": "next",
+            "role": "framework",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          },
+          {
+            "name": "react",
+            "role": "framework",
+            "basis": "code-observed",
+            "revision": {
+              "status": "known",
+              "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+            },
+            "evidencePaths": [
+              "package.json"
+            ],
+            "synthetic": false
+          }
+        ],
+        "award": {
+          "status": "unknown",
+          "reason": "An award is never inferred from a repository."
+        },
+        "projects": [],
+        "counts": {
+          "realProjects": 0,
+          "realObservations": 16,
+          "syntheticObservations": 0
+        }
+      }
+    },
+    {
+      "projectId": "prj_01fd8f7eb80d2f3cddd7e105",
+      "projectName": "Wirehead",
+      "catalogLocator": "https://github.com/knosmos/hackmit25",
+      "pinnedRevision": "5f4877420e9a9bfe7182511d88b29b2dbaf61f9d",
+      "manifestStatus": "no-root-manifest",
+      "manifestNote": "The commit was pinned and no root manifest was present.",
+      "manifestsRead": [],
+      "manifestsAbsent": [
+        "package.json",
+        "requirements.txt",
+        "go.mod",
+        "Cargo.toml",
+        "pyproject.toml"
+      ],
+      "retrievedAt": "2026-09-28T19:53:20.005Z",
+      "report": {
+        "synthetic": false,
+        "revision": {
+          "status": "known",
+          "value": "5f4877420e9a9bfe7182511d88b29b2dbaf61f9d"
+        },
+        "observations": [],
+        "languages": [],
+        "frameworks": [],
+        "award": {
+          "status": "unknown",
+          "reason": "An award is never inferred from a repository."
+        },
+        "projects": [],
+        "counts": {
+          "realProjects": 0,
+          "realObservations": 0,
+          "syntheticObservations": 0
+        }
+      }
+    }
+  ]
+}
