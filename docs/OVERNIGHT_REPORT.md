@@ -84,22 +84,26 @@ A second run used the catalog at `52077869607b4ddb12767d69704581b1c2f5240e`, aft
 - 2-Player Hot Potato: direct `no-match` because `Beginner` is generic. Mechanism and demo unknown.
 - Window Share and TravelAR: direct and mechanism unknown. Demo `no-match` because the host is `youtube.com`.
 - Wirehead: direct matched 330 real projects. 185 share `Education`. The union also includes shared sponsor-challenge text. Mechanism unknown. Demo `no-match` (`youtube.com`).
-- EcoAI: direct matched 108 real projects. 95 share `Sustainability`. The union also includes one sponsor-challenge string. Mechanism unknown, including the code-observed library claims, because those statements do not use the mechanism wording (`built with`, dependency, or gallery technology). Demo `no-match` (`youtu.be`).
+- EcoAI: direct matched 108 real projects. 95 share `Sustainability`. The union also includes one sponsor-challenge string. Mechanism unknown, including the code-observed library claims, because those statements did not use the mechanism wording then in use (`built with`, dependency, or gallery technology). That measured result is a historical sample from before pull request #32. The sample has not been repeated on the new matcher. Demo `no-match` (`youtu.be`).
 
-Direct mode still treats a shared sponsor-challenge string as a match. Interaction analogues and distant structural analogues are not implemented. This second run was not repeated on the catalog that contains Kami, Spidey Sense, and Eve.
+Direct mode still treats a shared sponsor-challenge string as a match. Interaction analogues and distant structural analogues are not implemented. This second run was not repeated on the catalog that contains Kami, Spidey Sense, and Eve. It has not been repeated on the new matcher.
+
+Mechanism mode, as merged in pull request #32 (https://github.com/bobshenruililin/HackathonRepo/pull/32, merge `fa743de0ebe088399ee0c290232e6beb456835a9`), now treats the text before `is code-observed as a library`, `framework`, or `language` as a technology token. A shared token can match. `ai`, `web`, and `technology` stay generic. The words `code-observed`, `library`, `framework`, `language`, `revision`, `manifest`, and `path` are not tokens by themselves. Built With, dependency, and gallery wording is unchanged. This is token matching on claim text. It is not evidence that the package is called. Code-evidence paths on those claims stay unknown. It is not a recommendation and not an award inference. This note does not add an analogue sample.
 
 ## Tests
 
 `pnpm test` on Node 24.21.0 at the code-observed claims commit, before pull request #28: schema 26, ingest 14, catalog-index 16, cli 14, eval 7, taxonomy 8, repo-observations 21, analogues 19. All passed. Pull request #28 added one analogue test. GitHub Actions "Install, typecheck, and test" passed on pull requests #27, #28, and #29. Local `pnpm test` on the #29 commit passed, including catalog-index 17 and analogues 20. This docs revision does not re-run the suite.
 
-Explorer checks before the filter pull request merged: the generated index served event names, paged results ("Showing 1–40 of 2180"), award plus a known repository (69 on the earlier catalog; the catalog now has more prize pages), Window Share, and 2-Player Hot Potato on track Beginner. Playwright was not re-run at this commit.
+An earlier explorer check, before the filter pull request merged, used a generated index that served event names, paged results ("Showing 1–40 of 2180"), award plus a known repository (69 on that earlier catalog; the catalog now has more prize pages), Window Share, and 2-Player Hot Potato on track Beginner. Playwright was not re-run for that earlier check.
+
+The explorer was checked over HTTP against a generated index of `catalog/hackmit/catalog.json` at commit `e05382b61d301ee02bc6106bc04278968878f2fb`. Catalog, explorer, and catalog-index files are unchanged from that commit through current `origin/main` (`ec0702ba4a3ff48a3f9dd87f8ab884f0fe130096`). Node v24.21.0. Next.js dev server on 127.0.0.1. No browser and no Playwright. No code change. `/` returned 200. Real records 2180, synthetic 0. Showing 1–40 of 2180. Event names included HackMIT 2016–2026, HackMIT'14, Blueprint 2025, and Blueprint 2026. `/?award=known&repository=known` returned 200. Showing 1–40 of 84 real projects. First listed match GeomPT. EcoAI `prj_06575f6b37c3f9323711a862` returned 200, including the statement `Flask is code-observed as a framework` with basis code-observed, and locator `https://github.com/kbhatnagar1506/ecoai`. This newer check is the one that saw that code-observed Flask statement. Compare of EcoAI and Unwrap by id and by exact title returned 200 and showed the titles as different.
 
 ## Still open
 
 - `Preet37/money-maxing` was opened read-only. It does not match a catalog locator. `https://github.com/athm23/money-maxing` is a different owner and was not used.
 - Eve's inspected URL lowercases to the catalog locator `https://github.com/kierancschmitt/eve`. Dependency names from the opened root `package.json` are attached. No new project was created.
 - Eleven other inspected repositories stay unresolved. No project was created for them.
-- The second analogue sample was not repeated after Kami, Spidey Sense, and Eve were attached. Mechanism mode does not read a statement of the form `is code-observed as a library`.
+- The second analogue sample was not repeated after Kami, Spidey Sense, and Eve were attached. The EcoAI result that reported mechanism `unknown` was run before the pull request #32 matcher. That sample has not been repeated on the new matcher. The remaining step for this matcher is to sample mechanism mode again on the current catalog.
 - Direct mode still matches a shared sponsor-challenge string. Interaction analogues and distant structural analogues are not built.
 - Removal intake is still undefined.
 - The second security pass is done and does not accept M0.
