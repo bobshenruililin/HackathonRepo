@@ -73,6 +73,23 @@ describe("HackMIT schema catalog", () => {
           item.locator.value === "https://github.com/vedant-a-joshi/mit-blueprint-25-submission",
       ),
     ).toBe(true);
+
+    const travel = searchRecords(dbPath, "TravelAR").find((hit) => hit.title === "TravelAR");
+    expect(travel).toBeDefined();
+    const travelRecord = getRecord(dbPath, travel?.id ?? "");
+    expect(
+      travelRecord?.details.submissions.some(
+        (submission) => submission.eventName.status === "known" && submission.eventName.value === "HackMIT 2017",
+      ),
+    ).toBe(true);
+    expect(
+      travelRecord?.details.repositories.some(
+        (item) => item.locator.status === "known" && item.locator.value === "https://github.com/averylamp/travelar",
+      ),
+    ).toBe(true);
+    expect(
+      travelRecord?.details.claims.some((claim) => claim.statement.includes("Best Use of Amadeus APIs")),
+    ).toBe(true);
   });
 });
 

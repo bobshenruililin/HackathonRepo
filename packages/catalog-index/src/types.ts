@@ -102,4 +102,8 @@ export type ListFilters = {
   reviewStatus?: "" | "unknown" | ReviewStatus;
   eventId?: string;
   repository?: "" | "unknown" | "known";
+  /** "known" requires an award, prize, or winner claim. "unknown" requires none. */
+  award?: "" | "unknown" | "known";
+  /** "unknown" requires no track claim. Any other value must appear in a track claim. */
+  track?: string;
 };

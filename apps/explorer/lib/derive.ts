@@ -28,7 +28,7 @@ export function deriveRecord(record: CatalogRecord): DerivedFields {
     countedInRealTotal,
     realityLabel: countedInRealTotal ? "Counted in the real index total" : "Not a real project",
     realityDetail: countedInRealTotal
-      ? "The index counts this record in the real total from the stored synthetic flag. This page repeats that flag and does not supply an event, a prize, or a source."
+      ? "The index counts this record in the real total from the stored synthetic flag. Event, prize, and source text below are whatever the index stored."
       : "The catalog file set synthetic to true. The index excludes this record from the real count.",
     evidenceCount: record.details.evidence.length,
     submissionCount: record.details.submissions.length,
@@ -38,16 +38,46 @@ export function deriveRecord(record: CatalogRecord): DerivedFields {
   };
 }
 
+export type EventOption = {
+  id: string;
+  label: string;
+};
+
 export function knownEventIds(records: readonly CatalogRecord[]): string[] {
-  const ids = new Set<string>();
+  return knownEventOptions(records).map((option) => option.id);
+}
+
+export function knownEventOptions(records: readonly CatalogRecord[]): EventOption[] {
+  const names = new Map<string, string>();
   for (const record of records) {
     for (const submission of record.details.submissions) {
-      if (submission.eventId.status === "known") {
-        ids.add(submission.eventId.value);
+      if (submission.eventId.status !== "known") continue;
+      const id = submission.eventId.value;
+      const name = submission.eventName.status === "known" ? submission.eventName.value : "";
+      const current = names.get(id);
+      if (current === undefined || (current === "" && name !== "")) {
+        names.set(id, name);
       }
     }
   }
-  return [...ids].sort();
+  return [...names.entries()]
+    .map(([id, name]) => ({
+      id,
+      label: name === "" ? `Unknown event name (${id})` : name,
+    }))
+    .sort((left, right) => left.label.localeCompare(right.label) || left.id.localeCompare(right.id));
+}
+
+export function eventLabels(record: CatalogRecord): string[] {
+  const labels: string[] = [];
+  for (const submission of record.details.submissions) {
+    if (submission.eventName.status === "known") {
+      labels.push(submission.eventName.value);
+    } else if (submission.eventId.status === "known") {
+      labels.push(`Unknown event name (${submission.eventId.value})`);
+    }
+  }
+  return labels;
 }
 
 export function formatKnown(value: KnownOrUnknown | undefined, missing: string): string {

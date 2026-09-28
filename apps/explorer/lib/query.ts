@@ -3,6 +3,7 @@ import type { ListFilters } from "@hackathon-atlas/catalog-index";
 const BASIS = new Set(["", "unknown", "source-reported", "code-observed", "test-observed", "inferred"]);
 const REVIEW = new Set(["", "unknown", "unreviewed", "accepted", "rejected"]);
 const REPOSITORY = new Set(["", "unknown", "known"]);
+const AWARD = new Set(["", "unknown", "known"]);
 
 export type ExplorerQuery = {
   filters: ListFilters;
@@ -12,6 +13,9 @@ export type ExplorerQuery = {
   reviewStatus: string;
   eventId: string;
   repository: string;
+  award: string;
+  track: string;
+  page: number;
 };
 
 export function toFtsQuery(raw: string): { query: string; note?: string } {
@@ -39,6 +43,11 @@ export function readExplorerQuery(
   const repository = allowed(first(params.repository), REPOSITORY);
   const eventRaw = first(params.eventId).trim();
   const eventId = /^[A-Za-z0-9_-]{0,200}$/.test(eventRaw) ? eventRaw : "";
+  const award = allowed(first(params.award), AWARD);
+  const trackRaw = first(params.track).trim().slice(0, 80);
+  const track = /^[\p{L}\p{N} ._+-]{0,80}$/u.test(trackRaw) ? trackRaw : "";
+  const pageRaw = Number(first(params.page));
+  const page = Number.isInteger(pageRaw) && pageRaw > 0 ? pageRaw : 1;
   return {
     filters: {
       query: keyword.query,
@@ -46,6 +55,8 @@ export function readExplorerQuery(
       reviewStatus: reviewStatus as ListFilters["reviewStatus"],
       repository: repository as ListFilters["repository"],
       eventId,
+      award: award as ListFilters["award"],
+      track,
     },
     keywordInput,
     keywordNote: keyword.note,
@@ -53,6 +64,9 @@ export function readExplorerQuery(
     reviewStatus,
     eventId,
     repository,
+    award,
+    track,
+    page,
   };
 }
 

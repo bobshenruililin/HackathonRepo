@@ -264,6 +264,68 @@ describe("listRecords", () => {
     );
   });
 
+  it("filters award and track claims without treating them as a project count", () => {
+    const catalogDir = tempDir();
+    writeFileSync(
+      path.join(catalogDir, "award.json"),
+      JSON.stringify({
+        id: "synthetic-award-track",
+        title: "SYNTHETIC TEST ONLY award track",
+        summary: "Labeled synthetic unit-test input. Not a hackathon project.",
+        synthetic: true,
+        claims: [
+          {
+            id: "clm_award",
+            synthetic: true,
+            statement: "The gallery card states the award label Winner.",
+            basis: "source-reported",
+            reviewStatus: "unreviewed",
+          },
+          {
+            id: "clm_track",
+            synthetic: true,
+            statement: "The gallery card names the track Beginner.",
+            basis: "source-reported",
+            reviewStatus: "unreviewed",
+          },
+        ],
+      }),
+    );
+    writeFileSync(
+      path.join(catalogDir, "plain.json"),
+      JSON.stringify({
+        id: "synthetic-no-award",
+        title: "SYNTHETIC TEST ONLY no award",
+        summary: "Labeled synthetic unit-test input. Not a hackathon project.",
+        synthetic: true,
+        claims: [
+          {
+            id: "clm_plain",
+            synthetic: true,
+            statement: "The staged project name is Synthetic.",
+            basis: "source-reported",
+            reviewStatus: "unreviewed",
+          },
+        ],
+      }),
+    );
+    const dbPath = path.join(catalogDir, "index.sqlite");
+    expect(buildIndex({ catalogDir, dbPath })).toEqual({ real: 0, synthetic: 2 });
+    expect(listRecords(dbPath, { award: "known" }).map((record) => record.id)).toEqual([
+      "synthetic-award-track",
+    ]);
+    expect(listRecords(dbPath, { award: "unknown" }).map((record) => record.id)).toEqual([
+      "synthetic-no-award",
+    ]);
+    expect(listRecords(dbPath, { track: "Beginner" }).map((record) => record.id)).toEqual([
+      "synthetic-award-track",
+    ]);
+    expect(listRecords(dbPath, { track: "unknown" }).map((record) => record.id)).toEqual([
+      "synthetic-no-award",
+    ]);
+    expect(countRecords(dbPath)).toEqual({ real: 0, synthetic: 2 });
+  });
+
   it("throws when the generated index is missing", () => {
     const dbPath = path.join(tempDir(), "missing.sqlite");
     expect(() => listRecords(dbPath)).toThrow(MissingIndexError);
