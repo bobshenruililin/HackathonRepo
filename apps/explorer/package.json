@@ -1,0 +1,31 @@
+{
+  "name": "@hackathon-atlas/explorer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 3000",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1 --port 3000",
+    "typecheck": "tsc --noEmit",
+    "pretypecheck": "pnpm --filter @hackathon-atlas/catalog-index build",
+    "build-index": "node scripts/build-smoke-index.mjs",
+    "prebuild-index": "pnpm --filter @hackathon-atlas/catalog-index build",
+    "prebuild": "pnpm --filter @hackathon-atlas/catalog-index build",
+    "predev": "pnpm --filter @hackathon-atlas/catalog-index build",
+    "pretest:e2e": "pnpm --filter @hackathon-atlas/catalog-index build && pnpm build",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@hackathon-atlas/catalog-index": "workspace:*",
+    "next": "16.3.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.19.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2"
+  }
+}

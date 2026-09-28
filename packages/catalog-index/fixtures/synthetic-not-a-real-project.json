@@ -1,0 +1,6 @@
+{
+  "id": "synthetic-fixture-not-a-real-project",
+  "title": "SYNTHETIC FIXTURE: Not a real hackathon project",
+  "summary": "Labeled synthetic record used only by tests. It is not a HackMIT project and must not increase the real record count.",
+  "synthetic": true
+}

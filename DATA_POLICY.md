@@ -48,7 +48,7 @@ Links and minimal evidence quotes are the proposed shareable layer. Archive page
 
 This draft does not grant rights to republish source text, images, or code from HackMIT, Devpost, or any other third party.
 
-**Proposed (not implemented, not owner-approved):** block export of archive pages, project media, and third-party source as a dataset. The concrete paths are unknown because this pull request does not create the workspace.
+**Proposed (not implemented, not owner-approved):** block export of archive pages, project media, and third-party source as a dataset. The workspace scaffold exists. The concrete export-block paths are still unknown, and this draft does not implement them.
 
 ## Attribution
 

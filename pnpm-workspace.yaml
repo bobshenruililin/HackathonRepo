@@ -1,0 +1,5 @@
+# Globs include a future packages/schema workspace package automatically.
+# Root scripts use pnpm -r, so they keep working while that package is absent.
+packages:
+  - "apps/*"
+  - "packages/*"

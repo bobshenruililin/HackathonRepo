@@ -1,0 +1,17 @@
+{
+  "name": "hackathon-atlas",
+  "private": true,
+  "packageManager": "pnpm@12.6.0+sha512-PvaPlRyxEawgS0paFvCy3fDaVqluBBPoHYVdnwtV75JnFHCQKOHNAMQFwsX7e56OxNxGd3yAXQNzwvL/AP0g7A==",
+  "engines": {
+    "node": "24.21.0"
+  },
+  "scripts": {
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "test:e2e": "pnpm -r --if-present test:e2e",
+    "dev": "pnpm --filter @hackathon-atlas/explorer dev",
+    "build-index": "pnpm --filter @hackathon-atlas/explorer build-index",
+    "build": "pnpm --filter @hackathon-atlas/explorer build",
+    "start": "pnpm --filter @hackathon-atlas/explorer start"
+  }
+}

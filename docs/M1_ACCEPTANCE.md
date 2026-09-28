@@ -2,9 +2,9 @@
 
 **Status: proposed. Not started. Not approved.**
 
-M1 means the milestone after M0. Nothing in this file starts M1, schedules it, or records owner approval. Criteria below are the proposed checks for that later milestone. They are measurable so a future verifier can apply them without reinterpretation. Commands, package scripts, and schema field names are unknown until the workspace and schema package exist. Do not treat a missing command as a pass.
+M1 means the milestone after M0. Nothing in this file starts M1, schedules it, or records owner approval. Criteria below are the proposed checks for that later milestone. They are measurable so a future verifier can apply them without reinterpretation. Schema field names are in `packages/schema`. Workspace commands are in the package manifests. Do not treat a missing command as a pass.
 
-M0 is still in progress. The full explorer is not part of M0. Passing M0 does not require M1.
+The schema package and the root workspace scaffold exist. Their commands are in the package manifests. The coordinator's install, typecheck, Vitest, and Playwright results are in `ops/STATE.md`. Those results are not M1 criteria. M0's full explorer is still out of scope. Passing M0 does not require M1.
 
 ## Criteria
 
@@ -47,7 +47,7 @@ This criterion is about scope, not about forbidding a later explorer. M1 does no
 - A chosen license. The owner has not chosen one. License selection is an owner blocker, not an M1 pass condition invented here.
 - A target number of projects, repositories, or pages.
 - A passing parser, a green typecheck, or a source URL, as proof that a claim is true.
-- Install, typecheck, Vitest, or Playwright results. They have not been run. Their future commands are unknown.
+- Install, typecheck, Vitest, or Playwright results. The coordinator recorded those commands for the workspace scaffold in `ops/STATE.md`. A green check is not proof that a claim is true, and it is not an M1 result.
 
 ## Current result
 
