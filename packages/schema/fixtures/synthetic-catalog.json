@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "0.1.0",
+  "authority": "canonical-catalog",
+  "authoritative": true,
+  "synthetic": true,
+  "datasetLabel": "synthetic-fixtures",
+  "fixtureWarning": "SYNTHETIC FIXTURE. Not a real project. Do not count these records as real projects.",
+  "events": [
+    {
+      "id": "evt_synthetic_north_0001",
+      "synthetic": true,
+      "name": "SYNTHETIC North Demo Event",
+      "startsAt": { "status": "known", "value": "2099-01-01T00:00:00.000Z" },
+      "endsAt": { "status": "known", "value": "2099-01-02T00:00:00.000Z" }
+    },
+    {
+      "id": "evt_synthetic_south_0001",
+      "synthetic": true,
+      "name": "SYNTHETIC South Demo Event",
+      "startsAt": {
+        "status": "unknown",
+        "reason": "No start time was supplied for this synthetic event."
+      },
+      "endsAt": {
+        "status": "unknown",
+        "reason": "No end time was supplied for this synthetic event."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj_synthetic_paper_boat_0001",
+      "synthetic": true,
+      "name": "SYNTHETIC Paper Boat",
+      "summary": {
+        "status": "unknown",
+        "reason": "No summary was supplied for this synthetic project."
+      }
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub_synthetic_paper_boat_north_0001",
+      "synthetic": true,
+      "projectId": "prj_synthetic_paper_boat_0001",
+      "eventId": "evt_synthetic_north_0001",
+      "submittedAt": {
+        "status": "unknown",
+        "reason": "No submission time was supplied for this synthetic submission."
+      }
+    },
+    {
+      "id": "sub_synthetic_paper_boat_south_0001",
+      "synthetic": true,
+      "projectId": "prj_synthetic_paper_boat_0001",
+      "eventId": "evt_synthetic_south_0001",
+      "submittedAt": {
+        "status": "unknown",
+        "reason": "No submission time was supplied for this synthetic submission."
+      }
+    }
+  ],
+  "repositories": [
+    {
+      "id": "repo_synthetic_paper_boat_app_0001",
+      "synthetic": true,
+      "projectId": "prj_synthetic_paper_boat_0001",
+      "locator": {
+        "status": "known",
+        "value": "https://example.invalid/synthetic/paper-boat-app"
+      }
+    },
+    {
+      "id": "repo_synthetic_paper_boat_notes_0001",
+      "synthetic": true,
+      "projectId": "prj_synthetic_paper_boat_0001",
+      "locator": {
+        "status": "unknown",
+        "reason": "No repository locator was supplied for this synthetic repository."
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evd_synthetic_source_0001",
+      "kind": "source",
+      "synthetic": true,
+      "sourceUrl": "https://example.invalid/synthetic/paper-boat-source",
+      "retrievedAt": "2099-01-03T00:00:00.000Z",
+      "excerpt": {
+        "kind": "third-party-excerpt",
+        "attribution": "SYNTHETIC third-party source label",
+        "quote": "SYNTHETIC quote: this sentence is not from a real project."
+      }
+    },
+    {
+      "id": "evd_synthetic_code_0001",
+      "kind": "code",
+      "synthetic": true,
+      "repositoryId": "repo_synthetic_paper_boat_app_0001",
+      "inspectedRevision": "SYNTHETIC-COMMIT-paper-boat-app-0001",
+      "observedAt": "2099-01-03T01:00:00.000Z",
+      "path": { "status": "known", "value": "SYNTHETIC.txt" }
+    },
+    {
+      "id": "evd_synthetic_test_0001",
+      "kind": "test",
+      "synthetic": true,
+      "repositoryId": "repo_synthetic_paper_boat_app_0001",
+      "inspectedRevision": "SYNTHETIC-COMMIT-paper-boat-app-0001",
+      "observedAt": "2099-01-03T02:00:00.000Z",
+      "result": {
+        "status": "unknown",
+        "reason": "No test result was observed for this synthetic revision."
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "clm_synthetic_name_0001",
+      "synthetic": true,
+      "subject": { "entity": "project", "id": "prj_synthetic_paper_boat_0001" },
+      "statement": "The synthetic fixture is named SYNTHETIC Paper Boat.",
+      "basis": "source-reported",
+      "evidenceIds": ["evd_synthetic_source_0001"],
+      "observedAt": "2099-01-03T03:00:00.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://example.invalid/synthetic/paper-boat-source",
+      "retrievedAt": "2099-01-03T00:00:00.000Z",
+      "repositoryInspected": false,
+      "resolution": { "status": "known", "value": "SYNTHETIC Paper Boat" }
+    },
+    {
+      "id": "clm_synthetic_code_0001",
+      "synthetic": true,
+      "subject": { "entity": "repository", "id": "repo_synthetic_paper_boat_app_0001" },
+      "statement": "A path named SYNTHETIC.txt was present in the inspected revision.",
+      "basis": "code-observed",
+      "evidenceIds": ["evd_synthetic_code_0001"],
+      "observedAt": "2099-01-03T03:30:00.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://example.invalid/synthetic/paper-boat-app",
+      "retrievedAt": "2099-01-03T01:00:00.000Z",
+      "repositoryInspected": true,
+      "inspectedCommitId": "SYNTHETIC-COMMIT-paper-boat-app-0001",
+      "resolution": { "status": "known", "value": "SYNTHETIC.txt" }
+    },
+    {
+      "id": "clm_synthetic_test_0001",
+      "synthetic": true,
+      "subject": { "entity": "repository", "id": "repo_synthetic_paper_boat_app_0001" },
+      "statement": "Whether the synthetic repository tests passed is unknown.",
+      "basis": "test-observed",
+      "evidenceIds": ["evd_synthetic_test_0001"],
+      "observedAt": "2099-01-03T04:00:00.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://example.invalid/synthetic/paper-boat-app",
+      "retrievedAt": "2099-01-03T02:00:00.000Z",
+      "repositoryInspected": true,
+      "inspectedCommitId": "SYNTHETIC-COMMIT-paper-boat-app-0001",
+      "resolution": {
+        "status": "unknown",
+        "reason": "The synthetic test evidence did not record a pass or fail."
+      }
+    },
+    {
+      "id": "clm_synthetic_inferred_0001",
+      "synthetic": true,
+      "subject": { "entity": "repository", "id": "repo_synthetic_paper_boat_app_0001" },
+      "statement": "The synthetic path name is a placeholder rather than a product feature.",
+      "basis": "inferred",
+      "evidenceIds": ["evd_synthetic_code_0001"],
+      "observedAt": "2099-01-03T04:30:00.000Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://example.invalid/synthetic/paper-boat-app",
+      "retrievedAt": "2099-01-03T01:00:00.000Z",
+      "repositoryInspected": true,
+      "inspectedCommitId": "SYNTHETIC-COMMIT-paper-boat-app-0001",
+      "resolution": { "status": "known", "value": "placeholder" }
+    }
+  ]
+}
