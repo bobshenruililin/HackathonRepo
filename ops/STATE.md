@@ -6,6 +6,8 @@ M0 foundation is on main as merge `2f877e39eefaafd1482dd5e77c28fdb7e6771005` (PR
 
 M1 collection did not start. On 2026-09-28 the registry on `589d87e` had 0 `approved` sources (29 `discovered`, 18 `permission-pending`). No genuine project records were accepted. The coverage report is `docs/M1_COVERAGE.md`. Devpost automation stays disabled.
 
+The 100-project ingest run on 2026-09-28 stopped before any fetch. `origin/main` at `538f526` still had 0 `approved` sources. Candidates examined: 0 of 500. Accepted: 0. The checkpoint is `docs/INGEST_CHECKPOINT.md`. That target did not approve collection.
+
 The workspace scaffold is on main. The coordinator ran install, typecheck, Vitest, and Playwright against commit `10b3e3c2a56870d581e5e4e2d691e9c337a54d05` on 2026-09-28. Those results, and the two GitHub Actions passes, are recorded below. They are not an owner approval of policy and not a collection approval.
 
 The second security pass is done. It does not accept M0. Report: `/cursor/stores/bc-57d64c88-331a-41ed-baf7-50dfe22d7fce/docs/m0-security-review-pass-2.md`. Reviewed commit: `4aa3fe2db2809b5c0563391127be5abf71b26e1a`. That commit is before PR #5 (`1311f2463630b4bbdb118413c04e9ca35a424a3c`). The pass's note that this file still marked the source audit and schema unknown applied to `4aa3fe2`, not to `1311f24`.
