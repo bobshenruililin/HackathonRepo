@@ -21,7 +21,11 @@ Run hackathon-atlas search against a generated SQLite index the caller supplies.
 
 A filter whose records column is absent stays status "unknown" and is not applied.
 Taxonomy dimensions with no accepted value stay unknown.
-Precedents and retrieval stay NOT MEASURED. This command does not run a labeled evaluation.
+hackmitTracks lists source-reported gallery track labels from hackmitTrackTaxonomy().
+They are not project assignments and not inferred product domains.
+The empty registry taxonomy section stays acceptedCount 0 and status unknown.
+Precedents and retrieval stay NOT MEASURED. Search hits are not precedents.
+This command does not run a labeled evaluation.
 `;
 
 export function defaultCliPath() {
@@ -75,11 +79,26 @@ export function taxonomySection(taxonomyApi, registry = taxonomyApi.createTaxono
   };
 }
 
+export function hackmitTracksSection(taxonomyApi) {
+  if (typeof taxonomyApi.hackmitTrackTaxonomy !== "function") {
+    throw new Error("Taxonomy package did not export hackmitTrackTaxonomy.");
+  }
+  const section = taxonomySection(taxonomyApi, taxonomyApi.hackmitTrackTaxonomy());
+  return {
+    status: section.status,
+    acceptedCount: section.acceptedCount,
+    reason:
+      "These are source-reported gallery track labels, not project assignments and not inferred product domains.",
+    dimensions: section.dimensions,
+  };
+}
+
 export function buildReport(search, taxonomyApi, registry) {
   assertSearchPayload(search);
   return {
     search,
     taxonomy: taxonomySection(taxonomyApi, registry),
+    hackmitTracks: hackmitTracksSection(taxonomyApi),
     precedents: {
       status: "NOT MEASURED",
       statement: "precedents are NOT MEASURED",
@@ -202,9 +221,10 @@ async function loadTaxonomy(taxonomyPath) {
   if (
     typeof taxonomyApi.createTaxonomyRegistry !== "function" ||
     typeof taxonomyApi.listAccepted !== "function" ||
+    typeof taxonomyApi.hackmitTrackTaxonomy !== "function" ||
     !Array.isArray(taxonomyApi.TAXONOMY_DIMENSIONS)
   ) {
-    throw new Error("Taxonomy package did not export the accepted-value registry.");
+    throw new Error("Taxonomy package did not export the accepted-value registry or hackmitTrackTaxonomy.");
   }
   return taxonomyApi;
 }
