@@ -77,17 +77,20 @@ A pattern note counted an earlier file (2,180 projects, before the last 22 prize
 
 ## Analogue sample
 
-`retrieveAnalogues` was run on the catalog at `8f1914d`, before the code-observed claims and before `Beginner` was ignored. The run used Node v22.22.2 because Node 24.21.0 was absent on that machine. Package tests on an in-memory fixture passed (19). The sample is not a recommendation and is not precision or recall.
+The first run used the catalog at `8f1914d`, before the code-observed claims and before `Beginner` was ignored. It used Node v22.22.2. Package tests on an in-memory fixture passed (19). 2-Player Hot Potato matched 140 real projects on `Beginner`.
 
-- 2-Player Hot Potato, Blueprint 2025: direct matched 140 real projects on the label `Beginner`. Mechanism and demo were unknown. Pull request #28 now treats that exact label as generic. The sample was not re-run after that change.
-- Window Share, HackMIT 2016, and TravelAR, HackMIT 2017: direct and mechanism unknown. Demo was `no-match` because the host is `youtube.com`.
-- Wirehead, HackMIT 2025, one project whose gallery track claim says Education: direct matched 330 real projects. 185 of those share `Education`. The union also includes shared sponsor-challenge text. Mechanism was unknown. Demo was `no-match` (`youtube.com`).
+A second run used the catalog at `52077869607b4ddb12767d69704581b1c2f5240e`, after `Beginner` was generic and after the first five code-observed repositories, and before Kami, Spidey Sense, and Eve were attached. Node v24.21.0. Package tests on the in-memory fixture passed (20). The sample is not a recommendation and is not precision or recall.
 
-Direct mode still treats a shared sponsor-challenge string as a match. Interaction analogues and distant structural analogues are not implemented. The sample was not repeated on the catalog that contains these eight code-observed repositories.
+- 2-Player Hot Potato: direct `no-match` because `Beginner` is generic. Mechanism and demo unknown.
+- Window Share and TravelAR: direct and mechanism unknown. Demo `no-match` because the host is `youtube.com`.
+- Wirehead: direct matched 330 real projects. 185 share `Education`. The union also includes shared sponsor-challenge text. Mechanism unknown. Demo `no-match` (`youtube.com`).
+- EcoAI: direct matched 108 real projects. 95 share `Sustainability`. The union also includes one sponsor-challenge string. Mechanism unknown, including the code-observed library claims, because those statements do not use the mechanism wording (`built with`, dependency, or gallery technology). Demo `no-match` (`youtu.be`).
+
+Direct mode still treats a shared sponsor-challenge string as a match. Interaction analogues and distant structural analogues are not implemented. This second run was not repeated on the catalog that contains Kami, Spidey Sense, and Eve.
 
 ## Tests
 
-`pnpm test` on Node 24.21.0 at the code-observed claims commit, before pull request #28: schema 26, ingest 14, catalog-index 16, cli 14, eval 7, taxonomy 8, repo-observations 21, analogues 19. All passed. Pull request #28 added one analogue test. GitHub Actions "Install, typecheck, and test" passed on pull requests #27 and #28. This docs revision does not re-run the suite.
+`pnpm test` on Node 24.21.0 at the code-observed claims commit, before pull request #28: schema 26, ingest 14, catalog-index 16, cli 14, eval 7, taxonomy 8, repo-observations 21, analogues 19. All passed. Pull request #28 added one analogue test. GitHub Actions "Install, typecheck, and test" passed on pull requests #27, #28, and #29. Local `pnpm test` on the #29 commit passed, including catalog-index 17 and analogues 20. This docs revision does not re-run the suite.
 
 Explorer checks before the filter pull request merged: the generated index served event names, paged results ("Showing 1–40 of 2180"), award plus a known repository (69 on the earlier catalog; the catalog now has more prize pages), Window Share, and 2-Player Hot Potato on track Beginner. Playwright was not re-run at this commit.
 
@@ -96,7 +99,7 @@ Explorer checks before the filter pull request merged: the generated index serve
 - `Preet37/money-maxing` was opened read-only. It does not match a catalog locator. `https://github.com/athm23/money-maxing` is a different owner and was not used.
 - Eve's inspected URL lowercases to the catalog locator `https://github.com/kierancschmitt/eve`. Dependency names from the opened root `package.json` are attached. No new project was created.
 - Eleven other inspected repositories stay unresolved. No project was created for them.
-- The analogue sample was not re-run after `Beginner` became generic, and it was not re-run after the five code-observed repositories landed.
+- The second analogue sample was not repeated after Kami, Spidey Sense, and Eve were attached. Mechanism mode does not read a statement of the form `is code-observed as a library`.
 - Direct mode still matches a shared sponsor-challenge string. Interaction analogues and distant structural analogues are not built.
 - Removal intake is still undefined.
 - The second security pass is done and does not accept M0.
