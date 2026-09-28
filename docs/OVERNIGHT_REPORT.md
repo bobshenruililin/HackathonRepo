@@ -1,6 +1,6 @@
 # Overnight report
 
-Catalog counts below are `catalog/hackmit/catalog.json`. This note was read from `origin/main` at `93d3ab705e8e5ea2837c2ef0c44e6787eb553463`. The catalog file was last changed in `b16f00e2a8336244b07363250364e04fc2f7046a`, which added code-observed dependency claims for Kami, Spidey Sense, and Eve onto the catalog from pull request #27. Pull request #28 did not change the catalog. Later commits through `93d3ab7` did not change that file. This is a record of what is in the repository now. It is not an acceptance of M0.
+Catalog counts below are `catalog/hackmit/catalog.json`. This note was read from `origin/main` at `4aeee36826fe8608eabcf54206243419758e9a68`. Pull request #44 attached unreviewed code-observed claims for GreenPlanner, Unwrap, and Prophecy. The earlier catalog change `b16f00e2a8336244b07363250364e04fc2f7046a` added code-observed dependency claims for Kami, Spidey Sense, and Eve onto the catalog from pull request #27. Pull request #28 did not change the catalog. This is a record of what is in the repository now. It is not an acceptance of M0.
 
 ## What is in the repository
 
@@ -20,11 +20,11 @@ The catalog was ingested from public gallery cards fetched on 2026-09-28, plus D
 | Synthetic projects | 0 |
 | Submissions | 2180 |
 | Repository locators | 921 |
-| Evidence | 2276 |
-| Claims | 5969 |
+| Evidence | 2279 |
+| Claims | 6002 |
 | Events | 12 |
 
-Claim basis in the file: source-reported 4870, inferred 942, code-observed 157, test-observed 0. Evidence kinds: source 2268, code 8. Review status is unreviewed. The catalog text contains no `@`.
+Claim basis in the file: source-reported 4870, inferred 942, code-observed 190, test-observed 0. Evidence kinds: source 2268, code 11. Review status is unreviewed. The catalog text contains no `@`.
 
 | Event | Projects | Known repository |
 | --- | ---: | ---: |
@@ -45,9 +45,9 @@ Blueprint is a separate event family. Start and end times are unknown. Sixty-two
 
 218 projects have an award, prize, or winner claim. 84 of those also have a repository locator. 455 projects have a demo-URL claim. 30 exact titles repeat across 66 project ids. `docs/DUPLICATE_TITLES.md` (pull request #39) compared known locators on those names: 0 names share one identical known locator, 11 have two or more different known locators, and 19 are unknown because at least one project has no repository. Projects were not merged.
 
-Eight repositories whose locators already matched a catalog project have code-observed dependency claims from public manifest names at a pinned commit: The Cambridge Sock Company, EcoAI, Mozaic, HeartFrame, Erbgut, Kami, Spidey Sense, and Eve. That is 149 technology claims on those projects, plus eight repository claims that an inspected revision was staged. Scoped npm package names are written without a leading at-sign. Code-evidence paths stay unknown; each technology statement names one manifest or file path. Eleven other inspected repositories were not attached, because the normalized locator was not already in the catalog. `Preet37/money-maxing` was opened and was not attached. The catalog locator `https://github.com/athm23/money-maxing` belongs to a project named Money Maxer and is a different owner. Awards were not inferred from these repositories.
+Eleven projects whose locators already matched a catalog project have code-observed dependency claims from public manifest names at a pinned commit: The Cambridge Sock Company, EcoAI, Mozaic, HeartFrame, Erbgut, Kami, Spidey Sense, Eve, GreenPlanner, Unwrap, and Prophecy. Technology claims of the form `is code-observed as a` number 179, on those 11 projects. Each of those projects also has one claim that an inspected revision was staged. GreenPlanner has 14 technology claims, Unwrap 15, and Prophecy 1 (`Python`). CampusMap still has no technology claims. Review status stays unreviewed. Code-evidence paths stay unknown. This is not an award inference and not evidence the package is called. Scoped npm package names are written without a leading at-sign. Each technology statement names one manifest or file path. Eleven other inspected repositories were not attached, because the normalized locator was not already in the catalog. `Preet37/money-maxing` was opened and was not attached. The catalog locator `https://github.com/athm23/money-maxing` belongs to a project named Money Maxer and is a different owner. Awards were not inferred from these repositories.
 
-Staging file `catalog/hackmit/staged/code-observed-slice-2.json` is on main (pull request #37). It is not the catalog. CampusMap's commit was pinned and no root manifest was present. GreenPlanner, Unwrap, and Prophecy have observation reports there. Those claims are not in `catalog/hackmit/catalog.json`.
+Staging file `catalog/hackmit/staged/code-observed-slice-2.json` is on main (pull request #37). It is not the catalog. CampusMap's commit was pinned and no root manifest was present. GreenPlanner, Unwrap, and Prophecy have observation reports there. Pull request #44 (merge `4aeee36826fe8608eabcf54206243419758e9a68`) attached those three projects' unreviewed code-observed claims to `catalog/hackmit/catalog.json`: 14 technology claims for GreenPlanner, 15 for Unwrap, and 1 for Prophecy (`Python`), plus one inspected-revision claim each. CampusMap still has no technology claims. Code evidence records: 11. Code-evidence paths stay unknown. This is not an award inference and not evidence the package is called.
 
 ## What the sources did not support
 
@@ -69,7 +69,7 @@ Precision and recall are **NOT MEASURED**. The gold set is six rechecked Devpost
 
 The filter "award claim and a known repository" returns 84 projects. That is a filter count, not precision or recall.
 
-Keyword scans for computer vision, physical-world-plus-AI, speech, and social matching were not treated as answers. Sponsor-challenge wording and unrelated titles match those words. Those four queries, and "README claims supported by repository evidence," stay **NOT MEASURED**. Eight projects now have code-observed dependency claims. That is not a measurement of the last query.
+Keyword scans for computer vision, physical-world-plus-AI, speech, and social matching were not treated as answers. Sponsor-challenge wording and unrelated titles match those words. Those four queries, and "README claims supported by repository evidence," stay **NOT MEASURED**. Eleven projects now have code-observed dependency claims. That is not a measurement of the last query.
 
 ## Taxonomy and patterns
 
@@ -106,7 +106,7 @@ The idea-precedent skill (`.cursor/skills/idea-precedent/SKILL.md`, pull request
 
 An earlier explorer check, before the filter pull request merged, used a generated index that served event names, paged results ("Showing 1–40 of 2180"), award plus a known repository (69 on that earlier catalog; the catalog now has more prize pages), Window Share, and 2-Player Hot Potato on track Beginner. Playwright was not re-run for that earlier check.
 
-The explorer was checked over HTTP against a generated index of `catalog/hackmit/catalog.json` at commit `e05382b61d301ee02bc6106bc04278968878f2fb`. `catalog/hackmit/catalog.json` and catalog-index are unchanged from that commit through current `origin/main` (`93d3ab705e8e5ea2837c2ef0c44e6787eb553463`). The staging file from pull request #37 is not that catalog. The explorer project page changed in pull request #41. That HTTP check did not show the derived Gallery track. Node v24.21.0. Next.js dev server on 127.0.0.1. No browser and no Playwright. That check did not change code. `/` returned 200. Real records 2180, synthetic 0. Showing 1–40 of 2180. Event names included HackMIT 2016–2026, HackMIT'14, Blueprint 2025, and Blueprint 2026. `/?award=known&repository=known` returned 200. Showing 1–40 of 84 real projects. First listed match GeomPT. EcoAI `prj_06575f6b37c3f9323711a862` returned 200, including the statement `Flask is code-observed as a framework` with basis code-observed, and locator `https://github.com/kbhatnagar1506/ecoai`. This newer check is the one that saw that code-observed Flask statement. Compare of EcoAI and Unwrap by id and by exact title returned 200 and showed the titles as different.
+The explorer was checked over HTTP against a generated index of `catalog/hackmit/catalog.json` at commit `e05382b61d301ee02bc6106bc04278968878f2fb`. `catalog/hackmit/catalog.json` changed in pull request #44. That HTTP check used the catalog at `e05382b61d301ee02bc6106bc04278968878f2fb` and did not show the GreenPlanner, Unwrap, or Prophecy code-observed claims. The staging file from pull request #37 is not that catalog. The explorer project page changed in pull request #41. That HTTP check did not show the derived Gallery track. Node v24.21.0. Next.js dev server on 127.0.0.1. No browser and no Playwright. That check did not change code. `/` returned 200. Real records 2180, synthetic 0. Showing 1–40 of 2180. Event names included HackMIT 2016–2026, HackMIT'14, Blueprint 2025, and Blueprint 2026. `/?award=known&repository=known` returned 200. Showing 1–40 of 84 real projects. First listed match GeomPT. EcoAI `prj_06575f6b37c3f9323711a862` returned 200, including the statement `Flask is code-observed as a framework` with basis code-observed, and locator `https://github.com/kbhatnagar1506/ecoai`. This newer check is the one that saw that code-observed Flask statement. Compare of EcoAI and Unwrap by id and by exact title returned 200 and showed the titles as different.
 
 ## Still open
 
@@ -115,8 +115,8 @@ The explorer was checked over HTTP against a generated index of `catalog/hackmit
 - Eleven other inspected repositories stay unresolved. No project was created for them.
 - The second analogue sample, on the catalog before Kami, Spidey Sense, and Eve, was not itself repeated. The EcoAI result that reported mechanism `unknown` was run before the pull request #32 matcher. That result stays a historical sample. `docs/MECHANISM_SAMPLE.md` is the later sample on the current catalog file.
 - Direct mode still matches a shared sponsor-challenge string. That is not a problem-domain assignment. Interaction analogues and distant structural analogues are not built.
-- GreenPlanner, Unwrap, and Prophecy have observation reports in `catalog/hackmit/staged/code-observed-slice-2.json`. Those claims are not in `catalog/hackmit/catalog.json`.
+- GreenPlanner, Unwrap, and Prophecy have unreviewed code-observed claims in `catalog/hackmit/catalog.json`: 14 technology claims for GreenPlanner, 15 for Unwrap, and 1 for Prophecy (`Python`), plus one inspected-revision claim each. CampusMap still has no technology claims. Code-evidence paths stay unknown. This is not an award inference and not evidence the package is called.
 - Removal intake is still undefined.
 - The second security pass is done and does not accept M0.
 
-The next catalog step is to review the promotion of GreenPlanner, Unwrap, and Prophecy only. Do not score the six fixed queries. Do not treat a sponsor challenge as a problem domain. Do not treat a missing gallery as an empty edition. M0 is not accepted.
+Do not score the six fixed queries. Do not treat a sponsor challenge as a problem domain. Do not treat a missing gallery as an empty edition. M0 is not accepted.
