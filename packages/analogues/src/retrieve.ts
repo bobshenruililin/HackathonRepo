@@ -115,7 +115,7 @@ function sharedEvidence(queryHits: readonly Hit[], otherHits: readonly Hit[]): S
 /**
  * Deterministic analogue retrieval.
  * `direct` shares a named track or challenge.
- * `mechanism` shares a dependency, Built With tag, or gallery technology.
+ * `mechanism` shares a dependency, Built With tag, gallery technology, or code-observed technology token.
  * `demo` shares a demo URL host.
  * Generic shared text and award labels do not match. Unknown stays unknown.
  */

@@ -462,6 +462,92 @@ describe("mechanism mode", () => {
     expect(result.status).toBe("no-match");
     expect(result.analogues).toEqual([]);
   });
+
+  it("shares a code-observed technology token", () => {
+    const catalog = fixture(
+      [{ id: "prj_synthetic_query" }, { id: "prj_synthetic_other" }],
+      [
+        {
+          id: "clm_query_flask",
+          projectId: "prj_synthetic_query",
+          basis: "code-observed",
+          statement:
+            "Flask is code-observed as a framework at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+        },
+        {
+          id: "clm_other_flask",
+          projectId: "prj_synthetic_other",
+          basis: "code-observed",
+          statement:
+            "Flask is code-observed as a framework at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+        },
+      ],
+    );
+
+    const result = retrieveAnalogues(catalog, "prj_synthetic_query", "mechanism");
+
+    expect(result.status).toBe("matched");
+    expect(result.analogues.map((analogue) => analogue.projectId)).toEqual(["prj_synthetic_other"]);
+    expect(result.analogues[0]?.shared.map((shared) => shared.text)).toEqual(["Flask"]);
+  });
+
+  it("does not match different code-observed technology tokens", () => {
+    const catalog = fixture(
+      [{ id: "prj_synthetic_query" }, { id: "prj_synthetic_other" }],
+      [
+        {
+          id: "clm_query_flask",
+          projectId: "prj_synthetic_query",
+          basis: "code-observed",
+          statement:
+            "Flask is code-observed as a framework at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+        },
+        {
+          id: "clm_other_react",
+          projectId: "prj_synthetic_other",
+          basis: "code-observed",
+          statement:
+            "react is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+        },
+      ],
+    );
+
+    const result = retrieveAnalogues(catalog, "prj_synthetic_query", "mechanism");
+
+    expect(result).toMatchObject({
+      status: "no-match",
+      reason: "No other project shares a specific value for this mode.",
+      analogues: [],
+    });
+  });
+
+  it("keeps the scoped npm package prefix as the display name", () => {
+    const catalog = fixture(
+      [{ id: "prj_synthetic_query" }, { id: "prj_synthetic_other" }],
+      [
+        {
+          id: "clm_query_types_node",
+          projectId: "prj_synthetic_query",
+          basis: "code-observed",
+          statement:
+            "Scoped npm package types/node is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+        },
+        {
+          id: "clm_other_types_node",
+          projectId: "prj_synthetic_other",
+          basis: "code-observed",
+          statement:
+            "Scoped npm package types/node is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+        },
+      ],
+    );
+
+    const result = retrieveAnalogues(catalog, "prj_synthetic_query", "mechanism");
+
+    expect(result.status).toBe("matched");
+    expect(result.analogues).toHaveLength(1);
+    expect(result.analogues[0]?.shared.map((shared) => shared.text)).toEqual(["Scoped npm package types/node"]);
+  });
 });
 
 describe("demo mode", () => {
