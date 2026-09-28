@@ -84,9 +84,11 @@ A second run used the catalog at `52077869607b4ddb12767d69704581b1c2f5240e`, aft
 - 2-Player Hot Potato: direct `no-match` because `Beginner` is generic. Mechanism and demo unknown.
 - Window Share and TravelAR: direct and mechanism unknown. Demo `no-match` because the host is `youtube.com`.
 - Wirehead: direct matched 330 real projects. 185 share `Education`. The union also includes shared sponsor-challenge text. Mechanism unknown. Demo `no-match` (`youtube.com`).
-- EcoAI: direct matched 108 real projects. 95 share `Sustainability`. The union also includes one sponsor-challenge string. Mechanism unknown, including the code-observed library claims, because those statements do not use the mechanism wording (`built with`, dependency, or gallery technology). Demo `no-match` (`youtu.be`).
+- EcoAI: direct matched 108 real projects. 95 share `Sustainability`. The union also includes one sponsor-challenge string. Mechanism unknown, including the code-observed library claims, because those statements did not use the mechanism wording then in use (`built with`, dependency, or gallery technology). That measured result is a historical sample from before pull request #32. The sample has not been repeated on the new matcher. Demo `no-match` (`youtu.be`).
 
-Direct mode still treats a shared sponsor-challenge string as a match. Interaction analogues and distant structural analogues are not implemented. This second run was not repeated on the catalog that contains Kami, Spidey Sense, and Eve.
+Direct mode still treats a shared sponsor-challenge string as a match. Interaction analogues and distant structural analogues are not implemented. This second run was not repeated on the catalog that contains Kami, Spidey Sense, and Eve. It has not been repeated on the new matcher.
+
+Mechanism mode, as merged in pull request #32 (https://github.com/bobshenruililin/HackathonRepo/pull/32, merge `fa743de0ebe088399ee0c290232e6beb456835a9`), now treats the text before `is code-observed as a library`, `framework`, or `language` as a technology token. A shared token can match. `ai`, `web`, and `technology` stay generic. The words `code-observed`, `library`, `framework`, `language`, `revision`, `manifest`, and `path` are not tokens by themselves. Built With, dependency, and gallery wording is unchanged. This is token matching on claim text. It is not evidence that the package is called. Code-evidence paths on those claims stay unknown. It is not a recommendation and not an award inference. This note does not add an analogue sample.
 
 ## Tests
 
@@ -99,7 +101,7 @@ Explorer checks before the filter pull request merged: the generated index serve
 - `Preet37/money-maxing` was opened read-only. It does not match a catalog locator. `https://github.com/athm23/money-maxing` is a different owner and was not used.
 - Eve's inspected URL lowercases to the catalog locator `https://github.com/kierancschmitt/eve`. Dependency names from the opened root `package.json` are attached. No new project was created.
 - Eleven other inspected repositories stay unresolved. No project was created for them.
-- The second analogue sample was not repeated after Kami, Spidey Sense, and Eve were attached. Mechanism mode does not read a statement of the form `is code-observed as a library`.
+- The second analogue sample was not repeated after Kami, Spidey Sense, and Eve were attached. The EcoAI result that reported mechanism `unknown` was run before the pull request #32 matcher. That sample has not been repeated on the new matcher. The remaining step for this matcher is to sample mechanism mode again on the current catalog.
 - Direct mode still matches a shared sponsor-challenge string. Interaction analogues and distant structural analogues are not built.
 - Removal intake is still undefined.
 - The second security pass is done and does not accept M0.
