@@ -1,0 +1,26 @@
+{
+  "name": "@hackathon-atlas/analogues",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Deterministic analogue retrieval over a schema 0.1.0 catalog. Matches shared track, technology, or demo-host claims. Does not use a network, an LLM, or a vector database.",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json && pnpm build",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "typescript": "7.0.2",
+    "vitest": "5.0.2"
+  }
+}
