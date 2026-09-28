@@ -1,0 +1,23 @@
+{
+  "name": "@hackathon-atlas/eval",
+  "private": true,
+  "type": "module",
+  "description": "Retrieval evaluation harness. Emits NOT MEASURED until a gold set and a real corpus exist. Does not invent projects or scores.",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json && pnpm build",
+    "test": "vitest run",
+    "bundle": "node dist/print-bundle.js"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "typescript": "7.0.2",
+    "vitest": "5.0.2"
+  }
+}
