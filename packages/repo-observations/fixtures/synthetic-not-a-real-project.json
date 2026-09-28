@@ -1,0 +1,14 @@
+{
+  "synthetic": true,
+  "datasetLabel": "synthetic-fixtures",
+  "fixtureWarning": "SYNTHETIC FIXTURE. Not a real project. Do not count these records as real projects.",
+  "revision": "SYNTHETIC-REVISION-paper-boat-0001",
+  "technologyNames": ["paperboat"],
+  "files": [{ "path": "README.md" }],
+  "excerpts": [
+    {
+      "path": "README.md",
+      "quote": "SYNTHETIC FIXTURE. Not a real project. This prose names paperboat and is not a copied README."
+    }
+  ]
+}

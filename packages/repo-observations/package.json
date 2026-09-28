@@ -1,0 +1,25 @@
+{
+  "name": "@hackathon-atlas/repo-observations",
+  "private": true,
+  "type": "module",
+  "description": "Read-only classification of caller-supplied repository listings and short excerpts. Does not fetch, clone, execute code, or invent projects.",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json && pnpm build",
+    "test": "vitest run"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "typescript": "7.0.2",
+    "vitest": "5.0.2"
+  }
+}
