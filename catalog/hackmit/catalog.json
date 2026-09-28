@@ -1851,6 +1851,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_03405763c688b74582c6fed5",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "lucide-react"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "lucide-react is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_f7f2bad80d65c5c5dd997b71"
@@ -2221,6 +2244,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_a6fbb98376c2a91bc274022b"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_03e0879ae4b3a6d71bf3a1c3",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/better-sqlite3"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "Scoped npm package types/better-sqlite3 is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
       },
       "synthetic": false
     },
@@ -4839,6 +4885,29 @@
       "subject": {
         "entity": "repository",
         "id": "repo_3a0a5d919ac8e40a478168af"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9b8b66b539ad8dcf89c084d5"
+      ],
+      "id": "clm_096000442fc30196ba1ec96a",
+      "inspectedCommitId": "38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "C++"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/timarnoldev/hackmit2026/tree/38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "statement": "C++ is code-observed as a language at revision 38f286275d7039d3688d4a00eb7fde5b6cc73737. Path: hardware/esp32_ticker/src/main.cpp.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_30b242b995ab22c4b256fc66"
       },
       "synthetic": false
     },
@@ -7637,6 +7706,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_0ec02ae78bac42d3e1e094e4",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "serialport"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "serialport is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/puppeteer/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_b5959a6f4eb9f6ea639631d5"
@@ -7897,6 +7989,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_163049a8b3e763ad69903654"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_3baa02d152c625aef357edec"
+      ],
+      "id": "clm_0f6c4837fe74a18b5c4e1d57",
+      "inspectedCommitId": "27202cb64499714be972b2a9ee078b7568fd63c3",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "streamlit"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/sinclairhansen/heartframe/tree/27202cb64499714be972b2a9ee078b7568fd63c3",
+      "statement": "streamlit is code-observed as a library at revision 27202cb64499714be972b2a9ee078b7568fd63c3. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_3bb039d5fe6d7e0e0d93576e"
       },
       "synthetic": false
     },
@@ -8645,6 +8760,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_00124c54a11dd0c449bd3068"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_10dd4b39eeaa6ca38fb64cf1",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "WTForms"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "WTForms is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
       },
       "synthetic": false
     },
@@ -9965,6 +10103,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_361dabf7f45a1532f04e4f9b"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_3baa02d152c625aef357edec"
+      ],
+      "id": "clm_133449be423c84a086ebd181",
+      "inspectedCommitId": "27202cb64499714be972b2a9ee078b7568fd63c3",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "pandas"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/sinclairhansen/heartframe/tree/27202cb64499714be972b2a9ee078b7568fd63c3",
+      "statement": "pandas is code-observed as a library at revision 27202cb64499714be972b2a9ee078b7568fd63c3. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_3bb039d5fe6d7e0e0d93576e"
       },
       "synthetic": false
     },
@@ -11641,6 +11802,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_16a7ca502f8caf28a04f1502",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "vitest"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "vitest is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_f110fb6f8c1df67430fcad5e"
@@ -13247,6 +13431,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_19574751a09bab6894506e04",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Flask-SQLAlchemy"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "Flask-SQLAlchemy is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_9f254ac4975751ce159b4077"
@@ -13353,6 +13560,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_7e4c371cc4c6957901e88663"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_199b2d8155d60323db56176f",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "ws"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "ws is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -14189,6 +14419,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_93591e021a8b886281e72eee"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_1ae9ce328245e5dd3b936cca",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/node"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "Scoped npm package types/node is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
       },
       "synthetic": false
     },
@@ -15733,6 +15986,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_1eaafe7940375f28fa3f17d6",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "tailwindcss"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "tailwindcss is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_0a0dc1987fc387770baaeac2"
@@ -16327,6 +16603,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_1fdbb5e3b49d8e71ab737102",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "playwright"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "playwright is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_4de7fabd2fa6533afe06c80a"
@@ -16587,6 +16886,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_357d402bdf0d023382a15982"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_2039d0215015082054b2e4d1",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/qrcode"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "Scoped npm package types/qrcode is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
       },
       "synthetic": false
     },
@@ -17559,6 +17881,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9b8b66b539ad8dcf89c084d5"
+      ],
+      "id": "clm_21cab99e61e06bd101122fba",
+      "inspectedCommitId": "38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "38f286275d7039d3688d4a00eb7fde5b6cc73737"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/timarnoldev/hackmit2026/tree/38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_8ef0faf9d9b5e4f99391e48e"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_115d245ae00746005e7b0229"
@@ -17599,6 +17944,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_0b7e24273aa0cc3aee93ee10"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_21d54184f2b738b300c6a3c5",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "email-validator"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "email-validator is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
       },
       "synthetic": false
     },
@@ -22465,6 +22833,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9b8b66b539ad8dcf89c084d5"
+      ],
+      "id": "clm_2b62bf6c0f8c310b2bdcfb6b",
+      "inspectedCommitId": "38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "plotly"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/timarnoldev/hackmit2026/tree/38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "statement": "plotly is code-observed as a library at revision 38f286275d7039d3688d4a00eb7fde5b6cc73737. Manifest path: pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_30b242b995ab22c4b256fc66"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_818b23bb89f4ce6d2b43d688"
@@ -22967,6 +23358,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_d5ff5a247fb30601a1e47565"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_2c4048819c8c65cc748db83f",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "requests"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "requests is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
       },
       "synthetic": false
     },
@@ -24291,6 +24705,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9b8b66b539ad8dcf89c084d5"
+      ],
+      "id": "clm_2ea08dd0c519c64f3f4ba545",
+      "inspectedCommitId": "38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "rapidfuzz"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/timarnoldev/hackmit2026/tree/38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "statement": "rapidfuzz is code-observed as a library at revision 38f286275d7039d3688d4a00eb7fde5b6cc73737. Manifest path: pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_30b242b995ab22c4b256fc66"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_02acaca6eeb41fb0b815905b"
@@ -24881,6 +25318,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_b6d6a1b4ca4f0ed16ca2e304"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_3baa02d152c625aef357edec"
+      ],
+      "id": "clm_2f9df00219d46a49d0b11cc1",
+      "inspectedCommitId": "27202cb64499714be972b2a9ee078b7568fd63c3",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "scikit-image"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/sinclairhansen/heartframe/tree/27202cb64499714be972b2a9ee078b7568fd63c3",
+      "statement": "scikit-image is code-observed as a library at revision 27202cb64499714be972b2a9ee078b7568fd63c3. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_3bb039d5fe6d7e0e0d93576e"
       },
       "synthetic": false
     },
@@ -25523,6 +25983,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_30caf81d54daf907709df500",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_f25a0cf690110a51fc774f9e"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_8f6ee7a0fcadc90e84593d65"
@@ -26069,6 +26552,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_6e4b2024ca1a2dd3fb79a475"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_32236dcae086c1552d7af922",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Flask-WTF"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "Flask-WTF is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
       },
       "synthetic": false
     },
@@ -27613,6 +28119,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_35ca88152f7bad7fbfbd6350",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Flask-Login"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "Flask-Login is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_1e17ad0cb0f1d71c98875429"
@@ -27741,6 +28270,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_4a7c5f352f6749a6f0ab7c05"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_361e6a9994ec0fa53d023744",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package capacitor/core"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "Scoped npm package capacitor/core is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
       },
       "synthetic": false
     },
@@ -29307,6 +29859,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_3935fb035455ef96dccb086e",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Flask-Migrate"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "Flask-Migrate is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_42f22596086d6c095cc1358d"
@@ -30051,6 +30626,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_1e1724c2f3d2c9941c3a0f46"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9b8b66b539ad8dcf89c084d5"
+      ],
+      "id": "clm_3aa7834944ce6e63b215e802",
+      "inspectedCommitId": "38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "pytest"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/timarnoldev/hackmit2026/tree/38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "statement": "pytest is code-observed as a library at revision 38f286275d7039d3688d4a00eb7fde5b6cc73737. Manifest path: pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_30b242b995ab22c4b256fc66"
       },
       "synthetic": false
     },
@@ -35819,6 +36417,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_3baa02d152c625aef357edec"
+      ],
+      "id": "clm_44a9d743b1096637a53afd79",
+      "inspectedCommitId": "27202cb64499714be972b2a9ee078b7568fd63c3",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "matplotlib"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/sinclairhansen/heartframe/tree/27202cb64499714be972b2a9ee078b7568fd63c3",
+      "statement": "matplotlib is code-observed as a library at revision 27202cb64499714be972b2a9ee078b7568fd63c3. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_3bb039d5fe6d7e0e0d93576e"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_301994613f328b49b937ed69"
@@ -36475,6 +37096,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_6858eac95a248b1a5763be01"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_45d330151dd659709b5c3bee",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "eslint"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "eslint is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
       },
       "synthetic": false
     },
@@ -37843,6 +38487,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_48b67d806331b0f92e552c6f",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "tsx"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "tsx is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/puppeteer/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_95eb557e39375efb2fdc38fa"
@@ -39181,6 +39848,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_e9757cc54e13942faa61a61c"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_4b9e1ad2b8711a53088b7bb7",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Flask"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "Flask is code-observed as a framework at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
       },
       "synthetic": false
     },
@@ -43299,6 +43989,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_3baa02d152c625aef357edec"
+      ],
+      "id": "clm_543f285595fdf01eb2746fff",
+      "inspectedCommitId": "27202cb64499714be972b2a9ee078b7568fd63c3",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "plotly"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/sinclairhansen/heartframe/tree/27202cb64499714be972b2a9ee078b7568fd63c3",
+      "statement": "plotly is code-observed as a library at revision 27202cb64499714be972b2a9ee078b7568fd63c3. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_3bb039d5fe6d7e0e0d93576e"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_3d845912f5103c7bf3b68682"
@@ -43801,6 +44514,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_b8558bfd0c93c07eb66ffb80"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_5543f18960b59921f11860d0",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "Scoped npm package types/react is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
       },
       "synthetic": false
     },
@@ -45741,6 +46477,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_5962b4e9cf288b2b07fcf29d",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Authlib"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "Authlib is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_b896c88fc93a77c077b8f7fc"
@@ -45913,6 +46672,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_a22000840559e97f06987423"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_5a03756db3d51dd969e1bc02",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "tailwind-merge"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "tailwind-merge is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -47457,6 +48239,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_5d4db72d144b25ffcf44a1da",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "qrcode"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "qrcode is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_4181f57f2e32415fcd037d67"
@@ -48487,6 +49292,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_a12aec481545f8f8bdd6d827"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_5fab3915bbaa89fab99e07d0",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "three"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "three is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -50203,6 +51031,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_49446af3f4a9e8bd6bd6e838"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_629ba733d2be4427267ae196",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package tailwindcss/vite"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package tailwindcss/vite is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -53353,6 +54204,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_67e88abfe8df41bd137574ed",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "class-variance-authority"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "class-variance-authority is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_2a8897d482f616526c13e2dc"
@@ -54079,6 +54953,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_69441d8c6ed351a0376f1e8b",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "zod"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "zod is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/puppeteer/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_4818e47c2997c595813aa015"
@@ -54361,6 +55258,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_9def6a4cf42afa0a749390ac"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_69f3886aab96db88b1df5ef7",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "python-dotenv"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "python-dotenv is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
       },
       "synthetic": false
     },
@@ -54893,6 +55813,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_6b41efd92f0ef4a3a97c2f3c",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package phosphor-icons/react"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "Scoped npm package phosphor-icons/react is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_fd3b0918553d7b30f5b65dae"
@@ -55043,6 +55986,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_f5e52dea75d779012f289725"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9b8b66b539ad8dcf89c084d5"
+      ],
+      "id": "clm_6ba3faa410abe1d9bc59707f",
+      "inspectedCommitId": "38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "numpy"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/timarnoldev/hackmit2026/tree/38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "statement": "numpy is code-observed as a library at revision 38f286275d7039d3688d4a00eb7fde5b6cc73737. Manifest path: pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_30b242b995ab22c4b256fc66"
       },
       "synthetic": false
     },
@@ -56125,6 +57091,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_6dea20eaa32bd4905a0a31ac",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "tsx"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "tsx is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_6de11feba4c3fee5127809ff"
@@ -56495,6 +57484,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_630e61519f89219172ce065d"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_6ea91cb3b19e06a4009a35d5",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "tailwindcss"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "tailwindcss is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -57573,6 +58585,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_da3e57dd00f8f186b5718dfa"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9b8b66b539ad8dcf89c084d5"
+      ],
+      "id": "clm_7078fe4c234cf8b2df467cd7",
+      "inspectedCommitId": "38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "pandas"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/timarnoldev/hackmit2026/tree/38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "statement": "pandas is code-observed as a library at revision 38f286275d7039d3688d4a00eb7fde5b6cc73737. Manifest path: pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_30b242b995ab22c4b256fc66"
       },
       "synthetic": false
     },
@@ -60019,6 +61054,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_7553784940d5454f97bea75a",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package capacitor/cli"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "Scoped npm package capacitor/cli is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_885ff382ae63b502c6c20368"
@@ -60635,6 +61693,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_767edb16009b13bf7cbe98cb",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react-dom"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "react-dom is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_9b3f438e2d015d2151919db9"
@@ -61027,6 +62108,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_48277092bcfa2f0ffc82cb17"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_77627174647500ab4c0ea93d",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package radix-ui/react-slot"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package radix-ui/react-slot is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -61687,6 +62791,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_238022166a07f59ad7765359"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_78bd0ca1fdb47dc11484e283",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "react is code-observed as a framework at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -63535,6 +64662,29 @@
       "subject": {
         "entity": "repository",
         "id": "repo_8e72211cffd9004375db1f73"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_7c1c4334b9ab5f5974cc6190",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package playwright/test"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package playwright/test is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -67301,6 +68451,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_84561ea0f5733cc2aa409d61",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "alembic"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "alembic is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_c29e4f38edb99406e500ff2e"
@@ -69827,6 +71000,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_a12bbe62f4f08fde4ad0d25f"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_3baa02d152c625aef357edec"
+      ],
+      "id": "clm_89950ffb0b85345c72d376de",
+      "inspectedCommitId": "27202cb64499714be972b2a9ee078b7568fd63c3",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "27202cb64499714be972b2a9ee078b7568fd63c3"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/sinclairhansen/heartframe/tree/27202cb64499714be972b2a9ee078b7568fd63c3",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_fe6751d7725b36fcc327798f"
       },
       "synthetic": false
     },
@@ -72361,6 +73557,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_8eca92cfab151b328e11c2fe",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package react-three/drei"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package react-three/drei is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_98759a4bc558bcfc023282e2"
@@ -73571,6 +74790,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_90e2d7ee7e8cb2551b9e5bf8",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package vitejs/plugin-react"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package vitejs/plugin-react is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_bc7b22b9496bdc7282c422c1"
@@ -74029,6 +75271,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_639bc748a27da6eb56076b07"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_925cf0e01b5eefac0b92e2a9",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "better-sqlite3"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "better-sqlite3 is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
       },
       "synthetic": false
     },
@@ -75855,6 +77120,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_ba76959e24203de6de826e33"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_3baa02d152c625aef357edec"
+      ],
+      "id": "clm_96665c8bd864d09142d409e6",
+      "inspectedCommitId": "27202cb64499714be972b2a9ee078b7568fd63c3",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "nibabel"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/sinclairhansen/heartframe/tree/27202cb64499714be972b2a9ee078b7568fd63c3",
+      "statement": "nibabel is code-observed as a library at revision 27202cb64499714be972b2a9ee078b7568fd63c3. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_3bb039d5fe6d7e0e0d93576e"
       },
       "synthetic": false
     },
@@ -82239,6 +83527,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9b8b66b539ad8dcf89c084d5"
+      ],
+      "id": "clm_a36c47e3375f2ed82aa5624b",
+      "inspectedCommitId": "38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Python"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/timarnoldev/hackmit2026/tree/38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "statement": "Python is code-observed as a language at revision 38f286275d7039d3688d4a00eb7fde5b6cc73737. Manifest path: pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_30b242b995ab22c4b256fc66"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_b4a30492bd39b07faa54c0cf"
@@ -82499,6 +83810,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_120080e7249f2bd076be2580"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9b8b66b539ad8dcf89c084d5"
+      ],
+      "id": "clm_a424172fe804c1bf6edda138",
+      "inspectedCommitId": "38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "streamlit"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/timarnoldev/hackmit2026/tree/38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "statement": "streamlit is code-observed as a library at revision 38f286275d7039d3688d4a00eb7fde5b6cc73737. Manifest path: pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_30b242b995ab22c4b256fc66"
       },
       "synthetic": false
     },
@@ -83009,6 +84343,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_a50e3394361b097281bdcd3d",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package tailwindcss/postcss"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "Scoped npm package tailwindcss/postcss is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_1b6df9903ba8d114f8bd467e"
@@ -83273,6 +84630,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_a5d65d68518d84da945793b7",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "next"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "next is code-observed as a framework at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_2473cc077b5030820977d101"
@@ -83489,6 +84869,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_f586c26e99bd91420ea6fbd3"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_a6288339b055216ac784a08f",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "clsx"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "clsx is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -84061,6 +85464,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_588f44de94de27be3a6f29da"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_a73361ad257e406f152ca934",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "eslint-config-next"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "eslint-config-next is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
       },
       "synthetic": false
     },
@@ -85407,6 +86833,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_a9fc7a6c9008148c6866a530",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "react is code-observed as a framework at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_c21b2b0ea26678399e9629da"
@@ -85469,6 +86918,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_e3230d5307a6106c16fb5a54"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_3baa02d152c625aef357edec"
+      ],
+      "id": "clm_aa75d514418125d4717764a8",
+      "inspectedCommitId": "27202cb64499714be972b2a9ee078b7568fd63c3",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Python"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/sinclairhansen/heartframe/tree/27202cb64499714be972b2a9ee078b7568fd63c3",
+      "statement": "Python is code-observed as a language at revision 27202cb64499714be972b2a9ee078b7568fd63c3. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_3bb039d5fe6d7e0e0d93576e"
       },
       "synthetic": false
     },
@@ -88949,6 +90421,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_b2115a188c99424bf75ce064",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Flask-Limiter"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "Flask-Limiter is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_3bb85fcc03abdd8116184aed"
@@ -91655,6 +93150,52 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_b7e53fe618ed72e2ce97f6f8",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "gunicorn"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "gunicorn is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_b7ebf243c1c72e1c83bea3c6",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/node"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package types/node is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_a848d6f42fa9d73864d9617b"
@@ -94207,6 +95748,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9b8b66b539ad8dcf89c084d5"
+      ],
+      "id": "clm_bc90e8ade68a25ff8750428b",
+      "inspectedCommitId": "38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "torch"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/timarnoldev/hackmit2026/tree/38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "statement": "torch is code-observed as a library at revision 38f286275d7039d3688d4a00eb7fde5b6cc73737. Manifest path: pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_30b242b995ab22c4b256fc66"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_b5d74c0ed4f70e73bb4babdf"
@@ -96011,6 +97575,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_c01d4e0b3b8596e621c49ed5",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "jsqr"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "jsqr is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_d36b2a056caad238cab0fb40"
@@ -96363,6 +97950,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_c0c2c3dbbb17c01d743c919b",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Python"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "Python is code-observed as a language at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_7c1927f8eac705a16cddf068"
@@ -96667,6 +98277,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_aca16f79a25312c737386e9b"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_c182acfbf3686ceb16382603",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "TypeScript"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "TypeScript is code-observed as a language at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
       },
       "synthetic": false
     },
@@ -97679,6 +99312,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_fdcae80905944c7cdc4e5e8d"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_c33bf547322cb58483bfe93c",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "zod"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "zod is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
       },
       "synthetic": false
     },
@@ -99439,6 +101095,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_1042a14caa1a38a744fcb0b1"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_c67de87156dd6a585c5323e9",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package sock-puppet/robot"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package sock-puppet/robot is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -106483,6 +108162,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_d42f727509ff66a46bf9e1cf",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package capacitor/ios"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "Scoped npm package capacitor/ios is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_8d8f3610deace20bcf197a39"
@@ -107029,6 +108731,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_f6071b094803839a84cd3619"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_d4fbbb75afcd289ed33196dd",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react-dom"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package types/react-dom is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -109255,6 +110980,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_d95a8640018e3a7540ba03c7",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "TypeScript"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "TypeScript is code-observed as a language at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_ff48a975651edbb27ce2d9db"
@@ -109911,6 +111659,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_01877bd0ec80fbdc74b078ee"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_3baa02d152c625aef357edec"
+      ],
+      "id": "clm_daf3aee75b7a992c32e06ac2",
+      "inspectedCommitId": "27202cb64499714be972b2a9ee078b7568fd63c3",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "numpy"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/sinclairhansen/heartframe/tree/27202cb64499714be972b2a9ee078b7568fd63c3",
+      "statement": "numpy is code-observed as a library at revision 27202cb64499714be972b2a9ee078b7568fd63c3. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_3bb039d5fe6d7e0e0d93576e"
       },
       "synthetic": false
     },
@@ -110879,6 +112650,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_f85ecf4c3ca0e3051570d258"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_dcd17b2baeae54dfb2fd318d",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package types/react is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -114931,6 +116725,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_e536912d7efa6a8792b3aa49",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "vite"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "vite is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_4a86e317a69a4dec5dd9f167"
@@ -115191,6 +117008,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_f7b8f8c6ef1988fa8d7f9ecc"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_e5bf1cbd467e2c62b5560a85",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_f1d16d3d5ad2f39142bcf84e"
       },
       "synthetic": false
     },
@@ -115807,6 +117647,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_97732467efcbc5e835795769"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_e750143926aaa6d149afa523",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/three"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package types/three is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -117219,6 +119082,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_e9ea419ba48867cd4cfcc485",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "b782757fc490ad64e0d829cf686027e0f797a7a5"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_ccde12613801991332bbd411"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_7c9b9f592ad2629e7de3aa81"
@@ -118385,6 +120271,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_ec6b4ed47072db62b72f4b28",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "C++"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "C++ is code-observed as a language at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Path: src/firmware/main.cpp.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_ad8f9a6354cf5236e5fe8e75"
@@ -118469,6 +120378,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_dced4be6582cd256e9df687e"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_ec91ca6f2e0112b733a309b8",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/ws"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package types/ws is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -118645,6 +120577,52 @@
       "subject": {
         "entity": "project",
         "id": "prj_a7a6aa944f2e408b7eac8021"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_eccde858d718dabf0ca5e3b3",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react-dom"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "Scoped npm package types/react-dom is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_ece546dfd681280551ad2c1b",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react-dom"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "react-dom is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -119195,6 +121173,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_a7b3d4df601547bd254d62f5"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_ee04da76b0d00daf940bfc15",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "psycopg"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "psycopg is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
       },
       "synthetic": false
     },
@@ -121443,6 +123444,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_f33be868a780e307b216bf19",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package react-three/fiber"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "Scoped npm package react-three/fiber is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_88035ecba3df044fe5455ffd"
@@ -122187,6 +124211,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_6df08e28a50239219d7b8976"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c25fc6a4ae1e32b1257e293d"
+      ],
+      "id": "clm_f461928b47d7e81c6da982cc",
+      "inspectedCommitId": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package anthropic-ai/sdk"
+      },
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "statement": "Scoped npm package anthropic-ai/sdk is code-observed as a library at revision 85ca6d3f81da206b8b06997af4ebb1b88ecaf00a. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_502dcdff8ebd04ca3f168463"
       },
       "synthetic": false
     },
@@ -124391,6 +126438,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_f8f57f5bb0a622c5eb574a5b",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "dotenv"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "dotenv is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/puppeteer/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_ef0c00e7acb34e1895b643ef"
@@ -124409,6 +126479,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_71e8ac5f2861f5230c328df4"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_d37f07637fdc7274c630d305"
+      ],
+      "id": "clm_f90108931af8faedd4956c39",
+      "inspectedCommitId": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "SQLAlchemy"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "statement": "SQLAlchemy is code-observed as a library at revision cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4. Manifest path: requirements.txt.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_06575f6b37c3f9323711a862"
       },
       "synthetic": false
     },
@@ -125311,6 +127404,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_13b573fdd0738aa210d5641d"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_9a96b7d7addac7b7add2c61c"
+      ],
+      "id": "clm_fb298dad9f95475762d75175",
+      "inspectedCommitId": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "prettier"
+      },
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "statement": "prettier is code-observed as a library at revision b782757fc490ad64e0d829cf686027e0f797a7a5. Manifest path: src/digital-twin/package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_a778961347d407f0fd208834"
       },
       "synthetic": false
     },
@@ -129585,6 +131701,18 @@
       "kind": "source",
       "retrievedAt": "2026-09-28T17:04:51.000Z",
       "sourceUrl": "https://hack-mit-2023.devpost.com/project-gallery",
+      "synthetic": false
+    },
+    {
+      "excerpt": {
+        "attribution": "Public GitHub tree for albertastrom/sock-puppet",
+        "kind": "third-party-excerpt",
+        "quote": "Dependency names were read from manifests at this revision."
+      },
+      "id": "evd_0eee92cad729e3ed1dbeace8",
+      "kind": "source",
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "sourceUrl": "https://github.com/albertastrom/sock-puppet/tree/b782757fc490ad64e0d829cf686027e0f797a7a5",
       "synthetic": false
     },
     {
@@ -134301,6 +136429,18 @@
       "kind": "source",
       "retrievedAt": "2026-09-28T17:04:19.000Z",
       "sourceUrl": "https://hackmit2017.devpost.com/project-gallery",
+      "synthetic": false
+    },
+    {
+      "id": "evd_3baa02d152c625aef357edec",
+      "inspectedRevision": "27202cb64499714be972b2a9ee078b7568fd63c3",
+      "kind": "code",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_fe6751d7725b36fcc327798f",
       "synthetic": false
     },
     {
@@ -142561,6 +144701,18 @@
     },
     {
       "excerpt": {
+        "attribution": "Public GitHub tree for timarnoldev/hackmit2026",
+        "kind": "third-party-excerpt",
+        "quote": "Dependency names were read from manifests at this revision."
+      },
+      "id": "evd_89dcf1eedc90ec5f3ef58c30",
+      "kind": "source",
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "sourceUrl": "https://github.com/timarnoldev/hackmit2026/tree/38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "synthetic": false
+    },
+    {
+      "excerpt": {
         "attribution": "gallery card title",
         "kind": "third-party-excerpt",
         "quote": "Phantom"
@@ -144456,6 +146608,18 @@
       "synthetic": false
     },
     {
+      "id": "evd_9a96b7d7addac7b7add2c61c",
+      "inspectedRevision": "b782757fc490ad64e0d829cf686027e0f797a7a5",
+      "kind": "code",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_ccde12613801991332bbd411",
+      "synthetic": false
+    },
+    {
       "excerpt": {
         "attribution": "gallery card title",
         "kind": "third-party-excerpt",
@@ -144597,6 +146761,18 @@
       "kind": "source",
       "retrievedAt": "2026-09-28T17:04:25.000Z",
       "sourceUrl": "https://hackmit-2019.devpost.com/project-gallery",
+      "synthetic": false
+    },
+    {
+      "id": "evd_9b8b66b539ad8dcf89c084d5",
+      "inspectedRevision": "38f286275d7039d3688d4a00eb7fde5b6cc73737",
+      "kind": "code",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_8ef0faf9d9b5e4f99391e48e",
       "synthetic": false
     },
     {
@@ -148249,6 +150425,18 @@
     },
     {
       "excerpt": {
+        "attribution": "Public GitHub tree for kbhatnagar1506/ecoai",
+        "kind": "third-party-excerpt",
+        "quote": "Dependency names were read from manifests at this revision."
+      },
+      "id": "evd_bbe002d5223974b0290b9a46",
+      "kind": "source",
+      "retrievedAt": "2026-09-28T17:42:52.688Z",
+      "sourceUrl": "https://github.com/kbhatnagar1506/ecoai/tree/cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "synthetic": false
+    },
+    {
+      "excerpt": {
         "attribution": "gallery card title",
         "kind": "third-party-excerpt",
         "quote": "TL;DW (Too Long Didn't Watch)"
@@ -148941,6 +151129,18 @@
       "kind": "source",
       "retrievedAt": "2026-09-28T17:00:40.000Z",
       "sourceUrl": "https://hackmit.devpost.com/project-gallery",
+      "synthetic": false
+    },
+    {
+      "id": "evd_c25fc6a4ae1e32b1257e293d",
+      "inspectedRevision": "85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
+      "kind": "code",
+      "observedAt": "2026-09-28T18:11:21.504Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_f1d16d3d5ad2f39142bcf84e",
       "synthetic": false
     },
     {
@@ -150661,6 +152861,18 @@
     },
     {
       "excerpt": {
+        "attribution": "Public GitHub tree for sinclairhansen/heartframe",
+        "kind": "third-party-excerpt",
+        "quote": "Dependency names were read from manifests at this revision."
+      },
+      "id": "evd_d3249378b262bea0184c779b",
+      "kind": "source",
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "sourceUrl": "https://github.com/sinclairhansen/heartframe/tree/27202cb64499714be972b2a9ee078b7568fd63c3",
+      "synthetic": false
+    },
+    {
+      "excerpt": {
         "attribution": "gallery card title",
         "kind": "third-party-excerpt",
         "quote": "Neato Game Reviews"
@@ -150705,6 +152917,18 @@
       "kind": "source",
       "retrievedAt": "2026-09-28T17:04:22.000Z",
       "sourceUrl": "https://hackmit-2018.devpost.com/project-gallery",
+      "synthetic": false
+    },
+    {
+      "id": "evd_d37f07637fdc7274c630d305",
+      "inspectedRevision": "cf5f0dbf89bba5adc93f079618d2e8b0d28a72a4",
+      "kind": "code",
+      "observedAt": "2026-09-28T17:42:52.688Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_f25a0cf690110a51fc774f9e",
       "synthetic": false
     },
     {
@@ -151245,6 +153469,18 @@
       "kind": "source",
       "retrievedAt": "2026-09-28T17:04:22.000Z",
       "sourceUrl": "https://hackmit-2018.devpost.com/project-gallery",
+      "synthetic": false
+    },
+    {
+      "excerpt": {
+        "attribution": "Public GitHub tree for haixinnn05/mozaic",
+        "kind": "third-party-excerpt",
+        "quote": "Dependency names were read from manifests at this revision."
+      },
+      "id": "evd_d8de7d599a188a37f8321b61",
+      "kind": "source",
+      "retrievedAt": "2026-09-28T18:11:21.504Z",
+      "sourceUrl": "https://github.com/haixinnn05/mozaic/tree/85ca6d3f81da206b8b06997af4ebb1b88ecaf00a",
       "synthetic": false
     },
     {
