@@ -426,7 +426,28 @@ describe("staged observation ingest", () => {
     expect(existsSync(path.join(outputDir, "catalog.json"))).toBe(false);
   });
 
-  it("does not store secret-like values, email fields, Devpost URLs, or instruction fields", () => {
+  it("accepts a staged Devpost source URL without fetching or counting it as real", () => {
+    const catalog = runTwice([
+      staged("obs_synthetic_devpost", {
+        project: { identityKey: "devpost-case", name: "SYNTHETIC Devpost Citation", summary: null },
+        source: {
+          url: "https://devpost.com/software/synthetic-not-real",
+          retrievedAt: RETRIEVED,
+        },
+      }),
+    ]);
+    expect(catalog.projects).toHaveLength(1);
+    expect(catalog.projects[0]?.synthetic).toBe(true);
+    expect(countRealProjects(catalog)).toBe(0);
+    expect(
+      catalog.evidence.some(
+        (item) => item.kind === "source" && item.sourceUrl === "https://devpost.com/software/synthetic-not-real",
+      ),
+    ).toBe(true);
+    expect(networkCalls).toBe(0);
+  });
+
+  it("does not store secret-like values, email fields, or instruction fields", () => {
     const token = ["ghp", "abcdefghijklmnopqrstuvwxyz0123456789"].join("_");
     const address = ["person", "example.invalid"].join("@");
     const secretDir = tempDir();
@@ -466,20 +487,6 @@ describe("staged observation ingest", () => {
       expect((error as Error).message).toMatch(/not stored/);
       expect((error as Error).message).not.toContain(address);
     }
-
-    const devpostDir = tempDir();
-    const devpostOut = tempDir();
-    writeObservations(devpostDir, [
-      staged("obs_synthetic_devpost", {
-        project: { identityKey: "devpost-case", name: "SYNTHETIC Devpost Skip", summary: null },
-        source: {
-          url: "https://devpost.com/software/synthetic-not-real",
-          retrievedAt: RETRIEVED,
-        },
-      }),
-    ]);
-    expect(() => runIngest({ stagingDir: devpostDir, outputDir: devpostOut })).toThrow(/Devpost/);
-    expect(existsSync(path.join(devpostOut, "catalog.json"))).toBe(false);
 
     const instructionDir = tempDir();
     const instructionOut = tempDir();

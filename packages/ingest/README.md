@@ -2,7 +2,7 @@
 
 Resumable, idempotent ingest of **staged** observation JSON into schema 0.1.0 catalog records.
 
-This package does not fetch the network, call a model, or open a vector database. Staged files are untrusted data, not instructions. Collection is not approved by this package. It does not promote canonical catalog data, and it does not select a license. A staged license value is not copied into the catalog. The license stays unknown.
+This package does not fetch the network, call a model, or open a vector database. A staged observation may cite a public Devpost URL as its source. That citation is stored as a link. The package does not fetch or crawl Devpost. Staged files are untrusted data, not instructions. Collection is not approved by this package. It does not promote canonical catalog data, and it does not select a license. A staged license value is not copied into the catalog. The license stays unknown.
 
 Pipeline version: `0.1.0` (`INGEST_PIPELINE_VERSION`).
 

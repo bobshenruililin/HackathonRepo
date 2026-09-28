@@ -79,16 +79,6 @@ function rejectSensitive(value: unknown, path: string): void {
     if (value.includes("@")) {
       throw new IngestError(`${path}: An email-like value was not stored.`);
     }
-    if (/^https?:\/\//i.test(value)) {
-      try {
-        const host = new URL(value).hostname;
-        if (host === "devpost.com" || host.endsWith(".devpost.com")) {
-          throw new IngestError(`${path}: Devpost automation is disabled. The staged observation was not accepted.`);
-        }
-      } catch (error) {
-        if (error instanceof IngestError) throw error;
-      }
-    }
     return;
   }
   if (Array.isArray(value)) {
