@@ -795,6 +795,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_017c561cb8351b5bcedb5671",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "lucide-react"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "lucide-react is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_bc3b2245f2929ea5eb211ba1"
@@ -2178,6 +2201,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_42f8ab27a301000a87024db1"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_03941a4b4e92e417ca598a80",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package testing-library/jest-dom"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "Scoped npm package testing-library/jest-dom is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
       },
       "synthetic": false
     },
@@ -6519,6 +6565,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_0c3db152bb167997303ce070",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "web-vitals"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "web-vitals is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_12eda38fea39c8b24a2673fa"
@@ -9978,6 +10047,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_12d3e04b95f794db1219bcb7",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "postcss"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "postcss is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_849b3576c4a14f7bbc5cc467"
@@ -11626,6 +11718,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_7c1feddbe641051f28881bf1"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_162fbd10c619cae457306350",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "jsdom"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "jsdom is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
       },
       "synthetic": false
     },
@@ -15705,6 +15820,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_1d83ca09319771ebbbe15921",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "framer-motion"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "framer-motion is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_738ed412faefeed17a8430a7"
@@ -16144,6 +16282,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_83b6686e41f98a251b4e847e"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_1e999cea784c46e64b578a0d",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "tailwindcss"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "tailwindcss is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
       },
       "synthetic": false
     },
@@ -16608,6 +16769,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_ff693beafd00d682551f6de8"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_1f91f08d483fcffca96755aa",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "react is code-observed as a framework at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
       },
       "synthetic": false
     },
@@ -18791,6 +18975,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_a10f2df5c2f201d0a963c0fb"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_231410ef15818e7deadeab74",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react-dom"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "react-dom is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
       },
       "synthetic": false
     },
@@ -26899,6 +27106,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_323bb4834fa536490366b119",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "typescript"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "typescript is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_6c112a309063127e51994494"
@@ -28414,6 +28644,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_06575f6b37c3f9323711a862"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_35d51f0f7cf1a89b072d5ebf",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react-dom"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "react-dom is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
       },
       "synthetic": false
     },
@@ -33105,6 +33358,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_05c09dc27dd95b9d04f7f27c"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_3e49e611e0d1cf9ec3d412e5",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "react is code-observed as a framework at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
       },
       "synthetic": false
     },
@@ -41185,6 +41461,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_5766780a0be86af776272faf"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_4ddca2a92edc52ccc8d14186",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "next"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "next is code-observed as a framework at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
       },
       "synthetic": false
     },
@@ -56239,6 +56538,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_6acad5b5b96de504aa01fd11",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react-scripts"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "react-scripts is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_d0d982418a567c972a6546b6"
@@ -57162,6 +57484,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_c610dd8641bce35901c7652a"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_6c7a9303ac1dc28f7633e9e5",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "vitest"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "vitest is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
       },
       "synthetic": false
     },
@@ -59895,6 +60240,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_6f8af355275346df3ba369b1"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_71919d4f86042d3b688b2741",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "postcss"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "postcss is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
       },
       "synthetic": false
     },
@@ -66135,6 +66503,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_7d3ba707498808b94b602efb",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package testing-library/react"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "Scoped npm package testing-library/react is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_12dbf270fd3698333db1c470"
@@ -67235,6 +67626,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_8049c2babdee46e9aaeedad8",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "autoprefixer"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "autoprefixer is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_249f1ff2175becfd9ef31768"
@@ -67847,6 +68261,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_ea656062ac3b61d557c3c0a1"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_8172ed3a38262f34968ce620",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "Scoped npm package types/react is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
       },
       "synthetic": false
     },
@@ -69763,6 +70200,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_5c90afac0aec186dec55232d"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_851b33ef188c04d8bf8b33cd",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package vitest/coverage-v8"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "Scoped npm package vitest/coverage-v8 is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
       },
       "synthetic": false
     },
@@ -73927,6 +74387,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_8d5367e5aedab9db3cd28da0",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react-dom"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "Scoped npm package types/react-dom is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_34284b2b038e002c1103ffcd"
@@ -74033,6 +74516,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_feb013ee37b747881b86e3a6"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_8d7264bca8e674877a646510",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react-leaflet"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "react-leaflet is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
       },
       "synthetic": false
     },
@@ -76412,6 +76918,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_09989ab53d98b3074c0952ee"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_92d2228fdf43134fb9aba360",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "068175fd7f78cc67c964e724adb7e45b52365b48"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_28be9b9103cadd1d9f7f116e"
       },
       "synthetic": false
     },
@@ -87056,6 +87585,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_a88edad1f10f90c5ccb35b53",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package testing-library/user-event"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "Scoped npm package testing-library/user-event is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_d8c7b3161a5527a6fa4836e4"
@@ -88154,6 +88706,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_f99bbac11cc5d483d9ee5a6f"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_aaab45f3db8b0bd8a6696e6b",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/node"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "Scoped npm package types/node is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
       },
       "synthetic": false
     },
@@ -94080,6 +94655,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_b73f0c7f652acba187d02dbd",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package testing-library/react"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "Scoped npm package testing-library/react is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_8d42999c24cca51b4c3230f3"
@@ -97117,6 +97715,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_5729df240b5d4b24b9ed4a3e"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_bcf22502123a47b93bbfd2f2",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package testing-library/dom"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "Scoped npm package testing-library/dom is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
       },
       "synthetic": false
     },
@@ -105594,6 +106215,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_0a21be9e3ca8aa7ff5fa9617"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c8b7bd28b697a784568f0721"
+      ],
+      "id": "clm_cc973e15f9ced63974652e72",
+      "inspectedCommitId": "3703e95f569b24f25708fd396b177b9dce0fc1d2",
+      "observedAt": "2026-09-28T19:32:07.792Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Python"
+      },
+      "retrievedAt": "2026-09-28T19:32:07.792Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/amritnair/hackmit/tree/3703e95f569b24f25708fd396b177b9dce0fc1d2",
+      "statement": "Python is code-observed as a language at revision 3703e95f569b24f25708fd396b177b9dce0fc1d2. Manifest path: pyproject.toml.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0092233429c41b8bb8c5768e"
       },
       "synthetic": false
     },
@@ -117972,6 +118616,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_e4d32d959ab689b8aba2271b",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "leaflet"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "leaflet is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_502c52c280142cf74d2574c8"
@@ -121584,6 +122251,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_25bed20cfd0fd01b157cc4a3"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_c8b7bd28b697a784568f0721"
+      ],
+      "id": "clm_ec29c1b4dd7d1268f66d19eb",
+      "inspectedCommitId": "3703e95f569b24f25708fd396b177b9dce0fc1d2",
+      "observedAt": "2026-09-28T19:32:07.792Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "3703e95f569b24f25708fd396b177b9dce0fc1d2"
+      },
+      "retrievedAt": "2026-09-28T19:32:07.792Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/amritnair/hackmit/tree/3703e95f569b24f25708fd396b177b9dce0fc1d2",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_19278f0568faf3966618b9f2"
       },
       "synthetic": false
     },
@@ -126877,6 +127567,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_f68e54a9e712ac223d83e1d7",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "tailwindcss"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "tailwindcss is code-observed as a library at revision 747d32f9aca804d88a9e629b00c480237a22e880. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_000826e77a5564980ad08ebc"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_2ead364410912a32a9d1f770"
@@ -128019,6 +128732,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_0c9daab11a8fb481d6548205"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_6c19b40662767c557b9fab77"
+      ],
+      "id": "clm_f90574ee6174efd9171fd717",
+      "inspectedCommitId": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "autoprefixer"
+      },
+      "retrievedAt": "2026-09-28T19:31:54.932Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/lavenderbonnet/hackmit/tree/068175fd7f78cc67c964e724adb7e45b52365b48",
+      "statement": "autoprefixer is code-observed as a library at revision 068175fd7f78cc67c964e724adb7e45b52365b48. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_018cb2e018f2a4452fc8a78b"
       },
       "synthetic": false
     },
@@ -129538,6 +130274,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_3a86688128550edf4b3b7ec8"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_a758c14de61126d2e79af500"
+      ],
+      "id": "clm_fc64ab9dfb266576798f0d69",
+      "inspectedCommitId": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "747d32f9aca804d88a9e629b00c480237a22e880"
+      },
+      "retrievedAt": "2026-09-28T19:32:01.422Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/kristina-sakayeva/hack_mit_26/tree/747d32f9aca804d88a9e629b00c480237a22e880",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_884d2793f1598799c528e5a7"
       },
       "synthetic": false
     },
@@ -142931,6 +143690,18 @@
       "synthetic": false
     },
     {
+      "id": "evd_6c19b40662767c557b9fab77",
+      "inspectedRevision": "068175fd7f78cc67c964e724adb7e45b52365b48",
+      "kind": "code",
+      "observedAt": "2026-09-28T19:31:54.932Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_28be9b9103cadd1d9f7f116e",
+      "synthetic": false
+    },
+    {
       "excerpt": {
         "attribution": "gallery card title",
         "kind": "third-party-excerpt",
@@ -149555,6 +150326,18 @@
       "synthetic": false
     },
     {
+      "id": "evd_a758c14de61126d2e79af500",
+      "inspectedRevision": "747d32f9aca804d88a9e629b00c480237a22e880",
+      "kind": "code",
+      "observedAt": "2026-09-28T19:32:01.422Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_884d2793f1598799c528e5a7",
+      "synthetic": false
+    },
+    {
       "excerpt": {
         "attribution": "gallery card title",
         "kind": "third-party-excerpt",
@@ -153236,6 +154019,18 @@
       "kind": "source",
       "retrievedAt": "2026-09-28T17:14:19.000Z",
       "sourceUrl": "https://plume.hackmit.org/api/v3/projects/gallery?hackathon_id=hack-2026&items_per_page=24",
+      "synthetic": false
+    },
+    {
+      "id": "evd_c8b7bd28b697a784568f0721",
+      "inspectedRevision": "3703e95f569b24f25708fd396b177b9dce0fc1d2",
+      "kind": "code",
+      "observedAt": "2026-09-28T19:32:07.792Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_19278f0568faf3966618b9f2",
       "synthetic": false
     },
     {
