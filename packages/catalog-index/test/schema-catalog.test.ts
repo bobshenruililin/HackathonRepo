@@ -219,6 +219,52 @@ describe("HackMIT schema catalog", () => {
       "pyproject.toml",
       [["Python", "language"]],
     );
+    expectStagedNames(
+      dbPath,
+      "ClosePilot",
+      "https://github.com/rahmagiwa/closepilot",
+      "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "package.json",
+      [
+        ["Scoped npm package eslint/js", "library"],
+        ["Scoped npm package types/react", "library"],
+        ["Scoped npm package types/react-dom", "library"],
+        ["Scoped npm package vitejs/plugin-react", "library"],
+        ["eslint", "library"],
+        ["eslint-plugin-react-hooks", "library"],
+        ["eslint-plugin-react-refresh", "library"],
+        ["globals", "library"],
+        ["react", "framework"],
+        ["react-dom", "library"],
+        ["vite", "library"],
+      ],
+    );
+    expectStagedNames(
+      dbPath,
+      "hackmit2026.com",
+      "https://github.com/luciusscala/hackmit2026",
+      "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "package.json",
+      [
+        ["Scoped npm package react-three/drei", "library"],
+        ["Scoped npm package react-three/fiber", "library"],
+        ["Scoped npm package supabase/supabase-js", "library"],
+        ["Scoped npm package tailwindcss/postcss", "library"],
+        ["Scoped npm package types/node", "library"],
+        ["Scoped npm package types/react", "library"],
+        ["Scoped npm package types/react-dom", "library"],
+        ["Scoped npm package vercel/analytics", "library"],
+        ["eslint", "library"],
+        ["eslint-config-next", "library"],
+        ["next", "framework"],
+        ["react", "framework"],
+        ["react-dom", "library"],
+        ["tailwindcss", "library"],
+        ["three", "library"],
+        ["typescript", "library"],
+      ],
+      "hackmit2026",
+    );
   });
 });
 
@@ -229,8 +275,9 @@ function expectStagedNames(
   revision: string,
   manifest: string,
   names: ReadonlyArray<readonly [string, "library" | "framework" | "language"]>,
+  searchQuery = title,
 ): void {
-  const hit = searchRecords(dbPath, title).find((item) => item.title === title);
+  const hit = searchRecords(dbPath, searchQuery).find((item) => item.title === title);
   expect(hit).toBeDefined();
   const record = getRecord(dbPath, hit?.id ?? "");
   expect(

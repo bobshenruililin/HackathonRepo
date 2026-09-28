@@ -6984,6 +6984,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_0d19cc4104aac51d0b7ba023",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "vite"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "vite is code-observed as a library at revision 6bf764cbd14f8d51490d3a4b42ad734c28131f0c. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_014633fa39a0482ab9bfdf1a"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_76b261169e8402b41a79bef9"
@@ -10136,6 +10159,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_12fe754f7b42d82940832245",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react-dom"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "react-dom is code-observed as a library at revision 6bf764cbd14f8d51490d3a4b42ad734c28131f0c. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_014633fa39a0482ab9bfdf1a"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_15c75371a06d84891b892ac0"
@@ -12891,6 +12937,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_1837af3249f92dd9cd576a3e",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "eslint"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "eslint is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_7c9b9f592ad2629e7de3aa81"
@@ -15578,6 +15647,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_1ce6b91d2590c9c3291c6958",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react-dom"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "react-dom is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_aaced827e722f6960d654df1"
@@ -17079,6 +17171,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_c3e095f225243fa3230a1a98"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_1ffb25213efec7cee4feea9b",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "eslint-plugin-react-hooks"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "eslint-plugin-react-hooks is code-observed as a library at revision 6bf764cbd14f8d51490d3a4b42ad734c28131f0c. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_014633fa39a0482ab9bfdf1a"
       },
       "synthetic": false
     },
@@ -33451,6 +33566,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_3e6f5d6bad54eaeb1963ea9d",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "eslint-plugin-react-refresh"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "eslint-plugin-react-refresh is code-observed as a library at revision 6bf764cbd14f8d51490d3a4b42ad734c28131f0c. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_014633fa39a0482ab9bfdf1a"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_89f74317aadc973891425649"
@@ -35516,6 +35654,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_34b05c62dc0344335774856c"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_4236df04f3f26c5190472afb",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/node"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "Scoped npm package types/node is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
       },
       "synthetic": false
     },
@@ -51470,6 +51631,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_61e146e3a11657e037397f9c",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "Scoped npm package types/react is code-observed as a library at revision 6bf764cbd14f8d51490d3a4b42ad734c28131f0c. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_014633fa39a0482ab9bfdf1a"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_ef71ff7cbbb46aded0c7c7ce"
@@ -57157,6 +57341,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_6bdb6788533f4ee5f05c8a18",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "react is code-observed as a framework at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_f85d446935137f6ea11a7e0d"
@@ -59909,6 +60116,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_833d840232172a6b3a07aa0c"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_70f5333e5320ba4bcc03813f",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package react-three/drei"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "Scoped npm package react-three/drei is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
       },
       "synthetic": false
     },
@@ -67032,6 +67262,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_7ea0316a715050bbd2da9794",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_1070716c52b354c39f0226cf"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_f600e340db6b43950b5edd1e"
@@ -73111,6 +73364,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_8b1d99181526e0288fb6e0cc",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "typescript"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "typescript is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_cb7d868551da2fb1b6a7182c"
@@ -76437,6 +76713,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_918e3d72b6b9a366acc958b9",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react-dom"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "Scoped npm package types/react-dom is code-observed as a library at revision 6bf764cbd14f8d51490d3a4b42ad734c28131f0c. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_014633fa39a0482ab9bfdf1a"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_3bb85fcc03abdd8116184aed"
@@ -77427,6 +77726,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_3c114feecfcce4ccbe2e6b82"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_93e1ff4a7ae0d93ac1c3c447",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "react"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "react is code-observed as a framework at revision 6bf764cbd14f8d51490d3a4b42ad734c28131f0c. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_014633fa39a0482ab9bfdf1a"
       },
       "synthetic": false
     },
@@ -78527,6 +78849,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_7cb34a90ff9a7fb90cfb596e"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_96326e1f5bf07ee7a3a11b67",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package vitejs/plugin-react"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "Scoped npm package vitejs/plugin-react is code-observed as a library at revision 6bf764cbd14f8d51490d3a4b42ad734c28131f0c. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_014633fa39a0482ab9bfdf1a"
       },
       "synthetic": false
     },
@@ -80601,6 +80946,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_9a7b1b97a738b5ba25b145e1",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package supabase/supabase-js"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "Scoped npm package supabase/supabase-js is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_dee5bf8b297074920a140bd0"
@@ -81566,6 +81934,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_77e506cbc0b89454915cc03c"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_9c91ed4bfb30d9b46a9a56a9",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "three"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "three is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
       },
       "synthetic": false
     },
@@ -91396,6 +91787,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_b08e2f2631e9ae4c7e8becfc",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "next"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "next is code-observed as a framework at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_c7587db23cb7b7f7ef19ae86"
@@ -92956,6 +93370,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_e6c00396cf48d72f03cb9c9f"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_b3c94c3b7b83d1a4c4bfe6ef",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package vercel/analytics"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "Scoped npm package vercel/analytics is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
       },
       "synthetic": false
     },
@@ -94744,6 +95181,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_b77af14cb631d042d27dd811",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package react-three/fiber"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "Scoped npm package react-three/fiber is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_e04b9ed34272015a1a2d3ab5"
@@ -96287,6 +96747,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_ba8852e0fb658a8e05044afe",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "eslint"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "eslint is code-observed as a library at revision 6bf764cbd14f8d51490d3a4b42ad734c28131f0c. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_014633fa39a0482ab9bfdf1a"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "inferred",
       "evidenceIds": [
         "evd_528904db94b961a030401160"
@@ -97693,6 +98176,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_da3e57dd00f8f186b5718dfa"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_bcdbb8ee20c651eb1f63949b",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "globals"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "globals is code-observed as a library at revision 6bf764cbd14f8d51490d3a4b42ad734c28131f0c. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_014633fa39a0482ab9bfdf1a"
       },
       "synthetic": false
     },
@@ -104854,6 +105360,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_03a23b1647cc429c70d0dd8e"
+      ],
+      "id": "clm_c9cb3b817329934a694e8503",
+      "inspectedCommitId": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package eslint/js"
+      },
+      "retrievedAt": "2026-09-28T19:53:11.322Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/rahmagiwa/closepilot/tree/6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "statement": "Scoped npm package eslint/js is code-observed as a library at revision 6bf764cbd14f8d51490d3a4b42ad734c28131f0c. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_014633fa39a0482ab9bfdf1a"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_2dd770253916bde8a0451173"
@@ -109828,6 +110357,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_d3a0fab1a371bcfb09c62dbd",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react-dom"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "Scoped npm package types/react-dom is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_4f09c91b1f10287dd7376ca9"
@@ -113862,6 +114414,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_db680aa63efedae96c8d48e5",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "tailwindcss"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "tailwindcss is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_23919fd5413cd80cd8fdb9a5"
@@ -117731,6 +118306,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_fb3d3597706bf6f745cecef1"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_e2e576bd20c1443f50d20d72",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "An inspected revision was staged for this repository.",
+      "subject": {
+        "entity": "repository",
+        "id": "repo_1e8c52191d619daa74e8ddca"
       },
       "synthetic": false
     },
@@ -122898,6 +123496,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_ed28d7dc33a7b7315e566f35",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package types/react"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "Scoped npm package types/react is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_849b3576c4a14f7bbc5cc467"
@@ -125294,6 +125915,29 @@
       "subject": {
         "entity": "project",
         "id": "prj_981945cbbd66cb8de7e43c59"
+      },
+      "synthetic": false
+    },
+    {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_f26449c372e6bce0e3d37591",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "eslint-config-next"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "eslint-config-next is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
       },
       "synthetic": false
     },
@@ -129838,6 +130482,29 @@
       "synthetic": false
     },
     {
+      "basis": "code-observed",
+      "evidenceIds": [
+        "evd_02267be3d8d2a6e0dd2742eb"
+      ],
+      "id": "clm_fb85afe9cf8485c91e66829a",
+      "inspectedCommitId": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "repositoryInspected": true,
+      "resolution": {
+        "status": "known",
+        "value": "Scoped npm package tailwindcss/postcss"
+      },
+      "retrievedAt": "2026-09-28T19:53:16.263Z",
+      "reviewStatus": "unreviewed",
+      "sourceUrl": "https://github.com/luciusscala/hackmit2026/tree/6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "statement": "Scoped npm package tailwindcss/postcss is code-observed as a library at revision 6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3. Manifest path: package.json.",
+      "subject": {
+        "entity": "project",
+        "id": "prj_0194bff66e717ff33b2546c8"
+      },
+      "synthetic": false
+    },
+    {
       "basis": "source-reported",
       "evidenceIds": [
         "evd_b54bc8a87e89ba6cf30a72b0"
@@ -132614,6 +133281,18 @@
       "synthetic": false
     },
     {
+      "id": "evd_02267be3d8d2a6e0dd2742eb",
+      "inspectedRevision": "6bd832d0dc72fa7e5d343b9e6b356c89d1982ae3",
+      "kind": "code",
+      "observedAt": "2026-09-28T19:53:16.263Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_1e8c52191d619daa74e8ddca",
+      "synthetic": false
+    },
+    {
       "excerpt": {
         "attribution": "gallery card title",
         "kind": "third-party-excerpt",
@@ -132767,6 +133446,18 @@
       "kind": "source",
       "retrievedAt": "2026-09-28T17:04:22.000Z",
       "sourceUrl": "https://hackmit-2018.devpost.com/project-gallery",
+      "synthetic": false
+    },
+    {
+      "id": "evd_03a23b1647cc429c70d0dd8e",
+      "inspectedRevision": "6bf764cbd14f8d51490d3a4b42ad734c28131f0c",
+      "kind": "code",
+      "observedAt": "2026-09-28T19:53:11.322Z",
+      "path": {
+        "reason": "No code path was staged for this revision.",
+        "status": "unknown"
+      },
+      "repositoryId": "repo_1070716c52b354c39f0226cf",
       "synthetic": false
     },
     {
