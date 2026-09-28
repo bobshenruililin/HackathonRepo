@@ -51,4 +51,4 @@ This criterion is about scope, not about forbidding a later explorer. M1 does no
 
 ## Current result
 
-M1 has not started. No criterion above has been executed. Result of each criterion: not run.
+M1 collection has not started. No criterion above has been executed. Result of each criterion: not run. `docs/M1_COVERAGE.md` records why: no source is approved, so no genuine project records were accepted.
